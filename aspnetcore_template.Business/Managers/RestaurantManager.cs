@@ -15,7 +15,8 @@ namespace aspnetcore_template.Business.Managers
         }
         public Restaurant Add(Restaurant restaurant)
         {
-            _unitOfWork.Repository<Restaurant>().Insert(restaurant);
+            restaurant = _unitOfWork.Repository<Restaurant>().Insert(restaurant);
+            _unitOfWork.Commit();
             return restaurant;
         }
 
@@ -48,11 +49,6 @@ namespace aspnetcore_template.Business.Managers
             _unitOfWork.Repository<Restaurant>().Update(restaurant);
             await _unitOfWork.CommitAsync();
             return restaurantChanges;
-        }
-
-        Task<Restaurant> IRestaurantManager.Add(Restaurant restaurant)
-        {
-            throw new System.NotImplementedException();
         }
 
         Task<Restaurant> IRestaurantManager.Delete(int id)

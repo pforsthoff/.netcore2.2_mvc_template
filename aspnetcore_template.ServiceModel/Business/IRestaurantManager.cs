@@ -11,7 +11,7 @@ namespace aspnetcore_template.ServiceModel.Business
         Task<Restaurant> GetRestaurant(int Id);
         IEnumerable<Restaurant> GetAllRestaurants();
         Task<IEnumerable<Restaurant>> GetAllRestaurantsAsync();
-        Task<Restaurant> Add(Restaurant restaurant);
+        Restaurant Add(Restaurant restaurant);
         Task<Restaurant> Update(Restaurant restaurantChanges);
         Task<Restaurant> Delete(int id);
     }
