@@ -1,0 +1,14 @@
+﻿@model aspnetcore_template.ServiceModel.Entities.Restaurant
+
+<section>
+    <div>
+        <h3><span class="label label-primary">@Model.Name</span></h3>
+    </div>
+    <div>
+        @Model.Cuisine
+    </div>
+    <div>
+        <a asp-action="Details" asp-route-id="@Model.Id" class="">Details</a>
+        <a asp-action="Edit" asp-route-id="@Model.Id" class="">Edit</a>
+    </div>
+</section>

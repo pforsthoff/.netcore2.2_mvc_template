@@ -1,0 +1,14 @@
+C:\Projects\Core\Core2.2\aspnetcore_template.ServiceModel\bin\Debug\netstandard2.0\aspnetcore_template.ServiceModel.deps.json
+C:\Projects\Core\Core2.2\aspnetcore_template.ServiceModel\bin\Debug\netstandard2.0\aspnetcore_template.ServiceModel.dll
+C:\Projects\Core\Core2.2\aspnetcore_template.ServiceModel\bin\Debug\netstandard2.0\aspnetcore_template.ServiceModel.pdb
+C:\Projects\Core\Core2.2\aspnetcore_template.ServiceModel\bin\Debug\netstandard2.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Projects\Core\Core2.2\aspnetcore_template.ServiceModel\bin\Debug\netstandard2.0\System.ComponentModel.Annotations.dll
+C:\Projects\Core\Core2.2\aspnetcore_template.ServiceModel\bin\Debug\netstandard2.0\Microsoft.Extensions.Identity.Stores.xml
+C:\Projects\Core\Core2.2\aspnetcore_template.ServiceModel\bin\Debug\netstandard2.0\System.ComponentModel.Annotations.xml
+C:\Projects\Core\Core2.2\aspnetcore_template.ServiceModel\obj\Debug\netstandard2.0\aspnetcore_template.ServiceModel.csprojAssemblyReference.cache
+C:\Projects\Core\Core2.2\aspnetcore_template.ServiceModel\obj\Debug\netstandard2.0\aspnetcore_template.ServiceModel.csproj.CoreCompileInputs.cache
+C:\Projects\Core\Core2.2\aspnetcore_template.ServiceModel\obj\Debug\netstandard2.0\aspnetcore_template.ServiceModel.AssemblyInfoInputs.cache
+C:\Projects\Core\Core2.2\aspnetcore_template.ServiceModel\obj\Debug\netstandard2.0\aspnetcore_template.ServiceModel.AssemblyInfo.cs
+C:\Projects\Core\Core2.2\aspnetcore_template.ServiceModel\obj\Debug\netstandard2.0\aspnetcore_template.ServiceModel.csproj.CopyComplete
+C:\Projects\Core\Core2.2\aspnetcore_template.ServiceModel\obj\Debug\netstandard2.0\aspnetcore_template.ServiceModel.dll
+C:\Projects\Core\Core2.2\aspnetcore_template.ServiceModel\obj\Debug\netstandard2.0\aspnetcore_template.ServiceModel.pdb

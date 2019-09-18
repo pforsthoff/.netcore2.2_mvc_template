@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\aspnetcore_template.Data\aspnetcore_template.Data.csproj" />
+    <ProjectReference Include="..\aspnetcore_template.ServiceModel\aspnetcore_template.ServiceModel.csproj" />
+  </ItemGroup>
+
+</Project>

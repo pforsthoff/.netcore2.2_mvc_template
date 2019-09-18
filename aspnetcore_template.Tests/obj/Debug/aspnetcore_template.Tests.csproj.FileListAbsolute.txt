@@ -1,0 +1,14 @@
+C:\Projects\Core\Core2.2\aspnetcore_template.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Projects\Core\Core2.2\aspnetcore_template.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Projects\Core\Core2.2\aspnetcore_template.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Projects\Core\Core2.2\aspnetcore_template.Tests\bin\Debug\aspnetcore_template.Tests.dll
+C:\Projects\Core\Core2.2\aspnetcore_template.Tests\bin\Debug\aspnetcore_template.Tests.pdb
+C:\Projects\Core\Core2.2\aspnetcore_template.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Projects\Core\Core2.2\aspnetcore_template.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Projects\Core\Core2.2\aspnetcore_template.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Projects\Core\Core2.2\aspnetcore_template.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Projects\Core\Core2.2\aspnetcore_template.Tests\obj\Debug\aspnetcore_template.Tests.csprojAssemblyReference.cache
+C:\Projects\Core\Core2.2\aspnetcore_template.Tests\obj\Debug\aspnetcore_template.Tests.csproj.CoreCompileInputs.cache
+C:\Projects\Core\Core2.2\aspnetcore_template.Tests\obj\Debug\aspnetcore_template.Tests.csproj.CopyComplete
+C:\Projects\Core\Core2.2\aspnetcore_template.Tests\obj\Debug\aspnetcore_template.Tests.dll
+C:\Projects\Core\Core2.2\aspnetcore_template.Tests\obj\Debug\aspnetcore_template.Tests.pdb

@@ -1,0 +1,33 @@
+﻿@using aspnetcore_template.ViewModels
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model aspnetcore_template.ViewModels.HomePageViewModel
+@{
+    ViewBag.Title = "Home";
+
+}
+    <div id="sidebar">
+        @await Html.PartialAsync("_Sidebar")
+    </div>
+<div id="wrapper">
+    <div id="main">
+        <h1>Welcome!</h1>
+
+        @foreach (var restaurant in Model.Restaurants)
+        {
+            @await Html.PartialAsync("_Summary", restaurant)
+        }
+            <div>
+                <a asp-controller="Home" asp-action="Create" class="btn btn-primary">
+                    Create
+                    <i class="fa fa-angle-left"></i>
+                </a>
+            </div>
+        </div>
+    <footer id="footer">
+        <div>&copy; 2019 csharpsnippets</div>
+    </footer>
+    <script type="text/javascript" src="js/site.js"></script>
+</div>
+

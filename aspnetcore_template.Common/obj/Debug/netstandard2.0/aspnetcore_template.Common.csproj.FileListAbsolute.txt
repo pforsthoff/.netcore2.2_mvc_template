@@ -1,0 +1,9 @@
+C:\Projects\Core\Core2.2\aspnetcore_template.Common\bin\Debug\netstandard2.0\aspnetcore_template.Common.deps.json
+C:\Projects\Core\Core2.2\aspnetcore_template.Common\bin\Debug\netstandard2.0\aspnetcore_template.Common.dll
+C:\Projects\Core\Core2.2\aspnetcore_template.Common\bin\Debug\netstandard2.0\aspnetcore_template.Common.pdb
+C:\Projects\Core\Core2.2\aspnetcore_template.Common\obj\Debug\netstandard2.0\aspnetcore_template.Common.csproj.CoreCompileInputs.cache
+C:\Projects\Core\Core2.2\aspnetcore_template.Common\obj\Debug\netstandard2.0\aspnetcore_template.Common.AssemblyInfoInputs.cache
+C:\Projects\Core\Core2.2\aspnetcore_template.Common\obj\Debug\netstandard2.0\aspnetcore_template.Common.AssemblyInfo.cs
+C:\Projects\Core\Core2.2\aspnetcore_template.Common\obj\Debug\netstandard2.0\aspnetcore_template.Common.dll
+C:\Projects\Core\Core2.2\aspnetcore_template.Common\obj\Debug\netstandard2.0\aspnetcore_template.Common.pdb
+C:\Projects\Core\Core2.2\aspnetcore_template.Common\obj\Debug\netstandard2.0\aspnetcore_template.Common.csprojAssemblyReference.cache

@@ -1,0 +1,18 @@
+﻿@model aspnetcore_template.ServiceModel.Entities.Restaurant
+
+@{
+    ViewBag.Title = "Details";
+}
+    <div id="sidebar">
+        @await Html.PartialAsync("_Sidebar")
+    </div>
+<div id="wrapper">
+    <div id="main">
+        <h1><span class="label label-primary">@Model.Name</span></h1>
+        <div>ID: @Model.Id</div>
+        <div>Cuisine: @Model.Cuisine</div>
+        <div>
+            <a asp-action="Index">Home</a>
+        </div>
+    </div>
+</div>
