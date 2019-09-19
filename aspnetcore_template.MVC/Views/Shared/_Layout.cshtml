@@ -4,22 +4,116 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
+    <link href="~/images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
     <link rel="stylesheet" href="~/lib/font-awesome/css/font-awesome.css" />
-    <link rel="stylesheet" href="~/css/site.css" />
+    @*<link rel="stylesheet" href="~/css/site.css" />*@
 
+    <link rel="stylesheet" href="~/css/dataTables.checkboxes.css" />
+    <link rel="stylesheet" href="~/css/jquery.dataTables.yadcf.css" />
+    <link rel="stylesheet" href="~/css/buttons.dataTables.min.css" />
+    <link rel="stylesheet" href="~/css/select.dataTables.min.css" />
+    <link rel="stylesheet" href="~/css/dataTables.jqueryui.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="~/css/braidss.css" />
+    <link rel="stylesheet" href="~/css/superfish.css" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
+
+    <link href="https://cdn.datatables.net/1.10.15/css/dataTables.bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.datatables.net/responsive/2.1.1/css/responsive.bootstrap.min.css" rel="stylesheet" />
+
+    <script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap4.min.js "></script>
+    <script src="https://cdn.datatables.net/buttons/1.2.1/js/buttons.print.min.js "></script>
+
+    <script type="text/javascript" src="~/lib/datatables/dataTables.cellEdit.js"></script>
+    <script type="text/javascript" src="~/lib/datatables/dataTables.buttons.min.js"></script>
+    <script type="text/javascript" src="~/lib/datatables/dataTables.checkboxes.min.js"></script>
+    <script type="text/javascript" src="~/lib/datatables/jquery.dataTables.yadcf.js"></script>
+    <script type="text/javascript" src="~/lib/datatables/dataTables.select.min.js"></script>
+    <script type="text/javascript" src="~/lib/datatables/dataTables.order.neutral.js"></script>
+
+    <script>
+        //This Script Variable needs to run before any other scripts
+        var app = { baseUrl: '@Url.Content("~/")' };
+    </script>
 </head>
 <body>
 
-    <div>
-        @RenderBody()
-    </div>
-    <footer>
-        @RenderSection("footer", false)
-        @await Component.InvokeAsync("Greeting")
-    </footer>
+    <div class="container">
+        <div class="span-32 last">
+          
+        </div>
+        <div id="homeheader" class="span-32 last">
+            @{
+                try
+                {
+                    //{ Html.RenderPartial("_userControl"); }
+                    @await Html.PartialAsync("_userControl")
+                }
+                catch
+                {
+                }
+            }
 
-    <script type="text/javascript" src="~/lib/jquery/dist/jquery.js"></script>
-    <script type="text/javascript" src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+            <div id="menu" class="span-32 last">
+                @*@{ Html.RenderPartial("_siteMenu"); }*@
+                @await Html.PartialAsync("_siteMenu")
+            </div>
+        </div>
+        <div class="span-32 last">
+            <div id="breadcrumb">
+                @*@Html.MvcSiteMap().SiteMapPath()*@
+            </div>
+        </div>
+        @*<div id="notifications-container" class="span-24 prepend-4 last">
+            @{ Html.RenderPartial("_notifications"); }
+        </div>*@
+
+        <div class="span-16">
+            <div id="page-header-left">
+                <div class="subtitle"></div>
+            </div>
+        </div>
+        <div class="span-8 last">
+            <div id="page-header-right">
+            </div>
+        </div>
+
+        <div id="body" class="lh-body">
+            <div class="span-32 last">
+
+            </div>
+            <div class="span-32 last">
+                <div class="alertbanner">
+                    <!--Home-->
+                    @{
+                        try
+                        {
+                            <strong>Database: </strong>
+                        }
+                        catch
+                        {
+                            <strong>Database: - Site: </strong>
+                        }
+                    }
+                </div>
+            </div>
+            <section class="content-wrapper main-content">
+                @RenderBody()
+            </section>
+
+        </div>
+        <div class="span-32 last">
+            @*@{ Html.RenderPartial("_siteFooter"); }*@
+            @await Html.PartialAsync("_siteFooter")
+        </div>
+
+    </div>
+
+        <script type="text/javascript" src="~/lib/jquery/dist/jquery.js"></script>
+        <script type="text/javascript" src="~/js/site.js"></script>
+        <script type="text/javascript" src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
 </body>
 </html>

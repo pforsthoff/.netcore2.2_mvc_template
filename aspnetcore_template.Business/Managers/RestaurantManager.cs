@@ -55,5 +55,10 @@ namespace aspnetcore_template.Business.Managers
         {
             throw new System.NotImplementedException();
         }
+        public IEnumerable<Restaurant> GetRestaurantsbyCuisineType(int cuisineNumber)
+        {
+            return _unitOfWork.Repository<Restaurant>().GetByCuisineType(cuisineNumber);
+            
+        }
     }
 }

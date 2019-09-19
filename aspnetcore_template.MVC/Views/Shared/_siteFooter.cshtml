@@ -1,0 +1,25 @@
+﻿<div id="wr-footer-container" class="span-32 last">
+    <div id="wr-footer-container-row1">
+        <div class="li-table">
+            <ul id="wr-footer-links">
+                <li>@Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { id = "tab-lh" })</li>
+                <li>@Html.ActionLink("Contact Us", "Contact", "Home", new { area = "" }, new { id = "tab-lh" })</li>
+                <li>@Html.ActionLink("FAQ", "Faq", "Home", new { area = "" }, new { id = "tab-lh" })</li>
+            </ul>
+        </div>
+    </div>
+    <div id="wr-footer-container-row2">
+        <div class="span-9 prepend-4">
+            <div id="wr-footer-image">
+                <div id="wr-footer-address">
+                    <ul>
+                        <li><strong>DotNet Core 2.2 Template</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="version span-32 alignLeft">
+        Version: @*@HtmlExtensions.AppVersion()*@ @*@typeof(MvcApplication).Assembly.GetName().Version*@
+    </div>
+</div>

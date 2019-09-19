@@ -76,3 +76,8 @@ C:\Projects\Core\Core2.2\aspnetcore_template.MVC\obj\Debug\netcoreapp2.2\aspnetc
 C:\Projects\Core\Core2.2\aspnetcore_template.MVC\obj\Debug\netcoreapp2.2\aspnetcore_template.MVC.RazorTargetAssemblyInfo.cs
 C:\Projects\Core\Core2.2\aspnetcore_template.MVC\obj\Debug\netcoreapp2.2\aspnetcore_template.MVC.Views.pdb
 C:\Projects\Core\Core2.2\aspnetcore_template.MVC\obj\Debug\netcoreapp2.2\aspnetcore_template.MVC.csproj.CopyComplete
+C:\Projects\Core\Core2.2\aspnetcore_template.MVC\obj\Debug\netcoreapp2.2\Razor\Views\Home\Grid.g.cshtml.cs
+C:\Projects\Core\Core2.2\aspnetcore_template.MVC\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.g.cshtml.cs
+C:\Projects\Core\Core2.2\aspnetcore_template.MVC\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_siteFooter.g.cshtml.cs
+C:\Projects\Core\Core2.2\aspnetcore_template.MVC\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_siteMenu.g.cshtml.cs
+C:\Projects\Core\Core2.2\aspnetcore_template.MVC\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_userControl.g.cshtml.cs

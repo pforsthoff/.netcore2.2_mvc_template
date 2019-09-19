@@ -1,0 +1,201 @@
+﻿@using aspnetcore_template.ViewModels
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model aspnetcore_template.ViewModels.HomePageViewModel
+@{
+    ViewBag.Title = "Home";
+
+}
+   
+<div id="wrapper">
+    <div id="main">
+        <div class="container">
+            <br />
+            <div style="width:90%; margin:0 auto;">
+                <table id="restaurant-table" class="display select" cellspacing="0" width="100%">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Name</th>
+                            <th>Cuisine</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        loadTable();
+        function loadTable() {
+            table = $('#restaurant-table').DataTable({
+
+                "processing": true,
+                "scrollX": false,
+                "lengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]],
+                "pageLength": 10,
+                stateSave: true,
+                dom: 'lBfrtip',
+               
+                "filterOptions": {
+                    searchButton: "Search",
+                    clearSearchButton: "ClearSearch",
+                    searchContainer: "SearchContainer"
+                },
+                "serverSide": true,
+                "ajax": {
+                    "url": "/home/AjaxRestaurants",
+                    "type": "POST",
+                    //data: function (d) {
+                    //    d.cuisine = 3;
+                    //}
+                },
+                "columns": [
+                    { "data": "id" },
+                    { "data": "name" },
+                    { "data": "cuisine" }
+                ],
+                "aoColumnDefs": [
+                    {
+                        'targets': 0,
+                        'checkboxes': {
+                            'selectRow': false,
+                            'orderable': false,
+                            'className': 'select-checkbox'
+                        }
+                    },
+                    {
+                        'targets': 1,
+                        'visible': true,
+                        'orderable':true
+                    },
+                    // Actions column not orderable
+                    {
+                        'targets': 2,
+                        'orderable': true
+                    }
+                ],
+                'stateSaveParams': function (settings, data) {
+                    data.columns.forEach(function (column) {
+                        delete column.visible;
+                    });
+                },
+
+                'select': {
+                    'style': 'multi'
+                },
+            });
+
+            table.search('').columns().search('').draw();
+
+        $(document).contextmenu({
+            delegate: ".dataTable tr",
+            menu: [
+                { title: "<i class='glyphicon-margin glyphicon glyphicon-remove' style='color: orange'></i> Cancel Row Update", cmd: "remove" },
+                { title: "<i class='glyphicon-margin glyphicon glyphicon-remove-sign' style='color: orange'></i> Cancel All Rows Update", cmd: "removeall" },
+                { title: "<i class='glyphicon-margin glyphicon glyphicon-floppy-disk glyphicon-margin' style='color: green'></i> Update Selected Rows", cmd: "update" },
+                { title: "<i class='glyphicon-margin glyphicon glyphicon-trash glyphicon-margin' style='color: red'></i> Delete Selected Rows", cmd: "delete" },
+                { title: "<i class='glyphicon-margin glyphicon glyphicon-plus glyphicon-margin' style='color: blue'></i> Create New Row", cmd: "add" },
+                { title: "<i class='glyphicon-margin glyphicon glyphicon-floppy-disk glyphicon-margin' style='color: blue'></i> ...Save New Row", cmd: "addupdate" },
+            ],
+
+            selector: 'span.context-menu',
+            className: 'css-title',
+            select: function (event, ui) {
+                var row = ui.target.closest("tr")
+                switch (ui.cmd) {
+                    case "remove":
+                        CancelRowEdit(row);
+                        break;
+                    case "removeall":
+                        CancelAllRowsEdit(row);
+                        break;
+                    case "update":
+                        UpdateConfigMaint(row);
+                        break;
+                    case "add":
+                        AddRow(row);
+                        break;
+                    case "addupdate":
+                        AddUpdateRow(row);
+                        break;
+                    case "delete":
+                        DeleteSelectedRows();
+                        break;
+                }
+            },
+            beforeOpen: function (event, ui) {
+            var $menu = ui.menu,
+            $target = ui.target,
+            extraData = ui.extraData;
+            ui.menu.zIndex(9999);
+            }
+        });
+        table.MakeCellsEditable({
+        //dataTables cellEdit
+            "columns": [1, 2, 3, 4],
+            "inputTypes": [
+                {
+                    "column": 1, // NAME
+                    "css": "edittext",  // edit text box width
+                    "maxLength": 9,
+                    "required": true
+                },
+                {
+                    "column": 2, // Cuisine
+                    "css": "edittext",  // edit text box width
+                    "maxLength": 3
+                },
+              {
+                    "column": 3, // Cuisine
+                    "css": "edittext",  // edit text box width
+                    "maxLength": 3
+                },
+              {
+                    "column": 4, // Cuisine
+                    "css": "edittext",  // edit text box width
+                    "maxLength": 3
+                }]
+        }),
+            $("body")
+                .tooltip({
+                    selector: '[data-toggle="tooltip"]',
+                    container: 'body'
+                });
+        };
+
+        function CancelRowEdit(e) {
+            if ($('#newrow').length) {
+                $('#newrow').remove();
+            }
+            $(this).UnselectRow(e);
+        }
+        function CancelAllRowsEdit(e) {
+            $(this).UnselectAllRows($(e));
+        }
+
+        function ResetSort() {
+            localStorage.removeItem('DataTables_' + window.location.pathname);
+            table.order.neutral().draw();
+        }
+
+        function UpdateConfigMaint(e) {
+            var row = $(e).closest('tr');
+            var form = $('#table-form').closest('form');
+            if (form.valid()) {
+                UpdateSelectedConfigMaint(row);
+            }
+        }
+
+        $(document)
+            .on('click',
+            '#btnQuery',
+            function (e) {
+                e.preventDefault();
+                var id = this.id;
+                table.ajax.reload();
+
+            });
+
+    </script>

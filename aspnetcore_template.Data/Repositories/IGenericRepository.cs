@@ -1,4 +1,5 @@
-﻿using aspnetcore_template.ServiceModel.Entities.Base;
+﻿using aspnetcore_template.ServiceModel.Entities;
+using aspnetcore_template.ServiceModel.Entities.Base;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -72,5 +73,6 @@ namespace aspnetcore_template.Data.Repositories
 
         T GetSingleInclude(Func<T, bool> where, params Expression<Func<T, object>>[] navigationProperties);
         Task<T> GetSingleIncludeAsync(Expression<Func<T, bool>> where, params Expression<Func<T, object>>[] navigationProperties);
+        IEnumerable<Restaurant> GetByCuisineType(int? id);
     }
 }

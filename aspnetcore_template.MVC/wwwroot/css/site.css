@@ -1,50 +1,491 @@
-﻿body {
-    font-family: sans-serif;
-    font-size: 14px;
-    margin: 0;
+﻿.parent{cursor:pointer}
+
+.spacerXLarge {
+    padding-left: 1150px; 
+}.spacerLarge {
+    padding-left: 950px; 
 }
-label {
-    font-weight: bold;
-    display: block;
+.spacerSmall {
+    padding-left: 200px; 
+}
+.spacer {
+    padding-left: 300px; 
+}
+body
+{
+    background-color: #000000;
+}
+/*.container
+{
+    background-color: #FFFFFF;
+    color: #333333;
+    border-left: 1px solid #CCCCCC;
+    border-right: 1px solid #CCCCCC;
+    box-shadow: 2px 0 12px -4px #888888, -2px 0 12px -4px #888888;
+}*/
+a
+{
+    color: #003366;
+}
+a:link
+{
+    color: #003366;
+}
+a:visited
+{
+    color: #003366;
 }
 
-input [type=text], input[type=password], textarea {
-    width: 150px;
+a.sortAsc {
+    padding-right: 16px;
+    background-image: url(/images/arrow_up.png);
+    background-position: right;
+    background-repeat: no-repeat;
 }
-#main {
-    background-color: #eee;
-    padding: 4px;
-    margin: 0;
+
+a.sortDesc {
+    padding-right: 16px;
+    background-image: url(/images/arrow_down.png);
+    background-position: right;
+    background-repeat: no-repeat;
 }
-#footer {
-    background-color: #222;
-    color: #eee;
-    padding: 8px 8px 8px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+
+/* HEADINGS   
+----------------------------------------------------------*/
+
+
+/* PRIMARY LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+#header
+{
+    background:url("~/images/braidss-logo.png") no-repeat scroll #ffffff;
+    position:relative;
+    background-repeat: no-repeat, repeat;
+    background-position: left center;
+    padding: 55px 0 55px 0;
+    height: 35px;
 }
-.headshot {
-    max-width: 50px;
-    border: 1px solid #222;
-    padding: 3px;
+
+#login
+{
+    color:#000000;
+    position:absolute;
+    right:10px;
+    top:6px;
 }
-.menu li {
-    list-style-type: none;
+
+#login a
+{
+    font-weight:bold;
 }
-.menu li.active {
+
+#breadcrumb
+{
+    background-color: #57839F;
+    font-size:0.9em;
+    padding:4px 0 4px 12px;
+    border-bottom: 1px solid #999999;
+    color: #FFFFFF;
+}
+
+#breadcrumb a
+{
+    color: #FFFFFF;
+}
+
+.separator
+{
+    font-family: Verdana;
+}
+
+#page-header-left
+{
+    padding-left: 8px;
+}
+
+#page-header-left h2
+{
+    color:#013A5F;
+    font-family:Times New Roman;
+    margin-bottom:0;
+}
+
+.subtitle
+{
+    color: #7D7D7D;
     font-weight: bold;
 }
-#sidebar {
-    background-color: #222;
-    color: #eee;
-    position: fixed;
-    height: 100%;
-    width: 250px;
-    overflow: hidden;
-    left: 0;
+
+#page-header-right
+{
+    padding-right: 8px;
+}
+
+/*.page-content
+{
+    padding: 0 8px;
+}
+
+.page-content img
+{
+    margin: 4px;
+    padding: 4px; 
+    border: 1px solid #CCCCCC;
+}
+
+#main-content p+p
+{
+    margin-top: 0;
+    text-indent: 0;
+}*/
+
+#footer
+{
+    text-align: center;
+    margin: 14px 0 0;
+    font-size: .9em;
+    padding: 10px;
+    border-top: 1px solid #CCCCCC;
+}
+
+#footer a
+{
+    color: #666666;
+    text-decoration: none;
+}
+
+#footer a:hover
+{
+    text-decoration: underline;
+}
+
+/*.avatar 
+{
+    float: left;
+    border: rgb(238,238,238) 1px solid;
+    padding: 4px;
+    margin: 4px;
+}*/
+
+
+
+/* VALIDATAION 
+----------------------------------------------------*/
+.field-validation-error
+{
+    color: #ff0000;
+}
+
+.input-validation-error, select.input-validation-error + ul.tagit, select.input-validation-error + ul.tagit input
+{
+    background-color: #ffeeee !important;
+}
+
+.input-validation-error, select.input-validation-error + ul.tagit
+{
+    border: 1px solid #ff0000 !important;
+}
+
+.validation-summary-errors
+{
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.validation-summary-errors ul
+{
+    margin-bottom: 0;
+}
+
+/* FORM ELEMENTS
+----------------------------------------------------*/
+textarea
+{
+    width: auto !important;
+    height: auto !important;
+}
+
+fieldset
+{
+    padding: 4px !important;
+}
+
+legend
+{
+    margin-left: 10px;
+    padding: 0 8px;
+}
+
+td .date-selector
+{
+    width: 60px;
+}
+.date-selector
+{
+    width: 80px;
+}
+
+select[multiple='multiple'].user-selector
+{
+    height: 100px;
+    width: 175px;
+}
+
+input[type='text'].large
+{
+    width: 350px;
+    font-size: 1.25em;
+    padding: 3px;
+    line-height: normal;
+    margin-bottom: 0;
+}
+
+input[readonly]
+{
+    color: #bbb;
+}
+
+input[readonly]:focus
+{
+    border-color: #bbb;
+}
+
+.numeric-textbox
+{
+    width: 75px;
+    text-align: right;
+}
+
+label.disabled 
+{
+    text-decoration: line-through;
+}
+
+#calendar table
+{
+    margin-bottom: 0;
+}
+
+#calendar h2
+{
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#calendar .ClosedOut a
+{
+    background: #009900 url('/images/tick_circle.png') no-repeat right;
+}
+
+#calendar .PendingCancelation a
+{
+    background: #FCEFA1 url('/images/exclamation.png') no-repeat right;
+    color: #000000;
+}
+
+#calendar .PendingGoDecision
+{
+    background: #009900 url('/images/exclamation.png') no-repeat right;
+}
+
+#calendar .RequiresCloseOut a
+{
+    background: #009900 url('/images/exclamation.png') no-repeat right;
+}
+
+#calendar .Canceled a
+{
+    text-decoration: line-through;
+    background: #e7e7e7 url('/images/cross_grey_small.png') no-repeat right;
+    border-color: #e7e7e7;
+    color: #777777;
+}
+
+#calendar table
+{
+    border: 0 none;
+    margin-top: 0;
+}
+
+.fc-header-left
+{
+    width: 5% !important;
+}
+
+.fc-header-right
+{
+    width: 5% !important;
+}
+
+.fc-header-center
+{
+    width: 90% !important;
+}
+
+.fc-state-default
+{
+    margin-bottom: 0.5em !important;
+}
+
+
+
+
+/* ADMINISTRATION 
+----------------------------------------------------*/
+#admin-dashboard ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#admin-dashboard ul li
+{
+    margin-bottom: 12px;
+}
+
+#admin-dashboard ul li img
+{
+    float: left;
+    margin: 0 6px 16px 0;
+    width: 32px;
+    height: 32px;
+}
+
+#admin-dashboard ul li h3
+{
     margin: 0;
 }
-#wrapper {
-    margin: 0 0 0 250px;
+
+
+/* USER MANAGEMENT
+-------------------------------------------------------*/
+#create-options
+{
+    position: absolute;
 }
+
+#create-options ul
+{
+    list-style:none outside none;
+    margin:0;
+    padding:0;
+}
+
+#create-options ul li
+{
+    line-height: 22px;
+}
+
+#create-options a
+{
+    display:block;
+    padding:2px 8px;
+    white-space:nowrap;
+}
+
+#create-options a:hover
+{
+    background-color: #ffffff;
+}
+
+/* SETTINGS
+-------------------------------------------------------*/
+#settings-list
+{
+    list-style-type:none;
+    margin:0 0 12px 0;
+    padding:0;
+}
+#settings-list li
+{
+    border-bottom:1px solid #CCCCCC;
+    padding: .8em .4em 0;
+}
+#settings-list li.alternate
+{
+    background-color: #EEEEEE;
+}
+#settings-list li.selected
+{
+    background-color: #FBF9EE !important;
+}
+#settings-list li label
+{
+    float:left;
+    font-weight: bold;
+}
+#settings-list li p.description
+{
+    clear: both;
+    margin-bottom: .8em;
+}
+#settings-list li div.field
+{
+    float: right;
+    font-size: .9em;
+}
+#settings-list li div input
+{
+    margin: 0;
+}
+
+/* NOTIFICATIONS
+-------------------------------------------------------*/
+#notifications
+{
+    margin: 8px 0;
+    display: none;
+}
+#notifications ul
+{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    display: none;
+}
+#notifications ul li
+{
+    border-top:1px solid #FAD42E;
+    padding:8px;
+}
+#notifications a.dismiss
+{
+    float: right;
+    margin: 0 0 0 8px;
+    text-indent: -9999px;
+}
+#notifications a.dismissAll
+{
+    float: right;
+    display: inline-block;
+    vertical-align: text-top;
+    margin-right: 8px;
+}
+#notifications > div
+{
+    text-align: center;
+    cursor: pointer;
+    background-color: #FAD42E;
+    text-decoration: underline;
+}
+#notifications .generated
+{
+    color:#999999;
+    float:right;
+    font-size:0.9em;
+    margin:0 0 0 8px;
+    text-transform:uppercase;
+}
+
+#notifications .body
+{
+    display: none;
+}
+#notifications .body p { margin: 8px 0; }
+#notifications .body p + p { text-indent: 0; }
+
+
+
+

@@ -1,4 +1,4 @@
-﻿using aspnetcore_template.ServiceModel.Entities.Base;
+﻿using aspnetcore_template.ServiceModel.Entities;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -143,6 +143,13 @@ namespace aspnetcore_template.Data.Repositories
         {
             return _context.Set<T>().Find(id);
         }
+        public IEnumerable<Restaurant> GetByCuisineType(int? id)
+        {
+            var restaurants = from b in _context.Restaurants
+                        where (b.Cuisine == (CuisineType)id)
+                        select b;
+            return restaurants;
+        }
         public async Task<T> GetByIdAsync(int? id)
         {
             return await _context.Set<T>().FindAsync(id);
@@ -178,7 +185,6 @@ namespace aspnetcore_template.Data.Repositories
                 .AsNoTracking() //Don't track any changes for the selected item
                 .FirstOrDefault(where); //Apply where clause
             return item;
-
         }
 
         public async Task<T> GetSingleIncludeAsync(Expression<Func<T, bool>> where, params Expression<Func<T, object>>[] navigationProperties)
@@ -203,7 +209,6 @@ namespace aspnetcore_template.Data.Repositories
             return entity;
         }
 
-
         public ICollection<T> PaggedList(int? pageSize, int? page, params Expression<Func<T, object>>[] navigationProperties)
         {
             IQueryable<T> query = _context.Set<T>();
@@ -211,8 +216,6 @@ namespace aspnetcore_template.Data.Repositories
             //Apply eager loadingf
             foreach (Expression<Func<T, object>> navigationProperty in navigationProperties)
                 query = query.Include<T, object>(navigationProperty);
-
-
 
             if (page != null && pageSize != null)
             {
@@ -229,8 +232,6 @@ namespace aspnetcore_template.Data.Repositories
             //Apply eager loadingf
             foreach (Expression<Func<T, object>> navigationProperty in navigationProperties)
                 query = query.Include<T, object>(navigationProperty);
-
-
 
             if (page != null && pageSize != null)
             {

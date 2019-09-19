@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\aspnetcore_template.Data\aspnetcore_template.Data.csproj" />
     <ProjectReference Include="..\aspnetcore_template.ServiceModel\aspnetcore_template.ServiceModel.csproj" />
   </ItemGroup>

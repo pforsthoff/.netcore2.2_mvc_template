@@ -14,5 +14,6 @@ namespace aspnetcore_template.ServiceModel.Business
         Restaurant Add(Restaurant restaurant);
         Task<Restaurant> Update(Restaurant restaurantChanges);
         Task<Restaurant> Delete(int id);
+        IEnumerable<Restaurant> GetRestaurantsbyCuisineType(int cuisineNumber);
     }
 }
