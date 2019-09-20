@@ -9,8 +9,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Dynamic;
 using System.Threading.Tasks;
-using aspnetcore_template.MVC.ViewModels;
 using AutoMapper;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using System.ComponentModel.DataAnnotations;
+using System.Reflection;
 
 namespace aspnetcore_template.Controllers
 {
@@ -48,7 +50,7 @@ namespace aspnetcore_template.Controllers
             var model = new HomePageViewModel();
             model.Restaurants = await _restaurantManager.GetAllRestaurantsAsync();
             model.CurrentGreeting = _greeter.GetGreeting();
-            return View(model);
+            model.Message = "Select a Cuisine";            return View(model);
         }
         [HttpGet]
         public ViewResult Create()
@@ -98,8 +100,11 @@ namespace aspnetcore_template.Controllers
         [HttpPost]
         public JsonResult AjaxRestaurants()
         {
-            var cuisineNumber = 3;
-
+            var cuisineNumber = Request.Form["cuisine"].FirstOrDefault(); 
+            if (cuisineNumber == "")
+            {
+                cuisineNumber = "0";
+            }
             var draw = HttpContext.Request.Form["draw"].FirstOrDefault();
 
             // Skip number of Rows count  
@@ -125,9 +130,9 @@ namespace aspnetcore_template.Controllers
             int recordsTotal = 0;
 
             // getting all Customer data  
-            IEnumerable<Restaurant> restaurants = _restaurantManager.GetRestaurantsbyCuisineType(cuisineNumber);
+            IEnumerable<Restaurant> restaurants = _restaurantManager.GetRestaurantsbyCuisineType(Convert.ToInt32(cuisineNumber));
             var restaurantData = (from c in restaurants
-                                  where c.Cuisine == (CuisineType)cuisineNumber
+                                  where c.Cuisine == (CuisineType)Convert.ToInt32(cuisineNumber)
                                   select new
                                   {
                                       Id = c.Id,
@@ -156,11 +161,10 @@ namespace aspnetcore_template.Controllers
             //total number of rows counts   
             recordsTotal = restaurantData.Count();
             //Paging   
-            var data = restaurantData.Skip(skip).Take(pageSize).ToList();
+            var mappedResults = _mapper.Map<IEnumerable<Restaurant>, ICollection<HomePageViewModel>>(restaurantData);
+            var data = mappedResults.Skip(skip).Take(pageSize).ToList();
             //Returning Json Data  
             return Json(new { draw = draw, recordsFiltered = recordsTotal, recordsTotal = recordsTotal, data = data });
-
-
         }
     }
 }

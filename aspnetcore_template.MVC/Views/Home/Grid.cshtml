@@ -1,4 +1,5 @@
 ﻿@using aspnetcore_template.ViewModels
+@using aspnetcore_template.ServiceModel.Entities
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
@@ -7,195 +8,245 @@
     ViewBag.Title = "Home";
 
 }
-   
-<div id="wrapper">
-    <div id="main">
-        <div class="container">
-            <br />
-            <div style="width:90%; margin:0 auto;">
-                <table id="restaurant-table" class="display select" cellspacing="0" width="100%">
-                    <thead>
-                        <tr>
-                            <th>Id</th>
-                            <th>Name</th>
-                            <th>Cuisine</th>
-                        </tr>
-                    </thead>
-                </table>
+    <div class="row">
+        <div class="col-sm-10 col-sm-offset-1">
+            <div class="panel panel-primary">
+                <div class="panel-heading"><h2><span class="label label-primary">Restaurants</span></h2></div>
+                <div class="panel-body">
+                    <div class="row" style="padding-left: 10px;">
+                        <div class="form-inline">
+                            <div class="form-group col-lg-1">
+                                @*@Html.LabelFor(m => m.Message, new { @class = "control-label", @for = "siteFilter" })*@
+                                <div>
+                                    Cuisine
+                                    @*@Html.Label(Model.Message,Model.Message, new { @id = "siteFilter" })*@
+                                </div>
+                            </div>
+                            <div class="form-group col-lg-4">
+                                @*@Html.LabelFor(m => m.Message, new { @class = "control-label", @for = "modelFilterLabel" })*@
+                                <div>
+                                    @Html.DropDownList("CuisineType",
+                                    Html.GetEnumSelectList<CuisineType>(),
+                                    "Select Cuisine", new { @class = "form-control" })
+                                </div>
+                            </div>
+                            <div class="form-group col-lg-2">
+                                <button id="btnQuery" type="button" class="btn btn-info input-sm">Query</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <hr />
+                    </div>
+                    <br />
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <table id="restaurant-table" class="display select" cellspacing="0" width="100%">
+                                <thead>
+                                    <tr>
+                                        <th>@Html.Label("Id", "Id", new { @class = "dataTable-head-column" })</th>
+                                        <th>@Html.Label("Name", "Name", new { @class = "dataTable-head-column" })</th>
+                                        <th>@Html.Label("Cuisine","Cuisine", new { @class = "dataTable-head-column" })</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-
     </div>
-    <script>
-        loadTable();
-        function loadTable() {
-            table = $('#restaurant-table').DataTable({
+                <script>
+                    var dt = new Date();
+                    var excelfilename = (dt.getMonth() + 1) + "/" + dt.getDate() + "/" + dt.getFullYear() + "_" + dt.getHours() + ":" + dt.getMinutes() + ":" + dt.getSeconds();
+                    var table = null;
+                    var selected = [];
+                    loadTable();
+                    function loadTable() {
+                        table = $('#restaurant-table').DataTable({
+                            "processing": true,
+                            "lengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]],
+                            "pageLength": 10,
+                            stateSave: true,
+                            dom: 'lBfrtip',
+                            buttons: [
 
-                "processing": true,
-                "scrollX": false,
-                "lengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]],
-                "pageLength": 10,
-                stateSave: true,
-                dom: 'lBfrtip',
-               
-                "filterOptions": {
-                    searchButton: "Search",
-                    clearSearchButton: "ClearSearch",
-                    searchContainer: "SearchContainer"
-                },
-                "serverSide": true,
-                "ajax": {
-                    "url": "/home/AjaxRestaurants",
-                    "type": "POST",
-                    //data: function (d) {
-                    //    d.cuisine = 3;
-                    //}
-                },
-                "columns": [
-                    { "data": "id" },
-                    { "data": "name" },
-                    { "data": "cuisine" }
-                ],
-                "aoColumnDefs": [
-                    {
-                        'targets': 0,
-                        'checkboxes': {
-                            'selectRow': false,
-                            'orderable': false,
-                            'className': 'select-checkbox'
+                                {
+                                    extend: 'excelHtml5',
+                                    "text": 'Excel <span class="glyphicon glyphicon-download-alt"></span>',
+                                    "className": 'btn btn-info btn-sm',
+                                    title: "BRAIDSS_Config_Maint_ " + excelfilename,
+                                    init: function (dt, node, config) {
+                                        config.title = "BRAIDSS_Config_Maint_" + excelfilename;
+                                    }
+                                }
+                            ],
+                            "filterOptions": {
+                                searchButton: "Search",
+                                clearSearchButton: "ClearSearch",
+                                searchContainer: "SearchContainer"
+                            },
+                            "serverSide": true,
+                            "ajax": {
+                                "url": "/home/AjaxRestaurants",
+                                "type": "POST",
+                                data: function (d) {
+                                    d.cuisine = $('#CuisineType').val();;
+                                }
+                            },
+                            "columns": [
+                                { "data": "id" },
+                                { "data": "name" },
+                                { "data": "cuisine" },
+                                { "data": "actions" }
+                            ],
+                            "aoColumnDefs": [
+                                {
+                                    'targets': 0,
+                                    'checkboxes': {
+                                        'selectRow': false,
+                                        'orderable': false,
+                                        'className': 'select-checkbox'
+                                    }
+                                },
+                                {
+                                    'targets': 1,
+                                    'visible': true,
+                                    'orderable': true
+                                },
+                                // Actions column not orderable
+                                {
+                                    'targets': 2,
+                                    'orderable': true
+                                }
+                            ],
+                            'stateSaveParams': function (settings, data) {
+                                data.columns.forEach(function (column) {
+                                    delete column.visible;
+                                });
+                            },
+
+                            //'select': {
+                            //    'style': 'multi'
+                            //},
+                        });
+
+                        table.search('').columns().search('').draw();
+
+                        $(document).contextmenu({
+                            delegate: ".dataTable tr",
+                            menu: [
+                                { title: "<i class='glyphicon-margin glyphicon glyphicon-remove' style='color: orange'></i> Cancel Row Update", cmd: "remove" },
+                                { title: "<i class='glyphicon-margin glyphicon glyphicon-remove-sign' style='color: orange'></i> Cancel All Rows Update", cmd: "removeall" },
+                                { title: "<i class='glyphicon-margin glyphicon glyphicon-floppy-disk glyphicon-margin' style='color: green'></i> Update Selected Rows", cmd: "update" },
+                                { title: "<i class='glyphicon-margin glyphicon glyphicon-trash glyphicon-margin' style='color: red'></i> Delete Selected Rows", cmd: "delete" },
+                                { title: "<i class='glyphicon-margin glyphicon glyphicon-plus glyphicon-margin' style='color: blue'></i> Create New Row", cmd: "add" },
+                                { title: "<i class='glyphicon-margin glyphicon glyphicon-floppy-disk glyphicon-margin' style='color: blue'></i> ...Save New Row", cmd: "addupdate" },
+                            ],
+
+                            selector: 'span.context-menu',
+                            className: 'css-title',
+                            select: function (event, ui) {
+                                var row = ui.target.closest("tr")
+                                switch (ui.cmd) {
+                                    case "remove":
+                                        CancelRowEdit(row);
+                                        break;
+                                    case "removeall":
+                                        CancelAllRowsEdit(row);
+                                        break;
+                                    case "update":
+                                        UpdateConfigMaint(row);
+                                        break;
+                                    case "add":
+                                        AddRow(row);
+                                        break;
+                                    case "addupdate":
+                                        AddUpdateRow(row);
+                                        break;
+                                    case "delete":
+                                        DeleteSelectedRows();
+                                        break;
+                                }
+                            },
+                            beforeOpen: function (event, ui) {
+                                var $menu = ui.menu,
+                                    $target = ui.target,
+                                    extraData = ui.extraData;
+                                ui.menu.zIndex(9999);
+                            }
+                        });
+                        table.MakeCellsEditable({
+                        //dataTables cellEdit
+                        "columns": [1,2,3,4]
+                        }),
+                            $("body")
+                                .tooltip({
+                                    selector: '[data-toggle="tooltip"]',
+                                    container: 'body'
+                                });
+                        };
+
+                    function CancelRowEdit(e) {
+                        if ($('#newrow').length) {
+                            $('#newrow').remove();
                         }
-                    },
-                    {
-                        'targets': 1,
-                        'visible': true,
-                        'orderable':true
-                    },
-                    // Actions column not orderable
-                    {
-                        'targets': 2,
-                        'orderable': true
+                        $(this).UnselectRow(e);
                     }
-                ],
-                'stateSaveParams': function (settings, data) {
-                    data.columns.forEach(function (column) {
-                        delete column.visible;
-                    });
-                },
+                    function CancelAllRowsEdit(e) {
+                        $(this).UnselectAllRows($(e));
+                    }
 
-                'select': {
-                    'style': 'multi'
-                },
-            });
+                    function ResetSort() {
+                        localStorage.removeItem('DataTables_' + window.location.pathname);
+                        table.order.neutral().draw();
+                    }
 
-            table.search('').columns().search('').draw();
+                    function UpdateConfigMaint(e) {
+                        var row = $(e).closest('tr');
+                        var form = $('#table-form').closest('form');
+                        if (form.valid()) {
+                            UpdateSelectedConfigMaint(row);
+                        }
+                    }
 
-        $(document).contextmenu({
-            delegate: ".dataTable tr",
-            menu: [
-                { title: "<i class='glyphicon-margin glyphicon glyphicon-remove' style='color: orange'></i> Cancel Row Update", cmd: "remove" },
-                { title: "<i class='glyphicon-margin glyphicon glyphicon-remove-sign' style='color: orange'></i> Cancel All Rows Update", cmd: "removeall" },
-                { title: "<i class='glyphicon-margin glyphicon glyphicon-floppy-disk glyphicon-margin' style='color: green'></i> Update Selected Rows", cmd: "update" },
-                { title: "<i class='glyphicon-margin glyphicon glyphicon-trash glyphicon-margin' style='color: red'></i> Delete Selected Rows", cmd: "delete" },
-                { title: "<i class='glyphicon-margin glyphicon glyphicon-plus glyphicon-margin' style='color: blue'></i> Create New Row", cmd: "add" },
-                { title: "<i class='glyphicon-margin glyphicon glyphicon-floppy-disk glyphicon-margin' style='color: blue'></i> ...Save New Row", cmd: "addupdate" },
-            ],
+                    $(document)
+                        .on('click',
+                            '#btnQuery',
+                            function (e) {
+                                e.preventDefault();
+                                var id = this.id;
+                                table.ajax.reload();
 
-            selector: 'span.context-menu',
-            className: 'css-title',
-            select: function (event, ui) {
-                var row = ui.target.closest("tr")
-                switch (ui.cmd) {
-                    case "remove":
-                        CancelRowEdit(row);
-                        break;
-                    case "removeall":
-                        CancelAllRowsEdit(row);
-                        break;
-                    case "update":
-                        UpdateConfigMaint(row);
-                        break;
-                    case "add":
-                        AddRow(row);
-                        break;
-                    case "addupdate":
-                        AddUpdateRow(row);
-                        break;
-                    case "delete":
-                        DeleteSelectedRows();
-                        break;
+                            });
+                    // Click event to put row into edit mode - minus action column
+    $('#restaurant-table tbody').on('dblclick', 'td', function () {
+        try {
+            console.log('edit click');
+             settingsEditColumns =table.column( 2 ).data().GetSettingsColumns();
+                //settingsEditColumns = $(this).GetSettingsColumns();
+                // check for existing edit row controls, only showedit controls if these don't already exist
+                var $row = table.row($(this).parent('tr')).nodes().to$(),
+                    currentInput = $row.find('td:eq(settingsEditColumns[0]) input').length;
+                //console.log("currentinput: " + currentInput);
+                if (settingsEditColumns.contains(table.cell(this).index().columnVisible) && currentInput == 0) {
+                    var rowId = table.row(this).data().Id;
+                    var index = $.inArray(rowId, selected);
+                    if (index === -1) {
+                        selected.push(rowId);
+                    } else {
+                        selected.splice(index, 1);
+                    }
+                    $(this).ShowEditRow($(this).parent('tr'));
+                    $(this).parent('tr').addClass('selected');
+                    $.fn.DataTable.tables({ visible: true, api: true })
+                        .columns.adjust()
+                        .responsive.recalc();
                 }
-            },
-            beforeOpen: function (event, ui) {
-            var $menu = ui.menu,
-            $target = ui.target,
-            extraData = ui.extraData;
-            ui.menu.zIndex(9999);
             }
-        });
-        table.MakeCellsEditable({
-        //dataTables cellEdit
-            "columns": [1, 2, 3, 4],
-            "inputTypes": [
-                {
-                    "column": 1, // NAME
-                    "css": "edittext",  // edit text box width
-                    "maxLength": 9,
-                    "required": true
-                },
-                {
-                    "column": 2, // Cuisine
-                    "css": "edittext",  // edit text box width
-                    "maxLength": 3
-                },
-              {
-                    "column": 3, // Cuisine
-                    "css": "edittext",  // edit text box width
-                    "maxLength": 3
-                },
-              {
-                    "column": 4, // Cuisine
-                    "css": "edittext",  // edit text box width
-                    "maxLength": 3
-                }]
-        }),
-            $("body")
-                .tooltip({
-                    selector: '[data-toggle="tooltip"]',
-                    container: 'body'
-                });
-        };
-
-        function CancelRowEdit(e) {
-            if ($('#newrow').length) {
-                $('#newrow').remove();
+        catch (e) {
+            console.log('errors - ' + e);
             }
-            $(this).UnselectRow(e);
-        }
-        function CancelAllRowsEdit(e) {
-            $(this).UnselectAllRows($(e));
-        }
-
-        function ResetSort() {
-            localStorage.removeItem('DataTables_' + window.location.pathname);
-            table.order.neutral().draw();
-        }
-
-        function UpdateConfigMaint(e) {
-            var row = $(e).closest('tr');
-            var form = $('#table-form').closest('form');
-            if (form.valid()) {
-                UpdateSelectedConfigMaint(row);
-            }
-        }
-
-        $(document)
-            .on('click',
-            '#btnQuery',
-            function (e) {
-                e.preventDefault();
-                var id = this.id;
-                table.ajax.reload();
-
-            });
-
-    </script>
+    });
+                </script>

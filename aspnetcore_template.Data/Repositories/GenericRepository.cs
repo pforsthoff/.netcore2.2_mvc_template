@@ -150,6 +150,7 @@ namespace aspnetcore_template.Data.Repositories
                         select b;
             return restaurants;
         }
+       
         public async Task<T> GetByIdAsync(int? id)
         {
             return await _context.Set<T>().FindAsync(id);

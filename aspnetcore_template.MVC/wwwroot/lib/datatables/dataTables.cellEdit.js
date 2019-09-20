@@ -4,10 +4,10 @@
 //This library has been extended beyond the point of it being anything remotely like the original celledit.
 //Do not attempt to upgrade this version!
 
-jQuery.fn.dataTable.Api.register('MakeCellsEditable()', function (settings) {
+$.fn.dataTable.Api.register('MakeCellsEditable()', function (settings) {
+    console.log('celledit-loaded');
     var table = this.table();
-
-    jQuery.fn.extend({
+    $.fn.extend({
         // UPDATE
         updateEditableCell: function (callingElement) {
 
@@ -244,6 +244,7 @@ jQuery.fn.dataTable.Api.register('MakeCellsEditable()', function (settings) {
             }
         },
         GetSettingsColumns: function (e) {
+            console.log('getting settings columns for celledit');
             var settingsColumns = [];
             $.each(settings.columns, function (i, val) {
                 settingsColumns.push(val);
@@ -451,3 +452,4 @@ function sanitizeCellValue(cellValue) {
     }
     return cellValue;
 }
+

@@ -5,23 +5,25 @@
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
     <link href="~/images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
-    <link rel="stylesheet" href="~/lib/font-awesome/css/font-awesome.css" />
-    @*<link rel="stylesheet" href="~/css/site.css" />*@
 
+    <link rel="stylesheet" href="~/css/jquery-ui.css" />
+    <link rel="stylesheet" href="~/css/bootstrap-dialog.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/superfish.css" />
+    <link rel="stylesheet" href="~/lib/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="~/css/braidss.css" />
     <link rel="stylesheet" href="~/css/dataTables.checkboxes.css" />
     <link rel="stylesheet" href="~/css/jquery.dataTables.yadcf.css" />
     <link rel="stylesheet" href="~/css/buttons.dataTables.min.css" />
     <link rel="stylesheet" href="~/css/select.dataTables.min.css" />
     <link rel="stylesheet" href="~/css/dataTables.jqueryui.css" />
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
-    <link rel="stylesheet" href="~/css/braidss.css" />
-    <link rel="stylesheet" href="~/css/superfish.css" />
+
+
+
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
-
-    <link href="https://cdn.datatables.net/1.10.15/css/dataTables.bootstrap.min.css" rel="stylesheet" />
-    <link href="https://cdn.datatables.net/responsive/2.1.1/css/responsive.bootstrap.min.css" rel="stylesheet" />
+    <script type="text/javascript" src="~/lib/jqueryui/jquery.ui-contextmenu.js"></script>
 
     <script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap4.min.js "></script>
@@ -33,7 +35,12 @@
     <script type="text/javascript" src="~/lib/datatables/jquery.dataTables.yadcf.js"></script>
     <script type="text/javascript" src="~/lib/datatables/dataTables.select.min.js"></script>
     <script type="text/javascript" src="~/lib/datatables/dataTables.order.neutral.js"></script>
-
+    <script type="text/javascript" src="~/js/bootstrap-dialog.js"></script>
+    <script type="text/javascript" src="~/js/js.global.js"></script>
+    <script type="text/javascript" src="~/js/hoverIntent.js"></script>
+    <script type="text/javascript" src="~/js/jquery.dialogform.js"></script>
+    <script type="text/javascript" src="~/js/respond.js"></script>
+    <script type="text/javascript" src="~/js/buttons.html5.min.js"></script>
     <script>
         //This Script Variable needs to run before any other scripts
         var app = { baseUrl: '@Url.Content("~/")' };
@@ -42,9 +49,6 @@
 <body>
 
     <div class="container">
-        <div class="span-32 last">
-          
-        </div>
         <div id="homeheader" class="span-32 last">
             @{
                 try
