@@ -48,7 +48,7 @@ jQuery.fn.dataTable.Api.register('MakeCellsEditable()', function (settings) {
                         var inputField = getInputField(td);
                         var newValue = inputField.val();
                         console.log("val: " + table.cell({ row: element, column: val }).data());
-                        _update(cell, newValue.toUpperCase());
+                        _update(cell, newValue);
                     }
                 });
 
@@ -76,7 +76,7 @@ jQuery.fn.dataTable.Api.register('MakeCellsEditable()', function (settings) {
                         var inputField = getInputField(td);
                         var newValue = inputField.val();
                         //console.log("newval: " + newValue);
-                        _update(cell, newValue.toUpperCase());
+                        _update(cell, newValue);
                     }
                 });
                 $(element).removeClass('selected');

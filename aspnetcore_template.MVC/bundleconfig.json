@@ -33,8 +33,13 @@
   {
     "outputFileName": "wwwroot/js/bundle.bootstrap.min.js",
     "inputFiles": [
-      "wwwroot/js/bootstrap-dialog.js",
       "wwwroot/lib/dist/js/bootstrap.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/js/bundle.bootstrap-dialog.min.js",
+    "inputFiles": [
+      "wwwroot/js/bootstrap-dialog.js"
     ]
   },
   {

@@ -1,6 +1,7 @@
 ﻿using aspnetcore_template.Data.Repositories;
 using aspnetcore_template.ServiceModel.Business;
 using aspnetcore_template.ServiceModel.Entities;
+using aspnetcore_template.ServiceModel.Messaging;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -64,20 +65,21 @@ namespace aspnetcore_template.Business.Managers
             return _unitOfWork.Repository<Restaurant>().GetByCuisineType(cuisineNumber);
             
         }
-       
-        //public static string GetDisplayName<T>(this T enumValue) where T : IComparable, IFormattable, IConvertible
-        //{
-        //    if (!typeof(T).IsEnum)
-        //        throw new ArgumentException("Argument must be of type Enum");
 
-        //    DisplayAttribute displayAttribute = enumValue.GetType()
-        //                                                 .GetMember(enumValue.ToString())
-        //                                                 .First()
-        //                                                 .GetCustomAttribute<DisplayAttribute>();
-
-        //    string displayName = displayAttribute?.GetName();
-
-        //    return displayName ?? enumValue.ToString();
-        //}
+        public JsonResultMessage UpdateRestaurant(Restaurant restaurant)
+        {
+            var result = ResultMessages.JsonResultMessage();
+            try
+            {
+                _unitOfWork.Repository<Restaurant>().Update(restaurant);
+                _unitOfWork.Commit();
+            }
+            catch (Exception ex)
+            {
+                result.Success = false;
+                result.Message = "Error updating config. " + ex.Message;
+            }
+            return result;
+        }
     }
 }

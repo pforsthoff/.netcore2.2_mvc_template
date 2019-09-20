@@ -41,16 +41,18 @@
                     <br />
                     <div class="row">
                         <div class="col-sm-12">
-                            <table id="restaurant-table" class="display select" cellspacing="0" width="100%">
-                                <thead>
-                                    <tr>
-                                        <th>@Html.Label("Id", "Id", new { @class = "dataTable-head-column" })</th>
-                                        <th>@Html.Label("Name", "Name", new { @class = "dataTable-head-column" })</th>
-                                        <th>@Html.Label("Cuisine","Cuisine", new { @class = "dataTable-head-column" })</th>
-                                        <th>Actions</th>
-                                    </tr>
-                                </thead>
-                            </table>
+                            <form id="table-form">
+                                <table id="restaurant-table" class="display select" cellspacing="0" width="100%">
+                                    <thead>
+                                        <tr>
+                                            <th>@Html.Label("Id", "Id", new { @class = "dataTable-head-column" })</th>
+                                            <th>@Html.Label("Name", "Name", new { @class = "dataTable-head-column" })</th>
+                                            <th>@Html.Label("Cuisine", "Cuisine", new { @class = "dataTable-head-column" })</th>
+                                            <th>Actions</th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -157,7 +159,7 @@
                                         CancelAllRowsEdit(row);
                                         break;
                                     case "update":
-                                        UpdateConfigMaint(row);
+                                        UpdateRows(row);
                                         break;
                                     case "add":
                                         AddRow(row);
@@ -203,11 +205,11 @@
                         table.order.neutral().draw();
                     }
 
-                    function UpdateConfigMaint(e) {
+                    function UpdateRows(e) {
                         var row = $(e).closest('tr');
                         var form = $('#table-form').closest('form');
                         if (form.valid()) {
-                            UpdateSelectedConfigMaint(row);
+                            UpdateSelectedRows(row);
                         }
                     }
 
@@ -244,8 +246,72 @@
                         .responsive.recalc();
                 }
             }
-        catch (e) {
-            console.log('errors - ' + e);
+        catch (e) {console.log('errors - ' + e);
             }
     });
-                </script>
+            function UpdateSelectedRows(e) {
+                //console.log("update");
+                var selectedRestaurants = table.rows('.selected').data().toArray();
+                if (selectedRestaurants.length == 0)
+                {
+                    toastr.error("Updated data required");
+                    return;
+                }
+                $(this).updateEditableCells(e);
+                // case validation
+                //for (i = 0; i < selectedConfigs.length; i++) {
+                //    selectedConfigs[i].CONFIG_NAME.toUpperCase();
+                //    selectedConfigs[i].CONFIG_NAME_ABREV.toUpperCase();
+                //    selectedConfigs[i].CUSTOMER.toUpperCase();
+                //}
+                BootstrapDialog.show({
+                    size: BootstrapDialog.SIZE_SMALL,
+                    //closable: false,
+                    type: BootstrapDialog.TYPE_DANGER,
+                    title: "Save Confirmation",
+                    message: "Are you sure you wish to update ALL of the selected Rows?",
+                    buttons: [{
+                            label: "Confirm",
+                            cssClass: 'btn-primary',
+                            action: function (dialog) {
+                                dialog.close();
+                                //$(this).updateEditableCells(e);
+                                $.ajax({
+                                    type: 'POST',
+                                    url: '@Url.Action("UpdateSelectedRows", "Home")',
+                                    dataType: 'json',
+                                    traditional: true,
+                                    data: { selectedRestaurants: JSON.stringify(selectedRestaurants) }
+
+                                }).done(function (result) {
+                                    console.log('message' + result.message)
+                                    if (result.success) {
+                                        toastr.success(result.message, "Success");
+                                        $("#restaurant-table").DataTable().destroy();
+                                        selected = [];
+                                        loadTable();
+                                        $(this).UnselectAllRows($(e));
+                                    } else {
+                                        toastr.error(result.message, "Error");
+                                    }
+                                });
+                            }
+                        },
+                        {
+                            label: "Cancel",
+                            action: function (dialog) {
+                                //Remove editing controls
+                                $.each(table.rows('.selected').indexes(), function (index, element) {
+                                    var row = table.row(element).node();
+                                    $(this).UnselectRow(e);
+                                    //Remove class selected
+                                    $(e).removeClass('selected');
+                                    table.row(element).draw();
+                                });
+                                dialog.close();
+                            }
+                        }
+                    ]
+                });
+        };
+ </script>

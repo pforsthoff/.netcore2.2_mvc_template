@@ -1,7 +1,6 @@
 ﻿using aspnetcore_template.ServiceModel.Entities;
-using System;
+using aspnetcore_template.ServiceModel.Messaging;
 using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace aspnetcore_template.ServiceModel.Business
@@ -15,5 +14,6 @@ namespace aspnetcore_template.ServiceModel.Business
         Task<Restaurant> Update(Restaurant restaurantChanges);
         Task<Restaurant> Delete(int id);
         IEnumerable<Restaurant> GetRestaurantsbyCuisineType(int cuisineNumber);
+        JsonResultMessage UpdateRestaurant(Restaurant restaurant);
     }
 }

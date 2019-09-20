@@ -1,4 +1,5 @@
-﻿using aspnetcore_template.ServiceModel.Business;
+﻿using aspnetcore_template.Common.Extensions;
+using aspnetcore_template.ServiceModel.Business;
 using aspnetcore_template.ServiceModel.Entities;
 using aspnetcore_template.Services;
 using aspnetcore_template.ViewModels;
@@ -10,9 +11,8 @@ using System.Linq;
 using System.Linq.Dynamic;
 using System.Threading.Tasks;
 using AutoMapper;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using System.ComponentModel.DataAnnotations;
-using System.Reflection;
+using aspnetcore_template.ServiceModel.Messaging;
+using Newtonsoft.Json;
 
 namespace aspnetcore_template.Controllers
 {
@@ -50,7 +50,8 @@ namespace aspnetcore_template.Controllers
             var model = new HomePageViewModel();
             model.Restaurants = await _restaurantManager.GetAllRestaurantsAsync();
             model.CurrentGreeting = _greeter.GetGreeting();
-            model.Message = "Select a Cuisine";            return View(model);
+            model.Message = "Select a Cuisine";
+            return View(model);
         }
         [HttpGet]
         public ViewResult Create()
@@ -165,6 +166,51 @@ namespace aspnetcore_template.Controllers
             var data = mappedResults.Skip(skip).Take(pageSize).ToList();
             //Returning Json Data  
             return Json(new { draw = draw, recordsFiltered = recordsTotal, recordsTotal = recordsTotal, data = data });
+        }
+        public JsonResult UpdateSelectedRows(string selectedRestaurants)
+        {
+            var resultMessage = ResultMessages.JsonResultMessage();
+            resultMessage.Message = "Successfully Updated Config";
+            resultMessage.Success = true;
+            try
+            {
+                ICollection<Restaurant> updateRestaurants = JsonConvert.DeserializeObject<ICollection<Restaurant>>(selectedRestaurants);
+                var failures = 0;
+                var successes = 0;
+                var result = resultMessage;
+                foreach (Restaurant restaurant in updateRestaurants)
+                {
+                    try
+                    {
+                        result = _restaurantManager.UpdateRestaurant(restaurant);
+                    }
+                    catch (Exception)
+                    {
+                        failures += 1;
+                    }
+                    if (!result.Success)
+                    {
+                        failures += 1;
+                    }
+                    else
+                    {
+                        successes += 1;
+                    }
+                }
+                if (failures > 0)
+                {
+                    resultMessage.Success = false;
+                    resultMessage.Message = "Updated {0}, Failed to Update {1}  row(s)".FormatWith(successes, failures);
+                    return Json(resultMessage);
+                }
+                resultMessage.Success = true;
+                resultMessage.Message = "Updated {0} row(s).".FormatWith(successes);
+            }
+            catch (Exception ex)
+            {
+                resultMessage.Success = false;
+                resultMessage.Message = "Error updating row(s). " + ex.Message;
+            }            return Json(resultMessage);
         }
     }
 }

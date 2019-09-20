@@ -1,0 +1,525 @@
+﻿#homeheader {
+    background: url(../images/DellEmc.png) no-repeat scroll #ffffff;
+    position: relative;
+    background-repeat: no-repeat, repeat;
+    background-position: left center;
+    padding: 55px 0 55px 0;
+    height: 35px;
+}
+.block-ui-custom {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    opacity: 0.7;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1040;
+}
+.floatLeft {
+    width: 22%;
+    float: left;
+}
+
+.floatRight {
+    width: 30%;
+    float: right;
+}
+
+/* Remove margin, it is just for stackoverflow viewing */
+.input-file .input-group-addon {
+    border: 0px;
+    padding: 0px;
+}
+
+    .input-file .input-group-addon .btn {
+        border-radius: 0 4px 4px 0
+    }
+
+    .input-file .input-group-addon input {
+        cursor: pointer;
+        position: absolute;
+        width: 72px;
+        z-index: 2;
+        top: 0;
+        right: 0;
+        filter: alpha(opacity=0);
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        opacity: 0;
+        background-color: transparent;
+        color: transparent;
+    }
+.big-col {
+    width: 400px !important;
+}
+/*Bootstrap Gutters*/
+.gutter-20.row {
+    margin-right: -10px;
+    margin-left: -10px;
+}
+
+.gutter-20 > [class^="col-"], .gutter-20 > [class^=" col-"] {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.gutter-10.row {
+    margin-right: -5px;
+    margin-left: -5px;
+}
+
+.gutter-10 > [class^="col-"], .gutter-10 > [class^=" col-"] {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.gutter-0.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.gutter-0 > [class^="col-"], .gutter-0 > [class^=" col-"] {
+    padding-right: 0;
+    padding-left: 0;
+}
+.input-xs {
+    height: 22px !important;
+    padding: 2px 5px !important;
+    font-size: 12px !important;
+    line-height: 1.5 !important; /* If Placeholder of the input is moved up, rem/modify this. */
+    border-radius: 3px !important;
+}
+/*-----------------------------*/
+.top-buffer {
+    margin-top: 5px;
+}
+
+label {
+    display: block !important;
+}
+
+    label input {
+        font-weight: normal
+    }
+
+::-ms-clear {
+    width: 0;
+    height: 0;
+}
+
+.yadcf-filter {
+    width: 100px !important;
+}
+.data-title :first-child {
+    margin-top: 20px;
+}
+
+#users-table_filter .form-control {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.1" id="spyglass" viewBox="0 0 22 22" height="22" width="22"><path d="m 10.011718,5.0898489 c -2.7000005,0 -4.9003915,2.2004 -4.9003915,4.9003996 0,2.6999995 2.200391,4.8983995 4.9003915,4.8983995 1.154374,0 2.204251,-0.4184 3.042969,-1.0898 l 3.207031,3.1113 0.626953,-0.6465 -3.185547,-3.0879 c 0.743242,-0.8594 1.208984,-1.964 1.208984,-3.1854995 0,-2.6999996 -2.20039,-4.9003996 -4.90039,-4.9003996 z m 0,1 c 2.2,0 3.90039,1.7004 3.90039,3.9003996 0,2.1999995 -1.70039,3.8983995 -3.90039,3.8983995 -2.2000005,0 -3.9003915,-1.6984 -3.9003915,-3.8983995 0,-2.1999996 1.700391,-3.9003996 3.9003915,-3.9003996 z" style="fill:#808080"/></svg>');
+    background-repeat: no-repeat;
+    background-color: #fff;
+    background-position: 0px 3px !important;
+    padding-left: 22px;
+}
+.my-input-class {
+    padding: 3px 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.my-confirm-class {
+    padding: 3px 6px;
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 4px;
+    background-color: #337ab7;
+    text-decoration: none;
+}
+
+.my-cancel-class {
+    padding: 3px 6px;
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 4px;
+    background-color: #a94442;
+    text-decoration: none;
+}
+
+.error {
+    position: relative;
+    display: inline-block !important;
+    box-shadow: 1px 1px 1px #aaaaaa;
+    color: #c51244;
+}
+
+.destroy-button {
+    padding: 5px 10px 5px 10px;
+    border: 1px blue solid;
+    background-color: lightgray;
+}
+
+
+  .container {
+      width: 1140px;
+      background-color: #FFFFFF;
+      color: #333333;
+      border-left: 1px solid #CCCCCC;
+      border-right: 1px solid #CCCCCC;
+      box-shadow: 2px 0 12px -4px #888888, -2px 0 12px -4px #888888;
+      padding-right: 0;
+      padding-left: 0;
+  }
+
+#rowedittextarea {
+    resize: none !important;
+}
+table.dataTable tbody th,
+table.dataTable tbody td {
+    white-space: nowrap;
+}
+table.dataTable tbody td.no-padding {
+    padding: 0;
+}
+
+td.detail-control {
+    text-align: center;
+    color: forestgreen;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+tr.shown td.detail-control {
+    text-align: center;
+    color: red;
+    font-size: 1.5em;
+}
+
+table.dataTable tr.odd {
+    background-color: #EFEEEC;
+}
+table.dataTable tbody tr.selected {
+    background-color: #B0BED9 ;
+}
+table.dataTable thead .sorting {
+    background: url('/Content/DataTables/images/sort_both.png') no-repeat center left;
+}
+/**
+ * Datatables Sorting icons on left
+ */
+
+table.dataTable thead > tr > th {
+    padding-left: 15px !important;
+    padding-right: 30px !important;
+  min-width: 100%
+}
+
+table.dataTable thead .sorting {
+    background: url('/Content/DataTables/images/sort_both.png') no-repeat center left;
+}
+
+table.dataTable thead .sorting_asc {
+    background: url('/Content/DataTables/images/sort_asc.png') no-repeat center left;
+}
+
+table.dataTable thead .sorting_desc {
+    background: url('/Content/DataTables/images/sort_desc.png') no-repeat center left;
+}
+
+table.dataTable thead .sorting_asc_disabled {
+    background: url('/Content/DataTables/images/sort_asc_disabled.png') no-repeat center left;
+}
+
+table.dataTable thead .sorting_desc_disabled {
+    background: url('/Content/DataTables/images/sort_desc_disabled.png') no-repeat center left;
+}
+
+/*div.container {
+    width: 80%;
+}*/
+.span-9 {width:350px;}
+.span-32 { width:1140px;margin-right:0;}
+body {
+    background:#fff; 
+    color:#013668; 
+    font: 10px/16px verdana, arial, sans-serif; 
+    height:100%; 
+    margin:0 auto; 
+    width:100%;
+}
+
+#wr-footer-container {
+    margin-top: 10px;
+    background-color: #013668;
+}
+
+ul#wr-footer-links
+ {
+    background-color: #013668;
+	list-style: none;
+	padding-top: 20px;
+    text-align: center;
+	}
+ul#wr-footer-links li {
+    text-align:  center;
+    font-weight: bold;
+    color: white;
+	display: inline;
+}
+#wr-footer-links a {
+     text-align: center;
+    color: white;
+    padding: 15px;
+}
+
+#wr-footer-address{
+    padding-left: 20px;
+    display: inline-block;
+    color: #e7e7e7;
+}
+
+#wr-footer-image {
+    margin-top: 20px;
+    background: url(../images/Boeing_sm_logo.png) no-repeat; 
+    display: inline-block;
+    text-align: left;
+
+}
+
+ul#wr-footer-images
+ {
+    background-color: #013668;
+	list-style: none;
+	padding-top: 20px;
+    text-align: center;
+	}
+
+ul#wr-footer-images li > ul {
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+    padding: 5px;
+    vertical-align: top;
+}
+
+ul#wr-footer-images li > ul li {
+    text-align: left;
+}
+
+ul#wr-footer-images li {
+    text-align:  center;
+    font-weight: bold;
+    color: white;
+}
+
+ul#wr-footer-images > li {
+    display: inline;
+}
+
+ #wr-footer-images a {
+     text-align: center;
+    color: white;
+}
+
+ #wr-footer-address ul {
+     float: left;
+     list-style: none;
+ }
+
+ #wr-image-links {
+     display: inline-block;
+ }
+ #wr-footer-container-row1 {
+
+     vertical-align: middle;
+ }
+
+ #wr-footer-container-row2 {
+     text-align: center;
+     border-top:solid 2px #e7e7e7;
+     vertical-align: middle;
+ }
+
+#breadCrumbValue {
+    display: inline-block;
+    font-weight: bold;
+    color: #666666;
+}
+
+#ajaxBusy {
+    display: none;
+    margin: 50px auto;
+    position: absolute;
+    right: 3px;
+
+    width: 50%;
+}
+#ajaxBusy img {
+    height: 24px;
+    width: 24px;
+}
+
+#tabs li {
+    width: 24%;
+    text-align: center;
+}
+
+#tabs li a {
+    display: inline-block;
+    float: none;
+    padding: 5px;
+    text-decoration: none;
+    width: 100%;
+}
+
+
+.dataTable-head-column {
+    font-size: 12px;
+    font-variant: small-caps;
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: 1px 1px #888888;
+    color: navy;
+}
+
+
+/* Loading Indicator Log Filter 
+----------------------------------------------------*/
+.loading-indicator {
+	height: 80px;
+	width: 80px;
+	background: url( '../images/ajax-loader.gif' );
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.loading-indicator-overlay {
+	background-color: #FFFFFF;
+	opacity: 0.6;
+	filter: alpha(opacity = 60);
+}
+
+/* ADMINISTRATION 
+----------------------------------------------------*/
+#admin-dashboard {
+    height: 400px;
+}
+#admin-dashboard ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#admin-dashboard ul li
+{
+    margin-bottom: 12px;
+}
+
+#admin-dashboard ul li img
+{
+    float: left;
+    margin: 0 6px 16px 0;
+    width: 32px;
+    height: 32px;
+}
+
+#admin-dashboard ul li h3
+{
+    margin: 0;
+}
+
+/* Application Log Section
+-----------------------------------------------------*/
+.application-section {
+    margin: 15px;
+    padding: 5px;
+    border: 1px solid #013668;
+    background: white;
+    border-radius: 2px;
+}
+#log-filter {
+    padding: 5px;
+    border: 1px solid #013668;
+    background: #e2e2e2;
+    border-radius: 2px;  
+}
+#log-filter label{
+    margin-left: 5px;
+    
+}
+#LogType {
+    width: 250px;
+}
+
+#filter-pane > table{
+    width: 100px;
+    padding: 1px;
+    display: table;
+}
+
+.filter-table {
+    background-color: white !important;
+}
+
+#filter_pane thead {
+    background-color: #013668;
+    color: #eaeaea;
+}
+
+.filter-table {
+    width: 100%;
+}
+
+.buttons {
+    padding: 6px;
+}
+#breadcrumb
+{
+    background-color: #013668;
+    font-size:0.9em;
+    padding:4px 0 4px 12px;
+    color: #FFFFFF;
+}
+.alertbanner {
+    background-color: #FFFFFF;
+    padding: 4px 0 4px 12px;
+    color: #337ab7;
+}
+#breadcrumb a
+{
+    color: #FFFFFF;
+}
+
+#breadCrumb {
+    padding-bottom: 5px;
+}
+
+.ui-autocomplete {
+    max-height: 100px;
+    overflow-y: auto;
+    /* prevent horizontal scrollbar */
+    overflow-x: hidden;
+  }
+.version {
+    padding-left: 5px;
+    color: #e6e6e6;
+}
+
+.overflow {
+    height: 150px;
+}
+
+.lh-body {
+    min-height: 500px;
+}
+
+.roles-list{
+    list-style: none;
+}
+
+ 
