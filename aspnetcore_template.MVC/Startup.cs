@@ -60,7 +60,7 @@ namespace aspnetcore_template
         private void ConfigureRoutes(IRouteBuilder routeBuilder)
         {
             //Home/Index
-            routeBuilder.MapRoute("Default", "{controller=Home}/{action=Index}/{id?}");
+            routeBuilder.MapRoute("Default", "{controller=Home}/{action=Grid}/{id?}");
             //routeBuilder.MapRoute("Default", "{controller=Home}/{action=Index}/{id?}");
         }
         public static void Main(string[] args)
