@@ -6,41 +6,31 @@
     <title>@ViewBag.Title</title>
     <link href="~/images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
+    @*bundle*@
+    <link rel="stylesheet" href="~/css/bundle.datatables.min.css" />
+    @*bundle*@
+    <link rel="stylesheet" href="~/css/bundle.bootstrap.min.css" />
+    @*bundle*@
+    <link rel="stylesheet" href="~/css/bundle.site.min.css" />
+
     <link rel="stylesheet" href="~/css/jquery-ui.css" />
-    <link rel="stylesheet" href="~/css/bootstrap-dialog.css" />
-    <link rel="stylesheet" href="~/css/site.css" />
     <link rel="stylesheet" href="~/css/superfish.css" />
     <link rel="stylesheet" href="~/lib/font-awesome/css/font-awesome.css" />
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
-    <link rel="stylesheet" href="~/css/braidss.css" />
-    <link rel="stylesheet" href="~/css/dataTables.checkboxes.css" />
-    <link rel="stylesheet" href="~/css/jquery.dataTables.yadcf.css" />
-    <link rel="stylesheet" href="~/css/buttons.dataTables.min.css" />
-    <link rel="stylesheet" href="~/css/select.dataTables.min.css" />
-    <link rel="stylesheet" href="~/css/dataTables.jqueryui.css" />
 
 
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
-    <script type="text/javascript" src="~/lib/jqueryui/jquery.ui-contextmenu.js"></script>
+    <script type="text/javascript" src="~/js/jquery-1.12.4.js"></script>
+    @*bundle*@
+    <script type="text/javascript" src="~/js/bundle.jqueryui.min.js"></script>
+    @*bundle*@
+    <script type="text/javascript" src="~/js/bundle.datatables.min.js"></script>
+    @*bundle*@
+    <script type="text/javascript" src="~/js/bundle.bootstrap.min.js"></script>
 
-    <script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap4.min.js "></script>
-    <script src="https://cdn.datatables.net/buttons/1.2.1/js/buttons.print.min.js "></script>
-
-    <script type="text/javascript" src="~/lib/datatables/dataTables.cellEdit.js"></script>
-    <script type="text/javascript" src="~/lib/datatables/dataTables.buttons.min.js"></script>
-    <script type="text/javascript" src="~/lib/datatables/dataTables.checkboxes.min.js"></script>
-    <script type="text/javascript" src="~/lib/datatables/jquery.dataTables.yadcf.js"></script>
-    <script type="text/javascript" src="~/lib/datatables/dataTables.select.min.js"></script>
-    <script type="text/javascript" src="~/lib/datatables/dataTables.order.neutral.js"></script>
-    <script type="text/javascript" src="~/js/bootstrap-dialog.js"></script>
     <script type="text/javascript" src="~/js/js.global.js"></script>
     <script type="text/javascript" src="~/js/hoverIntent.js"></script>
     <script type="text/javascript" src="~/js/jquery.dialogform.js"></script>
     <script type="text/javascript" src="~/js/respond.js"></script>
-    <script type="text/javascript" src="~/js/buttons.html5.min.js"></script>
     <script>
         //This Script Variable needs to run before any other scripts
         var app = { baseUrl: '@Url.Content("~/")' };
@@ -115,9 +105,5 @@
         </div>
 
     </div>
-
-        <script type="text/javascript" src="~/lib/jquery/dist/jquery.js"></script>
-        <script type="text/javascript" src="~/js/site.js"></script>
-        <script type="text/javascript" src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
 </body>
 </html>

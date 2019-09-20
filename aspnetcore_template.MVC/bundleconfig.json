@@ -1,0 +1,64 @@
+[
+  {
+    "outputFileName": "wwwroot/css/bundle.datatables.min.css",
+    "inputFiles": [
+      "wwwroot/css/dataTables.checkboxes.css",
+      "wwwroot/css/jquery.dataTables.yadcf.css",
+      "wwwroot/css/buttons.dataTables.min.css",
+      "wwwroot/css/select.dataTables.min.css",
+      "wwwroot/css/dataTables.jqueryui.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/css/bundle.site.min.css",
+    "inputFiles": [
+      "wwwroot/css/site.css",
+      "wwwroot/css/dotnetcore.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/css/bundle.bootstrap.min.css",
+    "inputFiles": [
+      "wwwroot/lib/bootstrap/dist/css/bootstrap.css",
+      "wwwroot/css/bootstrap-dialog.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/js/bundle.jqueryui.min.js",
+    "inputFiles": [
+      "wwwroot/js/jquery-ui-1.11.3.js",
+      "wwwroot/js/jquery.ui-contextmenu.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/js/bundle.bootstrap.min.js",
+    "inputFiles": [
+      "wwwroot/js/bootstrap-dialog.js",
+      "wwwroot/lib/dist/js/bootstrap.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/js/bundle.datatables.min.js",
+    "inputFiles": [
+      "wwwroot/js/jquery.dataTables.min.js",
+      "wwwroot/js/dataTables.bootstrap.min.js",
+      "wwwroot/js/dataTables.buttons.min.js",
+      "wwwroot/js/buttons.html5.min.js",
+      "wwwroot/js/dataTables.checkboxes.min.js",
+      "wwwroot/js/dataTables.cellEdit.js",
+      "wwwroot/js/jquery.dataTables.yadcf.js",
+      "wwwroot/js/dataTables.select.min.js",
+      "wwwroot/js/dataTables.order.neutral.js",
+      "wwwroot/js/dataTables.bootstrap4.min.js",
+      "wwwroot/js/buttons.html5.min.js",
+      "https://cdn.datatables.net/buttons/1.2.1/js/buttons.print.min.js",
+      "wwwroot/js/jszip.min.js"
+    ],
+
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    "sourceMap": false
+  }
+]

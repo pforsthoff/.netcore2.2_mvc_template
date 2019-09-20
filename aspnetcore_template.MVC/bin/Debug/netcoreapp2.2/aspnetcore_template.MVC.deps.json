@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.2",
-    "signature": "aef602c99ffc65a4a7d4c6bda5a8724dcbb84fda"
+    "signature": "c5fcb0cba1726f39f45988b89c254cf7a893a416"
   },
   "compilationOptions": {
     "defines": [
@@ -26,6 +26,7 @@
         "dependencies": {
           "AutoMapper": "9.0.0",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "7.0.0",
+          "BuildBundlerMinifier": "3.0.415",
           "Microsoft.AspNetCore.App": "2.2.0",
           "Microsoft.AspNetCore.Razor.Design": "2.2.0",
           "Microsoft.NETCore.App": "2.2.0",
@@ -72,6 +73,7 @@
           "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
         }
       },
+      "BuildBundlerMinifier/3.0.415": {},
       "Microsoft.CodeAnalysis.CSharp.Workspaces/2.8.0": {
         "dependencies": {
           "Microsoft.CodeAnalysis.CSharp": "2.8.0",
@@ -3667,6 +3669,13 @@
       "sha512": "sha512-szI4yeRIM7GWe9JyekW0dKYehPB0t6M+I55fPeCebN6PhS7zQZa0eG3bgOnOx+eP3caSNoE7KEJs2rk7MLsh8w==",
       "path": "automapper.extensions.microsoft.dependencyinjection/7.0.0",
       "hashPath": "automapper.extensions.microsoft.dependencyinjection.7.0.0.nupkg.sha512"
+    },
+    "BuildBundlerMinifier/3.0.415": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vhI32AdG9tdGN4Avtf/7FoH8HV2HwUM03npMaaspaSAqHDuw7SHCM43wppeRFF/364ye1Bapj3xqpVVQen3jbg==",
+      "path": "buildbundlerminifier/3.0.415",
+      "hashPath": "buildbundlerminifier.3.0.415.nupkg.sha512"
     },
     "Microsoft.CodeAnalysis.CSharp.Workspaces/2.8.0": {
       "type": "package",

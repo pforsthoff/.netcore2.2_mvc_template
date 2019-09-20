@@ -1,8 +1,8 @@
 ﻿<div id="login">
     <br />
     <br />
-    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Bemsid: <span class="username">@*@User.Identity.Name*@</span>|
-    @*Server Variable: <span class="username">@HttpContext.Current.Request["HTTP_BOEINGBEMSID"]</span>!*@
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Userid: <span class="username">@*@User.Identity.Name*@</span>|
+    @*Server Variable: <span class="username">@HttpContext.Current.Request["HTTP_UserID"]</span>!*@
     Server: <span class="username">@*@System.Environment.MachineName*@</span>|
     @Html.ActionLink("Profile", "Index", "Profile", new { area = "" }, null)
     @*<div class="icon icon-person"></div>*@

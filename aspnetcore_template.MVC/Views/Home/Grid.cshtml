@@ -179,7 +179,7 @@
                         });
                         table.MakeCellsEditable({
                         //dataTables cellEdit
-                        "columns": [1,2,3,4]
+                        "columns": [1,2]
                         }),
                             $("body")
                                 .tooltip({
@@ -224,8 +224,7 @@
     $('#restaurant-table tbody').on('dblclick', 'td', function () {
         try {
             console.log('edit click');
-             settingsEditColumns =table.column( 2 ).data().GetSettingsColumns();
-                //settingsEditColumns = $(this).GetSettingsColumns();
+                settingsEditColumns = $(this).GetSettingsColumns();
                 // check for existing edit row controls, only showedit controls if these don't already exist
                 var $row = table.row($(this).parent('tr')).nodes().to$(),
                     currentInput = $row.find('td:eq(settingsEditColumns[0]) input').length;
