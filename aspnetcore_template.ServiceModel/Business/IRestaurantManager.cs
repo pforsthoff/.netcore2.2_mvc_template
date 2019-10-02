@@ -7,12 +7,12 @@ namespace aspnetcore_template.ServiceModel.Business
 {
     public interface IRestaurantManager
     {
-        Task<Restaurant> GetRestaurant(int Id);
+        Task<Restaurant> GetRestaurantAsync(int Id);
         IEnumerable<Restaurant> GetAllRestaurants();
         Task<IEnumerable<Restaurant>> GetAllRestaurantsAsync();
-        Restaurant Add(Restaurant restaurant);
-        Task<Restaurant> Update(Restaurant restaurantChanges);
-        Task<Restaurant> Delete(int id);
+        Task<Restaurant> AddAsync(Restaurant restaurant);
+        Task<Restaurant> UpdateAsync(Restaurant restaurantChanges);
+        Task<Restaurant> DeleteAsync(int id);
         IEnumerable<Restaurant> GetRestaurantsbyCuisineType(int cuisineNumber);
         JsonResultMessage UpdateRestaurant(Restaurant restaurant);
     }

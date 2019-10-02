@@ -54,8 +54,10 @@
                                 </table>
                             </form>
                         </div>
+                        <div class="col-sm-12" id="tableActions">
+                           
+                        </div>
                     </div>
-                </div>
             </div>
         </div>
     </div>
@@ -78,9 +80,12 @@
                                     extend: 'excelHtml5',
                                     "text": 'Excel <span class="glyphicon glyphicon-download-alt"></span>',
                                     "className": 'btn btn-info btn-sm',
-                                    title: "BRAIDSS_Config_Maint_ " + excelfilename,
+                                    title: "Restaurants_ " + excelfilename,
+                                    exportOptions: {
+                                    columns: ':visible'
+                                    },
                                     init: function (dt, node, config) {
-                                        config.title = "BRAIDSS_Config_Maint_" + excelfilename;
+                                        config.title = "Restaurants_" + excelfilename;
                                     }
                                 }
                             ],
@@ -94,7 +99,7 @@
                                 "url": "/home/AjaxRestaurants",
                                 "type": "POST",
                                 data: function (d) {
-                                    d.cuisine = $('#CuisineType').val();;
+                                    d.cuisineNumber = $('#CuisineType').val();;
                                 }
                             },
                             "columns": [
@@ -135,7 +140,7 @@
                         });
 
                         table.search('').columns().search('').draw();
-
+                         table.buttons().container().appendTo('#tableActions');
                         $(document).contextmenu({
                             delegate: ".dataTable tr",
                             menu: [

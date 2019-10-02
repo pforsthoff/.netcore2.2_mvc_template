@@ -1,0 +1,5549 @@
+{
+  "aspnetcore_template.Business.dll": {
+    "C:\\Projects\\Core\\Core2.2\\aspnetcore_template.Business\\Managers\\RestaurantManager.cs": {
+      "aspnetcore_template.Business.Managers.RestaurantManager": {
+        "System.Void aspnetcore_template.Business.Managers.RestaurantManager::Delete(System.Int32)": {
+          "Lines": {
+            "29": 0,
+            "30": 0,
+            "31": 0,
+            "32": 0,
+            "33": 0,
+            "34": 0,
+            "35": 0
+          },
+          "Branches": [
+            {
+              "Line": 31,
+              "Offset": 30,
+              "EndOffset": 32,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 31,
+              "Offset": 30,
+              "EndOffset": 52,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Collections.Generic.IEnumerable`1<aspnetcore_template.ServiceModel.Entities.Restaurant> aspnetcore_template.Business.Managers.RestaurantManager::GetAllRestaurants()": {
+          "Lines": {
+            "42": 0,
+            "43": 0,
+            "44": 0
+          },
+          "Branches": []
+        },
+        "System.Threading.Tasks.Task`1<aspnetcore_template.ServiceModel.Entities.Restaurant> aspnetcore_template.Business.Managers.RestaurantManager::aspnetcore_template.ServiceModel.Business.IRestaurantManager.DeleteAsync(System.Int32)": {
+          "Lines": {
+            "60": 0,
+            "61": 0
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.IEnumerable`1<aspnetcore_template.ServiceModel.Entities.Restaurant> aspnetcore_template.Business.Managers.RestaurantManager::GetRestaurantsbyCuisineType(System.Int32)": {
+          "Lines": {
+            "64": 0,
+            "65": 0,
+            "67": 0
+          },
+          "Branches": []
+        },
+        "aspnetcore_template.ServiceModel.Messaging.JsonResultMessage aspnetcore_template.Business.Managers.RestaurantManager::UpdateRestaurant(aspnetcore_template.ServiceModel.Entities.Restaurant)": {
+          "Lines": {
+            "70": 0,
+            "71": 0,
+            "73": 0,
+            "74": 0,
+            "75": 0,
+            "76": 0,
+            "77": 0,
+            "78": 0,
+            "79": 0,
+            "80": 0,
+            "81": 0,
+            "82": 0,
+            "83": 0
+          },
+          "Branches": []
+        },
+        "System.Void aspnetcore_template.Business.Managers.RestaurantManager::.ctor(aspnetcore_template.Data.Repositories.IUnitOfWork)": {
+          "Lines": {
+            "17": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0
+          },
+          "Branches": []
+        }
+      },
+      "aspnetcore_template.Business.Managers.RestaurantManager/<AddAsync>d__2": {
+        "System.Void aspnetcore_template.Business.Managers.RestaurantManager/<AddAsync>d__2::MoveNext()": {
+          "Lines": {
+            "22": 0,
+            "23": 0,
+            "24": 0,
+            "25": 0,
+            "26": 0
+          },
+          "Branches": []
+        }
+      },
+      "aspnetcore_template.Business.Managers.RestaurantManager/<GetAllRestaurantsAsync>d__4": {
+        "System.Void aspnetcore_template.Business.Managers.RestaurantManager/<GetAllRestaurantsAsync>d__4::MoveNext()": {
+          "Lines": {
+            "38": 0,
+            "39": 0,
+            "40": 0
+          },
+          "Branches": [
+            {
+              "Line": 39,
+              "Offset": 49,
+              "EndOffset": 51,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 39,
+              "Offset": 49,
+              "EndOffset": 115,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        }
+      },
+      "aspnetcore_template.Business.Managers.RestaurantManager/<GetRestaurantAsync>d__6": {
+        "System.Void aspnetcore_template.Business.Managers.RestaurantManager/<GetRestaurantAsync>d__6::MoveNext()": {
+          "Lines": {
+            "47": 0,
+            "48": 0,
+            "49": 0
+          },
+          "Branches": [
+            {
+              "Line": 48,
+              "Offset": 60,
+              "EndOffset": 62,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 48,
+              "Offset": 60,
+              "EndOffset": 126,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        }
+      },
+      "aspnetcore_template.Business.Managers.RestaurantManager/<UpdateAsync>d__7": {
+        "System.Void aspnetcore_template.Business.Managers.RestaurantManager/<UpdateAsync>d__7::MoveNext()": {
+          "Lines": {
+            "52": 0,
+            "53": 0,
+            "54": 0,
+            "55": 0,
+            "56": 0,
+            "57": 0
+          },
+          "Branches": [
+            {
+              "Line": 52,
+              "Offset": 14,
+              "EndOffset": 25,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 53,
+              "Offset": 76,
+              "EndOffset": 78,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 53,
+              "Offset": 76,
+              "EndOffset": 145,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 55,
+              "Offset": 235,
+              "EndOffset": 237,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 52,
+              "Offset": 14,
+              "EndOffset": 274,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 55,
+              "Offset": 235,
+              "EndOffset": 303,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    }
+  },
+  "aspnetcore_template.Common.dll": {
+    "C:\\Projects\\Core\\Core2.2\\aspnetcore_template.Common\\Extensions\\StringExtensions.cs": {
+      "aspnetcore_template.Common.Extensions.StringExtensions": {
+        "System.Boolean aspnetcore_template.Common.Extensions.StringExtensions::ContainsHtml(System.String)": {
+          "Lines": {
+            "11": 0,
+            "12": 0,
+            "13": 0,
+            "14": 0
+          },
+          "Branches": []
+        },
+        "System.String aspnetcore_template.Common.Extensions.StringExtensions::EnsureEndsWith(System.String,System.String)": {
+          "Lines": {
+            "17": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "23": 0,
+            "24": 0
+          },
+          "Branches": [
+            {
+              "Line": 18,
+              "Offset": 13,
+              "EndOffset": 15,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 18,
+              "Offset": 13,
+              "EndOffset": 26,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.String aspnetcore_template.Common.Extensions.StringExtensions::FormatWith(System.String,System.Object[])": {
+          "Lines": {
+            "27": 0,
+            "28": 0,
+            "29": 0
+          },
+          "Branches": []
+        },
+        "System.Boolean aspnetcore_template.Common.Extensions.StringExtensions::IsNullOrEmpty(System.String)": {
+          "Lines": {
+            "32": 0,
+            "33": 0,
+            "34": 0
+          },
+          "Branches": []
+        },
+        "System.String aspnetcore_template.Common.Extensions.StringExtensions::Repeat(System.String,System.Int32)": {
+          "Lines": {
+            "37": 0,
+            "38": 0,
+            "39": 0
+          },
+          "Branches": []
+        },
+        "System.Int32 aspnetcore_template.Common.Extensions.StringExtensions::ToInt(System.String)": {
+          "Lines": {
+            "42": 0,
+            "43": 0,
+            "44": 0
+          },
+          "Branches": []
+        },
+        "System.String aspnetcore_template.Common.Extensions.StringExtensions::DomainLess(System.String)": {
+          "Lines": {
+            "46": 0,
+            "47": 0,
+            "48": 0
+          },
+          "Branches": []
+        },
+        "System.String aspnetcore_template.Common.Extensions.StringExtensions::AppendUniqueCode(System.String,System.Int32)": {
+          "Lines": {
+            "51": 0,
+            "53": 0,
+            "54": 0,
+            "55": 0,
+            "56": 0,
+            "57": 0,
+            "58": 0,
+            "59": 0,
+            "60": 0,
+            "61": 0,
+            "62": 0,
+            "63": 0,
+            "64": 0,
+            "65": 0,
+            "67": 0,
+            "68": 0,
+            "70": 0,
+            "71": 0,
+            "72": 0
+          },
+          "Branches": [
+            {
+              "Line": 55,
+              "Offset": 265,
+              "EndOffset": 38,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            },
+            {
+              "Line": 57,
+              "Offset": 55,
+              "EndOffset": 62,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 59,
+              "Offset": 98,
+              "EndOffset": 100,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 59,
+              "Offset": 98,
+              "EndOffset": 212,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 57,
+              "Offset": 55,
+              "EndOffset": 241,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 55,
+              "Offset": 265,
+              "EndOffset": 270,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    }
+  },
+  "aspnetcore_template.Data.dll": {
+    "C:\\Projects\\Core\\Core2.2\\aspnetcore_template.Data\\CoreDBContext.cs": {
+      "aspnetcore_template.Data.CoreDbContext": {
+        "Microsoft.EntityFrameworkCore.DbSet`1<aspnetcore_template.ServiceModel.Entities.Restaurant> aspnetcore_template.Data.CoreDbContext::get_Restaurants()": {
+          "Lines": {
+            "8": 0
+          },
+          "Branches": []
+        },
+        "System.Void aspnetcore_template.Data.CoreDbContext::OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)": {
+          "Lines": {
+            "17": 0,
+            "18": 0,
+            "19": 0
+          },
+          "Branches": []
+        },
+        "System.Void aspnetcore_template.Data.CoreDbContext::.ctor()": {
+          "Lines": {
+            "9": 0,
+            "10": 0,
+            "12": 0
+          },
+          "Branches": []
+        },
+        "System.Void aspnetcore_template.Data.CoreDbContext::.ctor(Microsoft.EntityFrameworkCore.DbContextOptions`1<aspnetcore_template.Data.CoreDbContext>)": {
+          "Lines": {
+            "14": 0,
+            "15": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Projects\\Core\\Core2.2\\aspnetcore_template.Data\\ModelBuilderExtensions.cs": {
+      "aspnetcore_template.Data.ModelBuilderExtensions": {
+        "System.Void aspnetcore_template.Data.ModelBuilderExtensions::AddConfiguration(Microsoft.EntityFrameworkCore.ModelBuilder,aspnetcore_template.Data.DbEntityConfiguration`1<TEntity>)": {
+          "Lines": {
+            "14": 0,
+            "15": 0,
+            "16": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Projects\\Core\\Core2.2\\aspnetcore_template.Data\\Repositories\\GenericRepository.cs": {
+      "aspnetcore_template.Data.Repositories.GenericRepository`1": {
+        "System.String aspnetcore_template.Data.Repositories.GenericRepository`1::get_ErrorMessage()": {
+          "Lines": {
+            "15": 0
+          },
+          "Branches": []
+        },
+        "System.Int32 aspnetcore_template.Data.Repositories.GenericRepository`1::Count()": {
+          "Lines": {
+            "21": 0,
+            "22": 0,
+            "23": 0
+          },
+          "Branches": []
+        },
+        "System.Void aspnetcore_template.Data.Repositories.GenericRepository`1::Delete(T)": {
+          "Lines": {
+            "31": 0,
+            "32": 0,
+            "33": 0,
+            "34": 0,
+            "35": 0,
+            "37": 0,
+            "38": 0
+          },
+          "Branches": [
+            {
+              "Line": 32,
+              "Offset": 17,
+              "EndOffset": 19,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 32,
+              "Offset": 17,
+              "EndOffset": 43,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Boolean aspnetcore_template.Data.Repositories.GenericRepository`1::Exist(System.Linq.Expressions.Expression`1<System.Func`2<T,System.Boolean>>)": {
+          "Lines": {
+            "41": 0,
+            "42": 0,
+            "43": 0,
+            "44": 0
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.IEnumerable`1<T> aspnetcore_template.Data.Repositories.GenericRepository`1::Filter(System.Linq.Expressions.Expression`1<System.Func`2<T,System.Boolean>>,System.Func`2<System.Linq.IQueryable`1<T>,System.Linq.IOrderedQueryable`1<T>>,System.String,System.Nullable`1<System.Int32>,System.Nullable`1<System.Int32>)": {
+          "Lines": {
+            "47": 0,
+            "48": 0,
+            "49": 0,
+            "50": 0,
+            "51": 0,
+            "52": 0,
+            "54": 0,
+            "55": 0,
+            "56": 0,
+            "57": 0,
+            "59": 0,
+            "60": 0,
+            "61": 0,
+            "62": 0,
+            "63": 0,
+            "64": 0,
+            "65": 0,
+            "66": 0,
+            "68": 0,
+            "69": 0,
+            "70": 0,
+            "71": 0,
+            "73": 0,
+            "74": 0
+          },
+          "Branches": [
+            {
+              "Line": 49,
+              "Offset": 19,
+              "EndOffset": 21,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 49,
+              "Offset": 19,
+              "EndOffset": 31,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 54,
+              "Offset": 37,
+              "EndOffset": 39,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 54,
+              "Offset": 37,
+              "EndOffset": 49,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 59,
+              "Offset": 55,
+              "EndOffset": 57,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 62,
+              "Offset": 114,
+              "EndOffset": 84,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 0
+            },
+            {
+              "Line": 62,
+              "Offset": 114,
+              "EndOffset": 116,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 0
+            },
+            {
+              "Line": 59,
+              "Offset": 55,
+              "EndOffset": 117,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            },
+            {
+              "Line": 68,
+              "Offset": 124,
+              "EndOffset": 126,
+              "Path": 0,
+              "Ordinal": 8,
+              "Hits": 0
+            },
+            {
+              "Line": 68,
+              "Offset": 124,
+              "EndOffset": 135,
+              "Path": 1,
+              "Ordinal": 9,
+              "Hits": 0
+            },
+            {
+              "Line": 68,
+              "Offset": 140,
+              "EndOffset": 142,
+              "Path": 0,
+              "Ordinal": 10,
+              "Hits": 0
+            },
+            {
+              "Line": 68,
+              "Offset": 140,
+              "EndOffset": 180,
+              "Path": 1,
+              "Ordinal": 11,
+              "Hits": 0
+            }
+          ]
+        },
+        "T aspnetcore_template.Data.Repositories.GenericRepository`1::Find(System.Linq.Expressions.Expression`1<System.Func`2<T,System.Boolean>>)": {
+          "Lines": {
+            "77": 0,
+            "78": 0,
+            "79": 0
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.ICollection`1<T> aspnetcore_template.Data.Repositories.GenericRepository`1::FindAll(System.Linq.Expressions.Expression`1<System.Func`2<T,System.Boolean>>)": {
+          "Lines": {
+            "82": 0,
+            "83": 0,
+            "84": 0
+          },
+          "Branches": []
+        },
+        "System.Linq.IQueryable`1<T> aspnetcore_template.Data.Repositories.GenericRepository`1::FindBy(System.Linq.Expressions.Expression`1<System.Func`2<T,System.Boolean>>)": {
+          "Lines": {
+            "97": 0,
+            "98": 0,
+            "99": 0
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.ICollection`1<T> aspnetcore_template.Data.Repositories.GenericRepository`1::GetAll()": {
+          "Lines": {
+            "102": 0,
+            "103": 0,
+            "104": 0
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.IList`1<T> aspnetcore_template.Data.Repositories.GenericRepository`1::GetAllInclude(System.Linq.Expressions.Expression`1<System.Func`2<T,System.Object>>[])": {
+          "Lines": {
+            "112": 0,
+            "113": 0,
+            "116": 0,
+            "117": 0,
+            "119": 0,
+            "120": 0,
+            "121": 0,
+            "123": 0,
+            "124": 0
+          },
+          "Branches": [
+            {
+              "Line": 116,
+              "Offset": 42,
+              "EndOffset": 20,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 116,
+              "Offset": 42,
+              "EndOffset": 44,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            }
+          ]
+        },
+        "T aspnetcore_template.Data.Repositories.GenericRepository`1::GetById(System.Nullable`1<System.Int32>)": {
+          "Lines": {
+            "143": 0,
+            "144": 0,
+            "145": 0
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.IEnumerable`1<aspnetcore_template.ServiceModel.Entities.Restaurant> aspnetcore_template.Data.Repositories.GenericRepository`1::GetByCuisineType(System.Nullable`1<System.Int32>)": {
+          "Lines": {
+            "147": 0,
+            "148": 0,
+            "149": 0,
+            "150": 0,
+            "151": 0,
+            "152": 0
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.IList`1<T> aspnetcore_template.Data.Repositories.GenericRepository`1::GetIncludeList(System.Func`2<T,System.Boolean>,System.Linq.Expressions.Expression`1<System.Func`2<T,System.Object>>[])": {
+          "Lines": {
+            "160": 0,
+            "162": 0,
+            "165": 0,
+            "166": 0,
+            "168": 0,
+            "169": 0,
+            "170": 0,
+            "171": 0,
+            "173": 0,
+            "174": 0
+          },
+          "Branches": [
+            {
+              "Line": 165,
+              "Offset": 42,
+              "EndOffset": 20,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 165,
+              "Offset": 42,
+              "EndOffset": 44,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            }
+          ]
+        },
+        "T aspnetcore_template.Data.Repositories.GenericRepository`1::GetSingleInclude(System.Func`2<T,System.Boolean>,System.Linq.Expressions.Expression`1<System.Func`2<T,System.Object>>[])": {
+          "Lines": {
+            "177": 0,
+            "178": 0,
+            "179": 0,
+            "182": 0,
+            "183": 0,
+            "185": 0,
+            "186": 0,
+            "187": 0,
+            "188": 0,
+            "189": 0
+          },
+          "Branches": [
+            {
+              "Line": 182,
+              "Offset": 50,
+              "EndOffset": 28,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 182,
+              "Offset": 50,
+              "EndOffset": 52,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            }
+          ]
+        },
+        "T aspnetcore_template.Data.Repositories.GenericRepository`1::Insert(T)": {
+          "Lines": {
+            "208": 0,
+            "209": 0,
+            "210": 0,
+            "211": 0
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.ICollection`1<T> aspnetcore_template.Data.Repositories.GenericRepository`1::PaggedList(System.Nullable`1<System.Int32>,System.Nullable`1<System.Int32>,System.Linq.Expressions.Expression`1<System.Func`2<T,System.Object>>[])": {
+          "Lines": {
+            "214": 0,
+            "215": 0,
+            "218": 0,
+            "219": 0,
+            "221": 0,
+            "222": 0,
+            "223": 0,
+            "224": 0,
+            "226": 0,
+            "227": 0
+          },
+          "Branches": [
+            {
+              "Line": 218,
+              "Offset": 40,
+              "EndOffset": 20,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 218,
+              "Offset": 40,
+              "EndOffset": 42,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 221,
+              "Offset": 49,
+              "EndOffset": 51,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 221,
+              "Offset": 49,
+              "EndOffset": 60,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 221,
+              "Offset": 65,
+              "EndOffset": 67,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 221,
+              "Offset": 65,
+              "EndOffset": 105,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Linq.IQueryable`1<T> aspnetcore_template.Data.Repositories.GenericRepository`1::Query()": {
+          "Lines": {
+            "252": 0,
+            "253": 0,
+            "254": 0
+          },
+          "Branches": []
+        },
+        "System.Void aspnetcore_template.Data.Repositories.GenericRepository`1::Update(T)": {
+          "Lines": {
+            "257": 0,
+            "258": 0,
+            "259": 0,
+            "260": 0,
+            "261": 0,
+            "264": 0,
+            "265": 0,
+            "266": 0
+          },
+          "Branches": [
+            {
+              "Line": 258,
+              "Offset": 17,
+              "EndOffset": 19,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 258,
+              "Offset": 17,
+              "EndOffset": 43,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void aspnetcore_template.Data.Repositories.GenericRepository`1::.ctor(aspnetcore_template.Data.CoreDbContext)": {
+          "Lines": {
+            "16": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0
+          },
+          "Branches": []
+        }
+      },
+      "aspnetcore_template.Data.Repositories.GenericRepository`1/<CountAsync>d__7": {
+        "System.Void aspnetcore_template.Data.Repositories.GenericRepository`1/<CountAsync>d__7::MoveNext()": {
+          "Lines": {
+            "26": 0,
+            "27": 0,
+            "28": 0
+          },
+          "Branches": [
+            {
+              "Line": 27,
+              "Offset": 58,
+              "EndOffset": 60,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 27,
+              "Offset": 58,
+              "EndOffset": 125,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        }
+      },
+      "aspnetcore_template.Data.Repositories.GenericRepository`1/<FindAllAsync>d__13": {
+        "System.Void aspnetcore_template.Data.Repositories.GenericRepository`1/<FindAllAsync>d__13::MoveNext()": {
+          "Lines": {
+            "87": 0,
+            "88": 0,
+            "89": 0
+          },
+          "Branches": [
+            {
+              "Line": 88,
+              "Offset": 69,
+              "EndOffset": 71,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 88,
+              "Offset": 69,
+              "EndOffset": 136,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        }
+      },
+      "aspnetcore_template.Data.Repositories.GenericRepository`1/<FindAsync>d__14": {
+        "System.Void aspnetcore_template.Data.Repositories.GenericRepository`1/<FindAsync>d__14::MoveNext()": {
+          "Lines": {
+            "92": 0,
+            "93": 0,
+            "94": 0
+          },
+          "Branches": [
+            {
+              "Line": 93,
+              "Offset": 64,
+              "EndOffset": 66,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 93,
+              "Offset": 64,
+              "EndOffset": 131,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        }
+      },
+      "aspnetcore_template.Data.Repositories.GenericRepository`1/<GetAllAsync>d__17": {
+        "System.Void aspnetcore_template.Data.Repositories.GenericRepository`1/<GetAllAsync>d__17::MoveNext()": {
+          "Lines": {
+            "107": 0,
+            "108": 0,
+            "109": 0
+          },
+          "Branches": [
+            {
+              "Line": 108,
+              "Offset": 58,
+              "EndOffset": 60,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 108,
+              "Offset": 58,
+              "EndOffset": 125,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        }
+      },
+      "aspnetcore_template.Data.Repositories.GenericRepository`1/<GetAllIncludeAsync>d__19": {
+        "System.Void aspnetcore_template.Data.Repositories.GenericRepository`1/<GetAllIncludeAsync>d__19::MoveNext()": {
+          "Lines": {
+            "127": 0,
+            "128": 0,
+            "131": 0,
+            "132": 0,
+            "136": 0,
+            "137": 0
+          },
+          "Branches": [
+            {
+              "Line": 131,
+              "Offset": 139,
+              "EndOffset": 62,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 131,
+              "Offset": 139,
+              "EndOffset": 141,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 136,
+              "Offset": 186,
+              "EndOffset": 188,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 136,
+              "Offset": 186,
+              "EndOffset": 253,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            }
+          ]
+        }
+      },
+      "aspnetcore_template.Data.Repositories.GenericRepository`1/<GetByIdAsync>d__22": {
+        "System.Void aspnetcore_template.Data.Repositories.GenericRepository`1/<GetByIdAsync>d__22::MoveNext()": {
+          "Lines": {
+            "155": 0,
+            "156": 0,
+            "157": 0
+          },
+          "Branches": [
+            {
+              "Line": 156,
+              "Offset": 69,
+              "EndOffset": 71,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 156,
+              "Offset": 69,
+              "EndOffset": 135,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        }
+      },
+      "aspnetcore_template.Data.Repositories.GenericRepository`1/<GetSingleIncludeAsync>d__25": {
+        "System.Void aspnetcore_template.Data.Repositories.GenericRepository`1/<GetSingleIncludeAsync>d__25::MoveNext()": {
+          "Lines": {
+            "192": 0,
+            "193": 0,
+            "194": 0,
+            "197": 0,
+            "198": 0,
+            "200": 0,
+            "201": 0,
+            "202": 0,
+            "203": 0,
+            "205": 0
+          },
+          "Branches": [
+            {
+              "Line": 197,
+              "Offset": 151,
+              "EndOffset": 74,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 197,
+              "Offset": 151,
+              "EndOffset": 153,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 200,
+              "Offset": 204,
+              "EndOffset": 206,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 200,
+              "Offset": 204,
+              "EndOffset": 271,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            }
+          ]
+        }
+      },
+      "aspnetcore_template.Data.Repositories.GenericRepository`1/<PaggedListAsync>d__28": {
+        "System.Void aspnetcore_template.Data.Repositories.GenericRepository`1/<PaggedListAsync>d__28::MoveNext()": {
+          "Lines": {
+            "230": 0,
+            "231": 0,
+            "234": 0,
+            "235": 0,
+            "237": 0,
+            "238": 0,
+            "239": 0,
+            "240": 0,
+            "242": 0,
+            "243": 0
+          },
+          "Branches": [
+            {
+              "Line": 234,
+              "Offset": 139,
+              "EndOffset": 62,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 234,
+              "Offset": 139,
+              "EndOffset": 141,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 237,
+              "Offset": 159,
+              "EndOffset": 161,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 237,
+              "Offset": 159,
+              "EndOffset": 174,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 237,
+              "Offset": 177,
+              "EndOffset": 179,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 237,
+              "Offset": 177,
+              "EndOffset": 239,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            },
+            {
+              "Line": 242,
+              "Offset": 273,
+              "EndOffset": 275,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 0
+            },
+            {
+              "Line": 242,
+              "Offset": 273,
+              "EndOffset": 340,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Projects\\Core\\Core2.2\\aspnetcore_template.Data\\Repositories\\MockRestaurantRepository.cs": {
+      "aspnetcore_template.Data.Repositories.MockRestaurantRepository": {
+        "aspnetcore_template.ServiceModel.Entities.Restaurant aspnetcore_template.Data.Repositories.MockRestaurantRepository::Add(aspnetcore_template.ServiceModel.Entities.Restaurant)": {
+          "Lines": {
+            "24": 0,
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "28": 0
+          },
+          "Branches": [
+            {
+              "Line": 25,
+              "Offset": 14,
+              "EndOffset": 16,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 25,
+              "Offset": 14,
+              "EndOffset": 39,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Int32 aspnetcore_template.Data.Repositories.MockRestaurantRepository::Count()": {
+          "Lines": {
+            "31": 0,
+            "32": 0
+          },
+          "Branches": []
+        },
+        "System.Threading.Tasks.Task`1<System.Int32> aspnetcore_template.Data.Repositories.MockRestaurantRepository::CountAsync()": {
+          "Lines": {
+            "36": 0,
+            "37": 0
+          },
+          "Branches": []
+        },
+        "System.Threading.Tasks.Task aspnetcore_template.Data.Repositories.MockRestaurantRepository::Create(aspnetcore_template.ServiceModel.Entities.Base.IEntity)": {
+          "Lines": {
+            "41": 0,
+            "42": 0
+          },
+          "Branches": []
+        },
+        "aspnetcore_template.ServiceModel.Entities.Restaurant aspnetcore_template.Data.Repositories.MockRestaurantRepository::Delete(System.Int32)": {
+          "Lines": {
+            "46": 0,
+            "47": 0,
+            "48": 0,
+            "49": 0,
+            "50": 0,
+            "51": 0,
+            "52": 0,
+            "53": 0
+          },
+          "Branches": [
+            {
+              "Line": 48,
+              "Offset": 44,
+              "EndOffset": 46,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 48,
+              "Offset": 44,
+              "EndOffset": 61,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void aspnetcore_template.Data.Repositories.MockRestaurantRepository::.ctor()": {
+          "Lines": {
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "22": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Projects\\Core\\Core2.2\\aspnetcore_template.Data\\Repositories\\UnitOfWork.cs": {
+      "aspnetcore_template.Data.Repositories.UnitOfWork": {
+        "System.Collections.Generic.Dictionary`2<System.Type,System.Object> aspnetcore_template.Data.Repositories.UnitOfWork::get_Repositories()": {
+          "Lines": {
+            "15": 0
+          },
+          "Branches": []
+        },
+        "System.Void aspnetcore_template.Data.Repositories.UnitOfWork::set_Repositories(System.Collections.Generic.Dictionary`2<System.Type,System.Object>)": {
+          "Lines": {
+            "16": 0
+          },
+          "Branches": []
+        },
+        "aspnetcore_template.Data.Repositories.IGenericRepository`1<T> aspnetcore_template.Data.Repositories.UnitOfWork::Repository()": {
+          "Lines": {
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "28": 0,
+            "31": 0,
+            "32": 0,
+            "33": 0,
+            "34": 0
+          },
+          "Branches": [
+            {
+              "Line": 26,
+              "Offset": 29,
+              "EndOffset": 31,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 26,
+              "Offset": 29,
+              "EndOffset": 61,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void aspnetcore_template.Data.Repositories.UnitOfWork::aspnetcore_template.Data.Repositories.IUnitOfWork.Commit()": {
+          "Lines": {
+            "41": 0,
+            "42": 0,
+            "43": 0
+          },
+          "Branches": []
+        },
+        "System.Void aspnetcore_template.Data.Repositories.UnitOfWork::Rollback()": {
+          "Lines": {
+            "46": 0,
+            "47": 0,
+            "48": 0
+          },
+          "Branches": [
+            {
+              "Line": 47,
+              "Offset": 28,
+              "EndOffset": 30,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 47,
+              "Offset": 28,
+              "EndOffset": 53,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void aspnetcore_template.Data.Repositories.UnitOfWork::Dispose(System.Boolean)": {
+          "Lines": {
+            "53": 0,
+            "54": 0,
+            "55": 0,
+            "56": 0,
+            "57": 0,
+            "58": 0,
+            "59": 0,
+            "60": 0,
+            "61": 0,
+            "62": 0
+          },
+          "Branches": [
+            {
+              "Line": 54,
+              "Offset": 12,
+              "EndOffset": 14,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 56,
+              "Offset": 18,
+              "EndOffset": 20,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 56,
+              "Offset": 18,
+              "EndOffset": 34,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 54,
+              "Offset": 12,
+              "EndOffset": 35,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void aspnetcore_template.Data.Repositories.UnitOfWork::Dispose()": {
+          "Lines": {
+            "65": 0,
+            "66": 0,
+            "67": 0,
+            "68": 0
+          },
+          "Branches": []
+        },
+        "System.Void aspnetcore_template.Data.Repositories.UnitOfWork::.ctor(aspnetcore_template.Data.CoreDbContext)": {
+          "Lines": {
+            "11": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "22": 0,
+            "50": 0
+          },
+          "Branches": []
+        }
+      },
+      "aspnetcore_template.Data.Repositories.UnitOfWork/<CommitAsync>d__7": {
+        "System.Void aspnetcore_template.Data.Repositories.UnitOfWork/<CommitAsync>d__7::MoveNext()": {
+          "Lines": {
+            "36": 0,
+            "37": 0,
+            "38": 0
+          },
+          "Branches": [
+            {
+              "Line": 37,
+              "Offset": 53,
+              "EndOffset": 55,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 37,
+              "Offset": 53,
+              "EndOffset": 120,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Projects\\Core\\Core2.2\\aspnetcore_template.Data\\Mappings\\RestaurantMap.cs": {
+      "aspnetcore_template.Data.Mappings.RestaurantMap": {
+        "System.Void aspnetcore_template.Data.Mappings.RestaurantMap::Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1<aspnetcore_template.ServiceModel.Entities.Restaurant>)": {
+          "Lines": {
+            "10": 0,
+            "11": 0,
+            "13": 0,
+            "14": 0,
+            "16": 0
+          },
+          "Branches": []
+        }
+      }
+    }
+  },
+  "aspnetcore_template.MVC.dll": {
+    "C:\\Projects\\Core\\Core2.2\\aspnetcore_template.MVC\\Startup.cs": {
+      "aspnetcore_template.Startup": {
+        "System.Void aspnetcore_template.Startup::ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)": {
+          "Lines": {
+            "31": 0,
+            "32": 0,
+            "33": 0,
+            "34": 0,
+            "35": 0,
+            "36": 0,
+            "37": 0,
+            "38": 0,
+            "39": 0,
+            "40": 0,
+            "41": 0,
+            "42": 0
+          },
+          "Branches": []
+        },
+        "Microsoft.Extensions.Configuration.IConfiguration aspnetcore_template.Startup::get_Configuration()": {
+          "Lines": {
+            "43": 0
+          },
+          "Branches": []
+        },
+        "System.Void aspnetcore_template.Startup::Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,aspnetcore_template.Services.IGreeter,Microsoft.AspNetCore.Hosting.IHostingEnvironment)": {
+          "Lines": {
+            "46": 0,
+            "47": 0,
+            "48": 0,
+            "49": 0,
+            "50": 0,
+            "51": 0,
+            "52": 0,
+            "59": 0
+          },
+          "Branches": [
+            {
+              "Line": 49,
+              "Offset": 35,
+              "EndOffset": 37,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 49,
+              "Offset": 35,
+              "EndOffset": 46,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void aspnetcore_template.Startup::ConfigureRoutes(Microsoft.AspNetCore.Routing.IRouteBuilder)": {
+          "Lines": {
+            "61": 0,
+            "63": 0,
+            "65": 0
+          },
+          "Branches": []
+        },
+        "System.Void aspnetcore_template.Startup::Main(System.String[])": {
+          "Lines": {
+            "67": 0,
+            "68": 0,
+            "69": 0,
+            "70": 0,
+            "71": 0,
+            "72": 0,
+            "73": 0,
+            "75": 0,
+            "76": 0
+          },
+          "Branches": []
+        },
+        "System.Void aspnetcore_template.Startup::.ctor()": {
+          "Lines": {
+            "22": 0,
+            "23": 0,
+            "24": 0,
+            "25": 0,
+            "26": 0,
+            "27": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Projects\\Core\\Core2.2\\aspnetcore_template.MVC\\ViewModels\\HomePageViewModel.cs": {
+      "aspnetcore_template.ViewModels.HomePageViewModel": {
+        "System.Collections.Generic.IEnumerable`1<aspnetcore_template.ServiceModel.Entities.Restaurant> aspnetcore_template.ViewModels.HomePageViewModel::get_Restaurants()": {
+          "Lines": {
+            "10": 1
+          },
+          "Branches": []
+        },
+        "System.String aspnetcore_template.ViewModels.HomePageViewModel::get_CurrentGreeting()": {
+          "Lines": {
+            "11": 0
+          },
+          "Branches": []
+        },
+        "System.String aspnetcore_template.ViewModels.HomePageViewModel::get_Actions()": {
+          "Lines": {
+            "13": 0
+          },
+          "Branches": []
+        },
+        "System.String aspnetcore_template.ViewModels.HomePageViewModel::get_Message()": {
+          "Lines": {
+            "14": 0
+          },
+          "Branches": []
+        },
+        "aspnetcore_template.ServiceModel.Entities.CuisineType aspnetcore_template.ViewModels.HomePageViewModel::get_cuisineTypes()": {
+          "Lines": {
+            "15": 0
+          },
+          "Branches": []
+        },
+        "System.Int32 aspnetcore_template.ViewModels.HomePageViewModel::get_Id()": {
+          "Lines": {
+            "16": 0
+          },
+          "Branches": []
+        },
+        "System.String aspnetcore_template.ViewModels.HomePageViewModel::get_Name()": {
+          "Lines": {
+            "17": 0
+          },
+          "Branches": []
+        },
+        "System.String aspnetcore_template.ViewModels.HomePageViewModel::get_Cuisine()": {
+          "Lines": {
+            "18": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Projects\\Core\\Core2.2\\aspnetcore_template.MVC\\ViewModels\\Register.cs": {
+      "aspnetcore_template.ViewModels.RegisterViewModel": {
+        "System.String aspnetcore_template.ViewModels.RegisterViewModel::get_Username()": {
+          "Lines": {
+            "12": 0
+          },
+          "Branches": []
+        },
+        "System.String aspnetcore_template.ViewModels.RegisterViewModel::get_Password()": {
+          "Lines": {
+            "14": 0
+          },
+          "Branches": []
+        },
+        "System.String aspnetcore_template.ViewModels.RegisterViewModel::get_ConfirmPassword()": {
+          "Lines": {
+            "16": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Projects\\Core\\Core2.2\\aspnetcore_template.MVC\\ViewModels\\RestaurantEditViewModel.cs": {
+      "aspnetcore_template.ViewModels.RestaurantEditViewModel": {
+        "System.String aspnetcore_template.ViewModels.RestaurantEditViewModel::get_Name()": {
+          "Lines": {
+            "9": 2
+          },
+          "Branches": []
+        },
+        "aspnetcore_template.ServiceModel.Entities.CuisineType aspnetcore_template.ViewModels.RestaurantEditViewModel::get_Cuisine()": {
+          "Lines": {
+            "10": 2
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Projects\\Core\\Core2.2\\aspnetcore_template.MVC\\ViewComponents\\Greeting.cs": {
+      "aspnetcore_template.ViewComponents.Greeting": {
+        "Microsoft.AspNetCore.Mvc.IViewComponentResult aspnetcore_template.ViewComponents.Greeting::Invoke()": {
+          "Lines": {
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "22": 0
+          },
+          "Branches": []
+        },
+        "System.Void aspnetcore_template.ViewComponents.Greeting::.ctor(aspnetcore_template.Services.IGreeter)": {
+          "Lines": {
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Projects\\Core\\Core2.2\\aspnetcore_template.MVC\\Services\\Greeter.cs": {
+      "aspnetcore_template.Services.Greeter": {
+        "System.String aspnetcore_template.Services.Greeter::GetGreeting()": {
+          "Lines": {
+            "20": 0,
+            "21": 0,
+            "22": 0
+          },
+          "Branches": []
+        },
+        "System.Void aspnetcore_template.Services.Greeter::.ctor(Microsoft.Extensions.Configuration.IConfiguration)": {
+          "Lines": {
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "17": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Projects\\Core\\Core2.2\\aspnetcore_template.MVC\\ViewModels\\RestaurantViewModel.cs": {
+      "aspnetcore_template.MVC.ViewModels.RestaurantViewModel": {
+        "System.Int32 aspnetcore_template.MVC.ViewModels.RestaurantViewModel::get_Id()": {
+          "Lines": {
+            "9": 0
+          },
+          "Branches": []
+        },
+        "System.String aspnetcore_template.MVC.ViewModels.RestaurantViewModel::get_Name()": {
+          "Lines": {
+            "12": 0
+          },
+          "Branches": []
+        },
+        "System.String aspnetcore_template.MVC.ViewModels.RestaurantViewModel::get_Cuisine()": {
+          "Lines": {
+            "15": 0
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.IEnumerable`1<Microsoft.AspNetCore.Mvc.Rendering.SelectListItem> aspnetcore_template.MVC.ViewModels.RestaurantViewModel::get_ModelListItems()": {
+          "Lines": {
+            "17": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Projects\\Core\\Core2.2\\aspnetcore_template.MVC\\Mappings\\MappingProfiles.cs": {
+      "aspnetcore_template.MVC.Mappings.MappingProfiles": {
+        "System.Void aspnetcore_template.MVC.Mappings.MappingProfiles::.ctor()": {
+          "Lines": {
+            "9": 0,
+            "10": 0,
+            "11": 0,
+            "12": 0,
+            "13": 0
+          },
+          "Branches": [
+            {
+              "Line": 11,
+              "Offset": 77,
+              "EndOffset": 79,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 11,
+              "Offset": 77,
+              "EndOffset": 102,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Projects\\Core\\Core2.2\\aspnetcore_template.MVC\\Mappings\\RestaurantTransforms.cs": {
+      "aspnetcore_template.MVC.Mappings.RestaurantTransforms": {
+        "System.String aspnetcore_template.MVC.Mappings.RestaurantTransforms::ProcessServerActionsAnchor(System.Int32)": {
+          "Lines": {
+            "8": 0,
+            "9": 0,
+            "11": 0,
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "18": 0,
+            "19": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Projects\\Core\\Core2.2\\aspnetcore_template.MVC\\Controllers\\HomeController.cs": {
+      "aspnetcore_template.Controllers.HomeController": {
+        "Microsoft.AspNetCore.Mvc.ViewResult aspnetcore_template.Controllers.HomeController::Create()": {
+          "Lines": {
+            "59": 0,
+            "60": 0,
+            "61": 0
+          },
+          "Branches": []
+        },
+        "Microsoft.AspNetCore.Mvc.JsonResult aspnetcore_template.Controllers.HomeController::UpdateSelectedRows(System.String)": {
+          "Lines": {
+            "104": 0,
+            "105": 0,
+            "106": 0,
+            "107": 0,
+            "109": 0,
+            "110": 0,
+            "111": 0,
+            "112": 0,
+            "113": 0,
+            "114": 0,
+            "115": 0,
+            "117": 0,
+            "118": 0,
+            "119": 0,
+            "120": 0,
+            "121": 0,
+            "122": 0,
+            "123": 0,
+            "124": 0,
+            "125": 0,
+            "126": 0,
+            "127": 0,
+            "129": 0,
+            "130": 0,
+            "131": 0,
+            "132": 0,
+            "133": 0,
+            "134": 0,
+            "135": 0,
+            "136": 0,
+            "137": 0,
+            "139": 0,
+            "140": 0,
+            "141": 0,
+            "142": 0,
+            "143": 0,
+            "144": 0,
+            "145": 0,
+            "146": 0,
+            "147": 0,
+            "148": 0
+          },
+          "Branches": [
+            {
+              "Line": 114,
+              "Offset": 129,
+              "EndOffset": 53,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 124,
+              "Offset": 105,
+              "EndOffset": 107,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 124,
+              "Offset": 105,
+              "EndOffset": 115,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 114,
+              "Offset": 129,
+              "EndOffset": 131,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 133,
+              "Offset": 154,
+              "EndOffset": 156,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 133,
+              "Offset": 154,
+              "EndOffset": 217,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Collections.Generic.IEnumerable`1<aspnetcore_template.ServiceModel.Entities.Restaurant> aspnetcore_template.Controllers.HomeController::SortByColumnWithOrder(System.String,System.String,System.Collections.Generic.IEnumerable`1<aspnetcore_template.ServiceModel.Entities.Restaurant>)": {
+          "Lines": {
+            "150": 0,
+            "152": 0,
+            "155": 0,
+            "156": 0,
+            "159": 0,
+            "160": 0,
+            "162": 0,
+            "163": 0
+          },
+          "Branches": [
+            {
+              "Line": 152,
+              "Offset": 6,
+              "EndOffset": 8,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 152,
+              "Offset": 19,
+              "EndOffset": 23,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 155,
+              "Offset": 35,
+              "EndOffset": 37,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 155,
+              "Offset": 44,
+              "EndOffset": 46,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 0
+            },
+            {
+              "Line": 155,
+              "Offset": 44,
+              "EndOffset": 69,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 0
+            },
+            {
+              "Line": 155,
+              "Offset": 35,
+              "EndOffset": 81,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            },
+            {
+              "Line": 155,
+              "Offset": 88,
+              "EndOffset": 90,
+              "Path": 0,
+              "Ordinal": 8,
+              "Hits": 0
+            },
+            {
+              "Line": 155,
+              "Offset": 88,
+              "EndOffset": 113,
+              "Path": 1,
+              "Ordinal": 9,
+              "Hits": 0
+            },
+            {
+              "Line": 152,
+              "Offset": 6,
+              "EndOffset": 127,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 152,
+              "Offset": 19,
+              "EndOffset": 127,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 159,
+              "Offset": 139,
+              "EndOffset": 141,
+              "Path": 0,
+              "Ordinal": 10,
+              "Hits": 0
+            },
+            {
+              "Line": 159,
+              "Offset": 148,
+              "EndOffset": 150,
+              "Path": 0,
+              "Ordinal": 12,
+              "Hits": 0
+            },
+            {
+              "Line": 159,
+              "Offset": 148,
+              "EndOffset": 173,
+              "Path": 1,
+              "Ordinal": 13,
+              "Hits": 0
+            },
+            {
+              "Line": 159,
+              "Offset": 139,
+              "EndOffset": 185,
+              "Path": 1,
+              "Ordinal": 11,
+              "Hits": 0
+            },
+            {
+              "Line": 159,
+              "Offset": 192,
+              "EndOffset": 194,
+              "Path": 0,
+              "Ordinal": 14,
+              "Hits": 0
+            },
+            {
+              "Line": 159,
+              "Offset": 192,
+              "EndOffset": 217,
+              "Path": 1,
+              "Ordinal": 15,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void aspnetcore_template.Controllers.HomeController::.ctor(AutoMapper.IMapper,aspnetcore_template.ServiceModel.Business.IRestaurantManager)": {
+          "Lines": {
+            "23": 5,
+            "24": 5,
+            "25": 5,
+            "26": 5,
+            "27": 5
+          },
+          "Branches": []
+        }
+      },
+      "aspnetcore_template.Controllers.HomeController/<GetRestaurants>d__3": {
+        "System.Void aspnetcore_template.Controllers.HomeController/<GetRestaurants>d__3::MoveNext()": {
+          "Lines": {
+            "30": 1,
+            "31": 1,
+            "32": 1
+          },
+          "Branches": [
+            {
+              "Line": 31,
+              "Offset": 44,
+              "EndOffset": 110,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            }
+          ]
+        }
+      },
+      "aspnetcore_template.Controllers.HomeController/<Index>d__4": {
+        "System.Void aspnetcore_template.Controllers.HomeController/<Index>d__4::MoveNext()": {
+          "Lines": {
+            "35": 1,
+            "36": 1,
+            "37": 1,
+            "38": 1,
+            "39": 1
+          },
+          "Branches": [
+            {
+              "Line": 37,
+              "Offset": 67,
+              "EndOffset": 136,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            }
+          ]
+        }
+      },
+      "aspnetcore_template.Controllers.HomeController/<Details>d__5": {
+        "System.Void aspnetcore_template.Controllers.HomeController/<Details>d__5::MoveNext()": {
+          "Lines": {
+            "42": 0,
+            "43": 0,
+            "44": 0,
+            "45": 0,
+            "46": 0,
+            "48": 0,
+            "49": 0
+          },
+          "Branches": [
+            {
+              "Line": 43,
+              "Offset": 50,
+              "EndOffset": 52,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 43,
+              "Offset": 50,
+              "EndOffset": 119,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 44,
+              "Offset": 164,
+              "EndOffset": 166,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 44,
+              "Offset": 164,
+              "EndOffset": 186,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            }
+          ]
+        }
+      },
+      "aspnetcore_template.Controllers.HomeController/<Grid>d__6": {
+        "System.Void aspnetcore_template.Controllers.HomeController/<Grid>d__6::MoveNext()": {
+          "Lines": {
+            "51": 0,
+            "52": 0,
+            "53": 0,
+            "54": 0,
+            "55": 0,
+            "56": 0
+          },
+          "Branches": [
+            {
+              "Line": 53,
+              "Offset": 67,
+              "EndOffset": 69,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 53,
+              "Offset": 67,
+              "EndOffset": 136,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        }
+      },
+      "aspnetcore_template.Controllers.HomeController/<Create>d__8": {
+        "System.Void aspnetcore_template.Controllers.HomeController/<Create>d__8::MoveNext()": {
+          "Lines": {
+            "64": 1,
+            "65": 1,
+            "66": 1,
+            "67": 1,
+            "68": 1,
+            "69": 1,
+            "70": 1,
+            "71": 1,
+            "74": 0,
+            "75": 0,
+            "77": 1
+          },
+          "Branches": [
+            {
+              "Line": 65,
+              "Offset": 36,
+              "EndOffset": 41,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 70,
+              "Offset": 134,
+              "EndOffset": 204,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 1
+            }
+          ]
+        }
+      },
+      "aspnetcore_template.Controllers.HomeController/<Edit>d__9": {
+        "System.Void aspnetcore_template.Controllers.HomeController/<Edit>d__9::MoveNext()": {
+          "Lines": {
+            "80": 0,
+            "81": 0,
+            "82": 0,
+            "83": 0,
+            "84": 0,
+            "86": 0,
+            "87": 0
+          },
+          "Branches": [
+            {
+              "Line": 81,
+              "Offset": 50,
+              "EndOffset": 52,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 81,
+              "Offset": 50,
+              "EndOffset": 119,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 82,
+              "Offset": 164,
+              "EndOffset": 166,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 82,
+              "Offset": 164,
+              "EndOffset": 186,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            }
+          ]
+        }
+      },
+      "aspnetcore_template.Controllers.HomeController/<Edit>d__10": {
+        "System.Void aspnetcore_template.Controllers.HomeController/<Edit>d__10::MoveNext()": {
+          "Lines": {
+            "91": 0,
+            "92": 0,
+            "93": 0,
+            "94": 0,
+            "95": 0,
+            "96": 0,
+            "97": 0,
+            "98": 0,
+            "100": 0,
+            "101": 0
+          },
+          "Branches": [
+            {
+              "Line": 91,
+              "Offset": 14,
+              "EndOffset": 25,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 92,
+              "Offset": 61,
+              "EndOffset": 63,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 92,
+              "Offset": 61,
+              "EndOffset": 130,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 93,
+              "Offset": 168,
+              "EndOffset": 170,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 93,
+              "Offset": 168,
+              "EndOffset": 188,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            },
+            {
+              "Line": 93,
+              "Offset": 193,
+              "EndOffset": 198,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 0
+            },
+            {
+              "Line": 97,
+              "Offset": 281,
+              "EndOffset": 283,
+              "Path": 0,
+              "Ordinal": 8,
+              "Hits": 0
+            },
+            {
+              "Line": 91,
+              "Offset": 14,
+              "EndOffset": 323,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 97,
+              "Offset": 281,
+              "EndOffset": 352,
+              "Path": 1,
+              "Ordinal": 9,
+              "Hits": 0
+            },
+            {
+              "Line": 93,
+              "Offset": 193,
+              "EndOffset": 395,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    }
+  },
+  "aspnetcore_template.MVC.Views.dll": {
+    "C:\\Projects\\Core\\Core2.2\\aspnetcore_template.MVC\\Views\\Home\\Create.cshtml": {
+      "AspNetCore.Views_Home_Create/<ExecuteAsync>d__0": {
+        "System.Void AspNetCore.Views_Home_Create/<ExecuteAsync>d__0::MoveNext()": {
+          "Lines": {
+            "4": 0,
+            "8": 0,
+            "11": 0,
+            "16": 0,
+            "18": 0,
+            "22": 0,
+            "23": 0,
+            "24": 0,
+            "30": 0,
+            "31": 0,
+            "32": 0,
+            "41": 0
+          },
+          "Branches": [
+            {
+              "Line": 8,
+              "Offset": 84,
+              "EndOffset": 88,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 8,
+              "Offset": 84,
+              "EndOffset": 145,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 11,
+              "Offset": 285,
+              "EndOffset": 287,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 11,
+              "Offset": 285,
+              "EndOffset": 354,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Projects\\Core\\Core2.2\\aspnetcore_template.MVC\\Views\\Home\\Details.cshtml": {
+      "AspNetCore.Views_Home_Details/<ExecuteAsync>d__8": {
+        "System.Void AspNetCore.Views_Home_Details/<ExecuteAsync>d__8::MoveNext()": {
+          "Lines": {
+            "4": 0,
+            "7": 0,
+            "11": 0,
+            "12": 0,
+            "13": 0
+          },
+          "Branches": [
+            {
+              "Line": 4,
+              "Offset": 93,
+              "EndOffset": 97,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 4,
+              "Offset": 93,
+              "EndOffset": 154,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 7,
+              "Offset": 291,
+              "EndOffset": 293,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 7,
+              "Offset": 291,
+              "EndOffset": 360,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 13,
+              "Offset": 1014,
+              "EndOffset": 1016,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 13,
+              "Offset": 1014,
+              "EndOffset": 1083,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            },
+            {
+              "Line": 13,
+              "Offset": 1119,
+              "EndOffset": 1121,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 0
+            },
+            {
+              "Line": 13,
+              "Offset": 1152,
+              "EndOffset": 1154,
+              "Path": 0,
+              "Ordinal": 8,
+              "Hits": 0
+            },
+            {
+              "Line": 13,
+              "Offset": 1152,
+              "EndOffset": 1223,
+              "Path": 1,
+              "Ordinal": 9,
+              "Hits": 0
+            },
+            {
+              "Line": 13,
+              "Offset": 1119,
+              "EndOffset": 1232,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Projects\\Core\\Core2.2\\aspnetcore_template.MVC\\Views\\Home\\Edit.cshtml": {
+      "AspNetCore.Views_Home_Edit/<ExecuteAsync>d__14": {
+        "System.Void AspNetCore.Views_Home_Edit/<ExecuteAsync>d__14::MoveNext()": {
+          "Lines": {
+            "4": 0
+          },
+          "Branches": [
+            {
+              "Line": 4,
+              "Offset": 14,
+              "EndOffset": 28,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 4,
+              "Offset": 34,
+              "EndOffset": 38,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 4,
+              "Offset": 34,
+              "EndOffset": 95,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 4,
+              "Offset": 525,
+              "EndOffset": 527,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 4,
+              "Offset": 525,
+              "EndOffset": 594,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            },
+            {
+              "Line": 4,
+              "Offset": 628,
+              "EndOffset": 630,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 0
+            },
+            {
+              "Line": 4,
+              "Offset": 661,
+              "EndOffset": 663,
+              "Path": 0,
+              "Ordinal": 8,
+              "Hits": 0
+            },
+            {
+              "Line": 4,
+              "Offset": 14,
+              "EndOffset": 703,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 4,
+              "Offset": 661,
+              "EndOffset": 732,
+              "Path": 1,
+              "Ordinal": 9,
+              "Hits": 0
+            },
+            {
+              "Line": 4,
+              "Offset": 628,
+              "EndOffset": 741,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 0
+            }
+          ]
+        }
+      },
+      "AspNetCore.Views_Home_Edit/<<ExecuteAsync>b__14_0>d": {
+        "System.Void AspNetCore.Views_Home_Edit/<<ExecuteAsync>b__14_0>d::MoveNext()": {
+          "Lines": {
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "20": 0,
+            "21": 0,
+            "22": 0
+          },
+          "Branches": [
+            {
+              "Line": 13,
+              "Offset": 8,
+              "EndOffset": 123,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 13,
+              "Offset": 227,
+              "EndOffset": 229,
+              "Path": 0,
+              "Ordinal": 13,
+              "Hits": 0
+            },
+            {
+              "Line": 13,
+              "Offset": 227,
+              "EndOffset": 252,
+              "Path": 1,
+              "Ordinal": 14,
+              "Hits": 0
+            },
+            {
+              "Line": 13,
+              "Offset": 492,
+              "EndOffset": 494,
+              "Path": 0,
+              "Ordinal": 15,
+              "Hits": 0
+            },
+            {
+              "Line": 13,
+              "Offset": 8,
+              "EndOffset": 533,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 13,
+              "Offset": 492,
+              "EndOffset": 561,
+              "Path": 1,
+              "Ordinal": 16,
+              "Hits": 0
+            },
+            {
+              "Line": 13,
+              "Offset": 597,
+              "EndOffset": 599,
+              "Path": 0,
+              "Ordinal": 17,
+              "Hits": 0
+            },
+            {
+              "Line": 13,
+              "Offset": 630,
+              "EndOffset": 632,
+              "Path": 0,
+              "Ordinal": 19,
+              "Hits": 0
+            },
+            {
+              "Line": 13,
+              "Offset": 8,
+              "EndOffset": 672,
+              "Path": 2,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 13,
+              "Offset": 630,
+              "EndOffset": 701,
+              "Path": 1,
+              "Ordinal": 20,
+              "Hits": 0
+            },
+            {
+              "Line": 13,
+              "Offset": 597,
+              "EndOffset": 710,
+              "Path": 1,
+              "Ordinal": 18,
+              "Hits": 0
+            },
+            {
+              "Line": 13,
+              "Offset": 880,
+              "EndOffset": 882,
+              "Path": 0,
+              "Ordinal": 21,
+              "Hits": 0
+            },
+            {
+              "Line": 13,
+              "Offset": 880,
+              "EndOffset": 905,
+              "Path": 1,
+              "Ordinal": 22,
+              "Hits": 0
+            },
+            {
+              "Line": 14,
+              "Offset": 1146,
+              "EndOffset": 1148,
+              "Path": 0,
+              "Ordinal": 23,
+              "Hits": 0
+            },
+            {
+              "Line": 13,
+              "Offset": 8,
+              "EndOffset": 1188,
+              "Path": 3,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 14,
+              "Offset": 1146,
+              "EndOffset": 1217,
+              "Path": 1,
+              "Ordinal": 24,
+              "Hits": 0
+            },
+            {
+              "Line": 14,
+              "Offset": 1253,
+              "EndOffset": 1255,
+              "Path": 0,
+              "Ordinal": 25,
+              "Hits": 0
+            },
+            {
+              "Line": 14,
+              "Offset": 1286,
+              "EndOffset": 1288,
+              "Path": 0,
+              "Ordinal": 27,
+              "Hits": 0
+            },
+            {
+              "Line": 13,
+              "Offset": 8,
+              "EndOffset": 1328,
+              "Path": 4,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 14,
+              "Offset": 1286,
+              "EndOffset": 1357,
+              "Path": 1,
+              "Ordinal": 28,
+              "Hits": 0
+            },
+            {
+              "Line": 14,
+              "Offset": 1253,
+              "EndOffset": 1366,
+              "Path": 1,
+              "Ordinal": 26,
+              "Hits": 0
+            },
+            {
+              "Line": 14,
+              "Offset": 1536,
+              "EndOffset": 1538,
+              "Path": 0,
+              "Ordinal": 29,
+              "Hits": 0
+            },
+            {
+              "Line": 14,
+              "Offset": 1536,
+              "EndOffset": 1561,
+              "Path": 1,
+              "Ordinal": 30,
+              "Hits": 0
+            },
+            {
+              "Line": 15,
+              "Offset": 1802,
+              "EndOffset": 1804,
+              "Path": 0,
+              "Ordinal": 31,
+              "Hits": 0
+            },
+            {
+              "Line": 13,
+              "Offset": 8,
+              "EndOffset": 1844,
+              "Path": 5,
+              "Ordinal": 5,
+              "Hits": 0
+            },
+            {
+              "Line": 15,
+              "Offset": 1802,
+              "EndOffset": 1873,
+              "Path": 1,
+              "Ordinal": 32,
+              "Hits": 0
+            },
+            {
+              "Line": 15,
+              "Offset": 1909,
+              "EndOffset": 1911,
+              "Path": 0,
+              "Ordinal": 33,
+              "Hits": 0
+            },
+            {
+              "Line": 15,
+              "Offset": 1942,
+              "EndOffset": 1944,
+              "Path": 0,
+              "Ordinal": 35,
+              "Hits": 0
+            },
+            {
+              "Line": 13,
+              "Offset": 8,
+              "EndOffset": 1984,
+              "Path": 6,
+              "Ordinal": 6,
+              "Hits": 0
+            },
+            {
+              "Line": 15,
+              "Offset": 1942,
+              "EndOffset": 2013,
+              "Path": 1,
+              "Ordinal": 36,
+              "Hits": 0
+            },
+            {
+              "Line": 15,
+              "Offset": 1909,
+              "EndOffset": 2022,
+              "Path": 1,
+              "Ordinal": 34,
+              "Hits": 0
+            },
+            {
+              "Line": 15,
+              "Offset": 2192,
+              "EndOffset": 2194,
+              "Path": 0,
+              "Ordinal": 37,
+              "Hits": 0
+            },
+            {
+              "Line": 15,
+              "Offset": 2192,
+              "EndOffset": 2217,
+              "Path": 1,
+              "Ordinal": 38,
+              "Hits": 0
+            },
+            {
+              "Line": 20,
+              "Offset": 2458,
+              "EndOffset": 2460,
+              "Path": 0,
+              "Ordinal": 39,
+              "Hits": 0
+            },
+            {
+              "Line": 13,
+              "Offset": 8,
+              "EndOffset": 2500,
+              "Path": 7,
+              "Ordinal": 7,
+              "Hits": 0
+            },
+            {
+              "Line": 20,
+              "Offset": 2458,
+              "EndOffset": 2529,
+              "Path": 1,
+              "Ordinal": 40,
+              "Hits": 0
+            },
+            {
+              "Line": 20,
+              "Offset": 2565,
+              "EndOffset": 2567,
+              "Path": 0,
+              "Ordinal": 41,
+              "Hits": 0
+            },
+            {
+              "Line": 20,
+              "Offset": 2598,
+              "EndOffset": 2600,
+              "Path": 0,
+              "Ordinal": 43,
+              "Hits": 0
+            },
+            {
+              "Line": 13,
+              "Offset": 8,
+              "EndOffset": 2640,
+              "Path": 8,
+              "Ordinal": 8,
+              "Hits": 0
+            },
+            {
+              "Line": 20,
+              "Offset": 2598,
+              "EndOffset": 2669,
+              "Path": 1,
+              "Ordinal": 44,
+              "Hits": 0
+            },
+            {
+              "Line": 20,
+              "Offset": 2565,
+              "EndOffset": 2678,
+              "Path": 1,
+              "Ordinal": 42,
+              "Hits": 0
+            },
+            {
+              "Line": 20,
+              "Offset": 2848,
+              "EndOffset": 2850,
+              "Path": 0,
+              "Ordinal": 45,
+              "Hits": 0
+            },
+            {
+              "Line": 20,
+              "Offset": 2848,
+              "EndOffset": 2873,
+              "Path": 1,
+              "Ordinal": 46,
+              "Hits": 0
+            },
+            {
+              "Line": 21,
+              "Offset": 3196,
+              "EndOffset": 3198,
+              "Path": 0,
+              "Ordinal": 47,
+              "Hits": 0
+            },
+            {
+              "Line": 13,
+              "Offset": 8,
+              "EndOffset": 3238,
+              "Path": 9,
+              "Ordinal": 9,
+              "Hits": 0
+            },
+            {
+              "Line": 21,
+              "Offset": 3196,
+              "EndOffset": 3267,
+              "Path": 1,
+              "Ordinal": 48,
+              "Hits": 0
+            },
+            {
+              "Line": 21,
+              "Offset": 3303,
+              "EndOffset": 3305,
+              "Path": 0,
+              "Ordinal": 49,
+              "Hits": 0
+            },
+            {
+              "Line": 21,
+              "Offset": 3336,
+              "EndOffset": 3338,
+              "Path": 0,
+              "Ordinal": 51,
+              "Hits": 0
+            },
+            {
+              "Line": 13,
+              "Offset": 8,
+              "EndOffset": 3379,
+              "Path": 10,
+              "Ordinal": 10,
+              "Hits": 0
+            },
+            {
+              "Line": 21,
+              "Offset": 3336,
+              "EndOffset": 3408,
+              "Path": 1,
+              "Ordinal": 52,
+              "Hits": 0
+            },
+            {
+              "Line": 21,
+              "Offset": 3303,
+              "EndOffset": 3417,
+              "Path": 1,
+              "Ordinal": 50,
+              "Hits": 0
+            },
+            {
+              "Line": 21,
+              "Offset": 3587,
+              "EndOffset": 3589,
+              "Path": 0,
+              "Ordinal": 53,
+              "Hits": 0
+            },
+            {
+              "Line": 21,
+              "Offset": 3587,
+              "EndOffset": 3612,
+              "Path": 1,
+              "Ordinal": 54,
+              "Hits": 0
+            },
+            {
+              "Line": 22,
+              "Offset": 3853,
+              "EndOffset": 3855,
+              "Path": 0,
+              "Ordinal": 55,
+              "Hits": 0
+            },
+            {
+              "Line": 13,
+              "Offset": 8,
+              "EndOffset": 3896,
+              "Path": 11,
+              "Ordinal": 11,
+              "Hits": 0
+            },
+            {
+              "Line": 22,
+              "Offset": 3853,
+              "EndOffset": 3925,
+              "Path": 1,
+              "Ordinal": 56,
+              "Hits": 0
+            },
+            {
+              "Line": 22,
+              "Offset": 3961,
+              "EndOffset": 3963,
+              "Path": 0,
+              "Ordinal": 57,
+              "Hits": 0
+            },
+            {
+              "Line": 22,
+              "Offset": 3994,
+              "EndOffset": 3996,
+              "Path": 0,
+              "Ordinal": 59,
+              "Hits": 0
+            },
+            {
+              "Line": 13,
+              "Offset": 8,
+              "EndOffset": 4037,
+              "Path": 12,
+              "Ordinal": 12,
+              "Hits": 0
+            },
+            {
+              "Line": 22,
+              "Offset": 3994,
+              "EndOffset": 4066,
+              "Path": 1,
+              "Ordinal": 60,
+              "Hits": 0
+            },
+            {
+              "Line": 22,
+              "Offset": 3961,
+              "EndOffset": 4075,
+              "Path": 1,
+              "Ordinal": 58,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Projects\\Core\\Core2.2\\aspnetcore_template.MVC\\Views\\Home\\Grid.cshtml": {
+      "AspNetCore.Views_Home_Grid/<ExecuteAsync>d__9": {
+        "System.Void AspNetCore.Views_Home_Grid/<ExecuteAsync>d__9::MoveNext()": {
+          "Lines": {
+            "4": 0,
+            "8": 0,
+            "28": 0,
+            "29": 0,
+            "30": 0,
+            "281": 0
+          },
+          "Branches": [
+            {
+              "Line": 4,
+              "Offset": 14,
+              "EndOffset": 28,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 8,
+              "Offset": 51,
+              "EndOffset": 55,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 8,
+              "Offset": 51,
+              "EndOffset": 112,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 28,
+              "Offset": 742,
+              "EndOffset": 744,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 28,
+              "Offset": 742,
+              "EndOffset": 811,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            },
+            {
+              "Line": 28,
+              "Offset": 845,
+              "EndOffset": 847,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 0
+            },
+            {
+              "Line": 28,
+              "Offset": 878,
+              "EndOffset": 880,
+              "Path": 0,
+              "Ordinal": 8,
+              "Hits": 0
+            },
+            {
+              "Line": 4,
+              "Offset": 14,
+              "EndOffset": 920,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 28,
+              "Offset": 878,
+              "EndOffset": 949,
+              "Path": 1,
+              "Ordinal": 9,
+              "Hits": 0
+            },
+            {
+              "Line": 28,
+              "Offset": 845,
+              "EndOffset": 958,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 0
+            }
+          ]
+        }
+      },
+      "AspNetCore.Views_Home_Grid/<<ExecuteAsync>b__9_0>d": {
+        "System.Void AspNetCore.Views_Home_Grid/<<ExecuteAsync>b__9_0>d::MoveNext()": {
+          "Lines": {
+            "48": 0,
+            "49": 0,
+            "50": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Projects\\Core\\Core2.2\\aspnetcore_template.MVC\\Views\\Home\\Index.cshtml": {
+      "AspNetCore.Views_Home_Index/<ExecuteAsync>d__10": {
+        "System.Void AspNetCore.Views_Home_Index/<ExecuteAsync>d__10::MoveNext()": {
+          "Lines": {
+            "3": 0,
+            "7": 0,
+            "11": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0
+          },
+          "Branches": [
+            {
+              "Line": 7,
+              "Offset": 74,
+              "EndOffset": 78,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 7,
+              "Offset": 74,
+              "EndOffset": 135,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 11,
+              "Offset": 275,
+              "EndOffset": 277,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 11,
+              "Offset": 275,
+              "EndOffset": 344,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 17,
+              "Offset": 701,
+              "EndOffset": 485,
+              "Path": 1,
+              "Ordinal": 9,
+              "Hits": 0
+            },
+            {
+              "Line": 19,
+              "Offset": 563,
+              "EndOffset": 565,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 0
+            },
+            {
+              "Line": 17,
+              "Offset": 474,
+              "EndOffset": 604,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            },
+            {
+              "Line": 19,
+              "Offset": 563,
+              "EndOffset": 632,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 0
+            },
+            {
+              "Line": 17,
+              "Offset": 474,
+              "EndOffset": 690,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 17,
+              "Offset": 701,
+              "EndOffset": 706,
+              "Path": 0,
+              "Ordinal": 8,
+              "Hits": 0
+            },
+            {
+              "Line": 17,
+              "Offset": 1088,
+              "EndOffset": 1090,
+              "Path": 0,
+              "Ordinal": 10,
+              "Hits": 0
+            },
+            {
+              "Line": 17,
+              "Offset": 1088,
+              "EndOffset": 1159,
+              "Path": 1,
+              "Ordinal": 11,
+              "Hits": 0
+            },
+            {
+              "Line": 17,
+              "Offset": 1195,
+              "EndOffset": 1197,
+              "Path": 0,
+              "Ordinal": 12,
+              "Hits": 0
+            },
+            {
+              "Line": 17,
+              "Offset": 1228,
+              "EndOffset": 1230,
+              "Path": 0,
+              "Ordinal": 14,
+              "Hits": 0
+            },
+            {
+              "Line": 17,
+              "Offset": 1228,
+              "EndOffset": 1299,
+              "Path": 1,
+              "Ordinal": 15,
+              "Hits": 0
+            },
+            {
+              "Line": 17,
+              "Offset": 1195,
+              "EndOffset": 1308,
+              "Path": 1,
+              "Ordinal": 13,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Projects\\Core\\Core2.2\\aspnetcore_template.MVC\\Views\\Home\\_Summary.cshtml": {
+      "AspNetCore.Views_Home__Summary/<ExecuteAsync>d__10": {
+        "System.Void AspNetCore.Views_Home__Summary/<ExecuteAsync>d__10::MoveNext()": {
+          "Lines": {
+            "5": 0,
+            "8": 0,
+            "11": 0,
+            "12": 0
+          },
+          "Branches": [
+            {
+              "Line": 8,
+              "Offset": 521,
+              "EndOffset": 523,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 8,
+              "Offset": 521,
+              "EndOffset": 556,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 11,
+              "Offset": 772,
+              "EndOffset": 774,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 11,
+              "Offset": 772,
+              "EndOffset": 841,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 11,
+              "Offset": 877,
+              "EndOffset": 879,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 11,
+              "Offset": 910,
+              "EndOffset": 912,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 0
+            },
+            {
+              "Line": 11,
+              "Offset": 910,
+              "EndOffset": 981,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 0
+            },
+            {
+              "Line": 11,
+              "Offset": 877,
+              "EndOffset": 990,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            },
+            {
+              "Line": 11,
+              "Offset": 1308,
+              "EndOffset": 1310,
+              "Path": 0,
+              "Ordinal": 8,
+              "Hits": 0
+            },
+            {
+              "Line": 11,
+              "Offset": 1308,
+              "EndOffset": 1343,
+              "Path": 1,
+              "Ordinal": 9,
+              "Hits": 0
+            },
+            {
+              "Line": 12,
+              "Offset": 1560,
+              "EndOffset": 1562,
+              "Path": 0,
+              "Ordinal": 10,
+              "Hits": 0
+            },
+            {
+              "Line": 12,
+              "Offset": 1560,
+              "EndOffset": 1631,
+              "Path": 1,
+              "Ordinal": 11,
+              "Hits": 0
+            },
+            {
+              "Line": 12,
+              "Offset": 1667,
+              "EndOffset": 1669,
+              "Path": 0,
+              "Ordinal": 12,
+              "Hits": 0
+            },
+            {
+              "Line": 12,
+              "Offset": 1700,
+              "EndOffset": 1702,
+              "Path": 0,
+              "Ordinal": 14,
+              "Hits": 0
+            },
+            {
+              "Line": 12,
+              "Offset": 1700,
+              "EndOffset": 1771,
+              "Path": 1,
+              "Ordinal": 15,
+              "Hits": 0
+            },
+            {
+              "Line": 12,
+              "Offset": 1667,
+              "EndOffset": 1780,
+              "Path": 1,
+              "Ordinal": 13,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Projects\\Core\\Core2.2\\aspnetcore_template.MVC\\Views\\Shared\\Components\\Greeting\\Default.cshtml": {
+      "AspNetCore.Views_Shared_Components_Greeting_Default/<ExecuteAsync>d__0": {
+        "System.Void AspNetCore.Views_Shared_Components_Greeting_Default/<ExecuteAsync>d__0::MoveNext()": {
+          "Lines": {
+            "4": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Projects\\Core\\Core2.2\\aspnetcore_template.MVC\\Views\\Shared\\Error.cshtml": {
+      "AspNetCore.Views_Shared_Error/<ExecuteAsync>d__0": {
+        "System.Void AspNetCore.Views_Shared_Error/<ExecuteAsync>d__0::MoveNext()": {
+          "Lines": {
+            "3": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Projects\\Core\\Core2.2\\aspnetcore_template.MVC\\Views\\Shared\\_Layout.cshtml": {
+      "AspNetCore.Views_Shared__Layout/<<ExecuteAsync>b__32_0>d": {
+        "System.Void AspNetCore.Views_Shared__Layout/<<ExecuteAsync>b__32_0>d::MoveNext()": {
+          "Lines": {
+            "6": 0,
+            "41": 0
+          },
+          "Branches": [
+            {
+              "Line": 6,
+              "Offset": 8,
+              "EndOffset": 360,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 429,
+              "EndOffset": 433,
+              "Path": 1,
+              "Ordinal": 40,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 429,
+              "EndOffset": 495,
+              "Path": 0,
+              "Ordinal": 39,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 521,
+              "EndOffset": 525,
+              "Path": 1,
+              "Ordinal": 42,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 521,
+              "EndOffset": 572,
+              "Path": 0,
+              "Ordinal": 41,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 721,
+              "EndOffset": 723,
+              "Path": 0,
+              "Ordinal": 43,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 721,
+              "EndOffset": 746,
+              "Path": 1,
+              "Ordinal": 44,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 912,
+              "EndOffset": 914,
+              "Path": 0,
+              "Ordinal": 45,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 8,
+              "EndOffset": 953,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 912,
+              "EndOffset": 981,
+              "Path": 1,
+              "Ordinal": 46,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 1015,
+              "EndOffset": 1017,
+              "Path": 0,
+              "Ordinal": 47,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 1048,
+              "EndOffset": 1050,
+              "Path": 0,
+              "Ordinal": 49,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 8,
+              "EndOffset": 1090,
+              "Path": 2,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 1048,
+              "EndOffset": 1119,
+              "Path": 1,
+              "Ordinal": 50,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 1015,
+              "EndOffset": 1128,
+              "Path": 1,
+              "Ordinal": 48,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 1345,
+              "EndOffset": 1347,
+              "Path": 0,
+              "Ordinal": 51,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 1345,
+              "EndOffset": 1370,
+              "Path": 1,
+              "Ordinal": 52,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 1515,
+              "EndOffset": 1517,
+              "Path": 0,
+              "Ordinal": 53,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 8,
+              "EndOffset": 1557,
+              "Path": 3,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 1515,
+              "EndOffset": 1586,
+              "Path": 1,
+              "Ordinal": 54,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 1622,
+              "EndOffset": 1624,
+              "Path": 0,
+              "Ordinal": 55,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 1655,
+              "EndOffset": 1657,
+              "Path": 0,
+              "Ordinal": 57,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 8,
+              "EndOffset": 1697,
+              "Path": 4,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 1655,
+              "EndOffset": 1726,
+              "Path": 1,
+              "Ordinal": 58,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 1622,
+              "EndOffset": 1735,
+              "Path": 1,
+              "Ordinal": 56,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 1952,
+              "EndOffset": 1954,
+              "Path": 0,
+              "Ordinal": 59,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 1952,
+              "EndOffset": 1977,
+              "Path": 1,
+              "Ordinal": 60,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 2122,
+              "EndOffset": 2124,
+              "Path": 0,
+              "Ordinal": 61,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 8,
+              "EndOffset": 2164,
+              "Path": 5,
+              "Ordinal": 5,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 2122,
+              "EndOffset": 2193,
+              "Path": 1,
+              "Ordinal": 62,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 2229,
+              "EndOffset": 2231,
+              "Path": 0,
+              "Ordinal": 63,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 2262,
+              "EndOffset": 2264,
+              "Path": 0,
+              "Ordinal": 65,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 8,
+              "EndOffset": 2304,
+              "Path": 6,
+              "Ordinal": 6,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 2262,
+              "EndOffset": 2333,
+              "Path": 1,
+              "Ordinal": 66,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 2229,
+              "EndOffset": 2342,
+              "Path": 1,
+              "Ordinal": 64,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 2559,
+              "EndOffset": 2561,
+              "Path": 0,
+              "Ordinal": 67,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 2559,
+              "EndOffset": 2584,
+              "Path": 1,
+              "Ordinal": 68,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 2729,
+              "EndOffset": 2731,
+              "Path": 0,
+              "Ordinal": 69,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 8,
+              "EndOffset": 2771,
+              "Path": 7,
+              "Ordinal": 7,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 2729,
+              "EndOffset": 2800,
+              "Path": 1,
+              "Ordinal": 70,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 2836,
+              "EndOffset": 2838,
+              "Path": 0,
+              "Ordinal": 71,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 2869,
+              "EndOffset": 2871,
+              "Path": 0,
+              "Ordinal": 73,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 8,
+              "EndOffset": 2911,
+              "Path": 8,
+              "Ordinal": 8,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 2869,
+              "EndOffset": 2940,
+              "Path": 1,
+              "Ordinal": 74,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 2836,
+              "EndOffset": 2949,
+              "Path": 1,
+              "Ordinal": 72,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 3118,
+              "EndOffset": 3120,
+              "Path": 0,
+              "Ordinal": 75,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 3118,
+              "EndOffset": 3143,
+              "Path": 1,
+              "Ordinal": 76,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 3288,
+              "EndOffset": 3290,
+              "Path": 0,
+              "Ordinal": 77,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 8,
+              "EndOffset": 3330,
+              "Path": 9,
+              "Ordinal": 9,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 3288,
+              "EndOffset": 3359,
+              "Path": 1,
+              "Ordinal": 78,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 3395,
+              "EndOffset": 3397,
+              "Path": 0,
+              "Ordinal": 79,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 3428,
+              "EndOffset": 3430,
+              "Path": 0,
+              "Ordinal": 81,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 8,
+              "EndOffset": 3471,
+              "Path": 10,
+              "Ordinal": 10,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 3428,
+              "EndOffset": 3500,
+              "Path": 1,
+              "Ordinal": 82,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 3395,
+              "EndOffset": 3509,
+              "Path": 1,
+              "Ordinal": 80,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 3678,
+              "EndOffset": 3680,
+              "Path": 0,
+              "Ordinal": 83,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 3678,
+              "EndOffset": 3703,
+              "Path": 1,
+              "Ordinal": 84,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 3848,
+              "EndOffset": 3850,
+              "Path": 0,
+              "Ordinal": 85,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 8,
+              "EndOffset": 3891,
+              "Path": 11,
+              "Ordinal": 11,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 3848,
+              "EndOffset": 3920,
+              "Path": 1,
+              "Ordinal": 86,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 3956,
+              "EndOffset": 3958,
+              "Path": 0,
+              "Ordinal": 87,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 3989,
+              "EndOffset": 3991,
+              "Path": 0,
+              "Ordinal": 89,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 8,
+              "EndOffset": 4032,
+              "Path": 12,
+              "Ordinal": 12,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 3989,
+              "EndOffset": 4061,
+              "Path": 1,
+              "Ordinal": 90,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 3956,
+              "EndOffset": 4070,
+              "Path": 1,
+              "Ordinal": 88,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 4239,
+              "EndOffset": 4241,
+              "Path": 0,
+              "Ordinal": 91,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 4239,
+              "EndOffset": 4264,
+              "Path": 1,
+              "Ordinal": 92,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 4409,
+              "EndOffset": 4411,
+              "Path": 0,
+              "Ordinal": 93,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 8,
+              "EndOffset": 4452,
+              "Path": 13,
+              "Ordinal": 13,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 4409,
+              "EndOffset": 4481,
+              "Path": 1,
+              "Ordinal": 94,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 4517,
+              "EndOffset": 4519,
+              "Path": 0,
+              "Ordinal": 95,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 4550,
+              "EndOffset": 4552,
+              "Path": 0,
+              "Ordinal": 97,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 8,
+              "EndOffset": 4593,
+              "Path": 14,
+              "Ordinal": 14,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 4550,
+              "EndOffset": 4622,
+              "Path": 1,
+              "Ordinal": 98,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 4517,
+              "EndOffset": 4631,
+              "Path": 1,
+              "Ordinal": 96,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 4800,
+              "EndOffset": 4802,
+              "Path": 0,
+              "Ordinal": 99,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 4800,
+              "EndOffset": 4825,
+              "Path": 1,
+              "Ordinal": 100,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 4970,
+              "EndOffset": 4972,
+              "Path": 0,
+              "Ordinal": 101,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 8,
+              "EndOffset": 5013,
+              "Path": 15,
+              "Ordinal": 15,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 4970,
+              "EndOffset": 5042,
+              "Path": 1,
+              "Ordinal": 102,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 5078,
+              "EndOffset": 5080,
+              "Path": 0,
+              "Ordinal": 103,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 5111,
+              "EndOffset": 5113,
+              "Path": 0,
+              "Ordinal": 105,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 8,
+              "EndOffset": 5154,
+              "Path": 16,
+              "Ordinal": 16,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 5111,
+              "EndOffset": 5183,
+              "Path": 1,
+              "Ordinal": 106,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 5078,
+              "EndOffset": 5192,
+              "Path": 1,
+              "Ordinal": 104,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 5362,
+              "EndOffset": 5364,
+              "Path": 0,
+              "Ordinal": 107,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 5362,
+              "EndOffset": 5387,
+              "Path": 1,
+              "Ordinal": 108,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 5532,
+              "EndOffset": 5534,
+              "Path": 0,
+              "Ordinal": 109,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 8,
+              "EndOffset": 5575,
+              "Path": 17,
+              "Ordinal": 17,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 5532,
+              "EndOffset": 5604,
+              "Path": 1,
+              "Ordinal": 110,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 5640,
+              "EndOffset": 5642,
+              "Path": 0,
+              "Ordinal": 111,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 5673,
+              "EndOffset": 5675,
+              "Path": 0,
+              "Ordinal": 113,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 8,
+              "EndOffset": 5716,
+              "Path": 18,
+              "Ordinal": 18,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 5673,
+              "EndOffset": 5745,
+              "Path": 1,
+              "Ordinal": 114,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 5640,
+              "EndOffset": 5754,
+              "Path": 1,
+              "Ordinal": 112,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 5923,
+              "EndOffset": 5925,
+              "Path": 0,
+              "Ordinal": 115,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 5923,
+              "EndOffset": 5948,
+              "Path": 1,
+              "Ordinal": 116,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 6093,
+              "EndOffset": 6095,
+              "Path": 0,
+              "Ordinal": 117,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 8,
+              "EndOffset": 6136,
+              "Path": 19,
+              "Ordinal": 19,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 6093,
+              "EndOffset": 6165,
+              "Path": 1,
+              "Ordinal": 118,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 6201,
+              "EndOffset": 6203,
+              "Path": 0,
+              "Ordinal": 119,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 6234,
+              "EndOffset": 6236,
+              "Path": 0,
+              "Ordinal": 121,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 8,
+              "EndOffset": 6277,
+              "Path": 20,
+              "Ordinal": 20,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 6234,
+              "EndOffset": 6306,
+              "Path": 1,
+              "Ordinal": 122,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 6201,
+              "EndOffset": 6315,
+              "Path": 1,
+              "Ordinal": 120,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 6484,
+              "EndOffset": 6486,
+              "Path": 0,
+              "Ordinal": 123,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 6484,
+              "EndOffset": 6509,
+              "Path": 1,
+              "Ordinal": 124,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 6654,
+              "EndOffset": 6656,
+              "Path": 0,
+              "Ordinal": 125,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 8,
+              "EndOffset": 6697,
+              "Path": 21,
+              "Ordinal": 21,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 6654,
+              "EndOffset": 6726,
+              "Path": 1,
+              "Ordinal": 126,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 6762,
+              "EndOffset": 6764,
+              "Path": 0,
+              "Ordinal": 127,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 6795,
+              "EndOffset": 6797,
+              "Path": 0,
+              "Ordinal": 129,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 8,
+              "EndOffset": 6838,
+              "Path": 22,
+              "Ordinal": 22,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 6795,
+              "EndOffset": 6867,
+              "Path": 1,
+              "Ordinal": 130,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 6762,
+              "EndOffset": 6876,
+              "Path": 1,
+              "Ordinal": 128,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 7045,
+              "EndOffset": 7047,
+              "Path": 0,
+              "Ordinal": 131,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 7045,
+              "EndOffset": 7070,
+              "Path": 1,
+              "Ordinal": 132,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 7215,
+              "EndOffset": 7217,
+              "Path": 0,
+              "Ordinal": 133,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 8,
+              "EndOffset": 7258,
+              "Path": 23,
+              "Ordinal": 23,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 7215,
+              "EndOffset": 7287,
+              "Path": 1,
+              "Ordinal": 134,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 7323,
+              "EndOffset": 7325,
+              "Path": 0,
+              "Ordinal": 135,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 7356,
+              "EndOffset": 7358,
+              "Path": 0,
+              "Ordinal": 137,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 8,
+              "EndOffset": 7399,
+              "Path": 24,
+              "Ordinal": 24,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 7356,
+              "EndOffset": 7428,
+              "Path": 1,
+              "Ordinal": 138,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 7323,
+              "EndOffset": 7437,
+              "Path": 1,
+              "Ordinal": 136,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 7654,
+              "EndOffset": 7656,
+              "Path": 0,
+              "Ordinal": 139,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 7654,
+              "EndOffset": 7679,
+              "Path": 1,
+              "Ordinal": 140,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 7824,
+              "EndOffset": 7826,
+              "Path": 0,
+              "Ordinal": 141,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 8,
+              "EndOffset": 7867,
+              "Path": 25,
+              "Ordinal": 25,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 7824,
+              "EndOffset": 7896,
+              "Path": 1,
+              "Ordinal": 142,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 7932,
+              "EndOffset": 7934,
+              "Path": 0,
+              "Ordinal": 143,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 7965,
+              "EndOffset": 7967,
+              "Path": 0,
+              "Ordinal": 145,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 8,
+              "EndOffset": 8008,
+              "Path": 26,
+              "Ordinal": 26,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 7965,
+              "EndOffset": 8037,
+              "Path": 1,
+              "Ordinal": 146,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 7932,
+              "EndOffset": 8046,
+              "Path": 1,
+              "Ordinal": 144,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 8263,
+              "EndOffset": 8265,
+              "Path": 0,
+              "Ordinal": 147,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 8263,
+              "EndOffset": 8288,
+              "Path": 1,
+              "Ordinal": 148,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 8433,
+              "EndOffset": 8435,
+              "Path": 0,
+              "Ordinal": 149,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 8,
+              "EndOffset": 8476,
+              "Path": 27,
+              "Ordinal": 27,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 8433,
+              "EndOffset": 8505,
+              "Path": 1,
+              "Ordinal": 150,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 8541,
+              "EndOffset": 8543,
+              "Path": 0,
+              "Ordinal": 151,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 8574,
+              "EndOffset": 8576,
+              "Path": 0,
+              "Ordinal": 153,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 8,
+              "EndOffset": 8617,
+              "Path": 28,
+              "Ordinal": 28,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 8574,
+              "EndOffset": 8646,
+              "Path": 1,
+              "Ordinal": 154,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 8541,
+              "EndOffset": 8655,
+              "Path": 1,
+              "Ordinal": 152,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 8872,
+              "EndOffset": 8874,
+              "Path": 0,
+              "Ordinal": 155,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 8872,
+              "EndOffset": 8897,
+              "Path": 1,
+              "Ordinal": 156,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 9042,
+              "EndOffset": 9044,
+              "Path": 0,
+              "Ordinal": 157,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 8,
+              "EndOffset": 9085,
+              "Path": 29,
+              "Ordinal": 29,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 9042,
+              "EndOffset": 9114,
+              "Path": 1,
+              "Ordinal": 158,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 9150,
+              "EndOffset": 9152,
+              "Path": 0,
+              "Ordinal": 159,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 9183,
+              "EndOffset": 9185,
+              "Path": 0,
+              "Ordinal": 161,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 8,
+              "EndOffset": 9226,
+              "Path": 30,
+              "Ordinal": 30,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 9183,
+              "EndOffset": 9255,
+              "Path": 1,
+              "Ordinal": 162,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 9150,
+              "EndOffset": 9264,
+              "Path": 1,
+              "Ordinal": 160,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 9433,
+              "EndOffset": 9435,
+              "Path": 0,
+              "Ordinal": 163,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 9433,
+              "EndOffset": 9458,
+              "Path": 1,
+              "Ordinal": 164,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 9603,
+              "EndOffset": 9605,
+              "Path": 0,
+              "Ordinal": 165,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 8,
+              "EndOffset": 9646,
+              "Path": 31,
+              "Ordinal": 31,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 9603,
+              "EndOffset": 9675,
+              "Path": 1,
+              "Ordinal": 166,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 9711,
+              "EndOffset": 9713,
+              "Path": 0,
+              "Ordinal": 167,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 9744,
+              "EndOffset": 9746,
+              "Path": 0,
+              "Ordinal": 169,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 8,
+              "EndOffset": 9787,
+              "Path": 32,
+              "Ordinal": 32,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 9744,
+              "EndOffset": 9816,
+              "Path": 1,
+              "Ordinal": 170,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 9711,
+              "EndOffset": 9825,
+              "Path": 1,
+              "Ordinal": 168,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 9994,
+              "EndOffset": 9996,
+              "Path": 0,
+              "Ordinal": 171,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 9994,
+              "EndOffset": 10019,
+              "Path": 1,
+              "Ordinal": 172,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 10164,
+              "EndOffset": 10166,
+              "Path": 0,
+              "Ordinal": 173,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 8,
+              "EndOffset": 10207,
+              "Path": 33,
+              "Ordinal": 33,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 10164,
+              "EndOffset": 10236,
+              "Path": 1,
+              "Ordinal": 174,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 10272,
+              "EndOffset": 10274,
+              "Path": 0,
+              "Ordinal": 175,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 10305,
+              "EndOffset": 10307,
+              "Path": 0,
+              "Ordinal": 177,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 8,
+              "EndOffset": 10348,
+              "Path": 34,
+              "Ordinal": 34,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 10305,
+              "EndOffset": 10377,
+              "Path": 1,
+              "Ordinal": 178,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 10272,
+              "EndOffset": 10386,
+              "Path": 1,
+              "Ordinal": 176,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 10555,
+              "EndOffset": 10557,
+              "Path": 0,
+              "Ordinal": 179,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 10555,
+              "EndOffset": 10580,
+              "Path": 1,
+              "Ordinal": 180,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 10725,
+              "EndOffset": 10727,
+              "Path": 0,
+              "Ordinal": 181,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 8,
+              "EndOffset": 10768,
+              "Path": 35,
+              "Ordinal": 35,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 10725,
+              "EndOffset": 10797,
+              "Path": 1,
+              "Ordinal": 182,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 10833,
+              "EndOffset": 10835,
+              "Path": 0,
+              "Ordinal": 183,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 10866,
+              "EndOffset": 10868,
+              "Path": 0,
+              "Ordinal": 185,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 8,
+              "EndOffset": 10909,
+              "Path": 36,
+              "Ordinal": 36,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 10866,
+              "EndOffset": 10938,
+              "Path": 1,
+              "Ordinal": 186,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 10833,
+              "EndOffset": 10947,
+              "Path": 1,
+              "Ordinal": 184,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 11116,
+              "EndOffset": 11118,
+              "Path": 0,
+              "Ordinal": 187,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 11116,
+              "EndOffset": 11141,
+              "Path": 1,
+              "Ordinal": 188,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 11286,
+              "EndOffset": 11288,
+              "Path": 0,
+              "Ordinal": 189,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 8,
+              "EndOffset": 11329,
+              "Path": 37,
+              "Ordinal": 37,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 11286,
+              "EndOffset": 11358,
+              "Path": 1,
+              "Ordinal": 190,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 11394,
+              "EndOffset": 11396,
+              "Path": 0,
+              "Ordinal": 191,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 11427,
+              "EndOffset": 11429,
+              "Path": 0,
+              "Ordinal": 193,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 8,
+              "EndOffset": 11470,
+              "Path": 38,
+              "Ordinal": 38,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 11427,
+              "EndOffset": 11499,
+              "Path": 1,
+              "Ordinal": 194,
+              "Hits": 0
+            },
+            {
+              "Line": 6,
+              "Offset": 11394,
+              "EndOffset": 11508,
+              "Path": 1,
+              "Ordinal": 192,
+              "Hits": 0
+            }
+          ]
+        }
+      },
+      "AspNetCore.Views_Shared__Layout/<<ExecuteAsync>b__32_1>d": {
+        "System.Void AspNetCore.Views_Shared__Layout/<<ExecuteAsync>b__32_1>d::MoveNext()": {
+          "Lines": {
+            "50": 0,
+            "52": 0,
+            "53": 0,
+            "54": 0,
+            "55": 0,
+            "56": 0,
+            "61": 0,
+            "92": 0,
+            "94": 0,
+            "95": 0,
+            "96": 0,
+            "98": 0,
+            "103": 0,
+            "109": 0
+          },
+          "Branches": [
+            {
+              "Line": 50,
+              "Offset": 8,
+              "EndOffset": 39,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 50,
+              "Offset": 8,
+              "EndOffset": 89,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 50,
+              "Offset": 91,
+              "EndOffset": 97,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 52,
+              "Offset": 152,
+              "EndOffset": 154,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 0
+            },
+            {
+              "Line": 50,
+              "Offset": 91,
+              "EndOffset": 193,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            },
+            {
+              "Line": 52,
+              "Offset": 152,
+              "EndOffset": 221,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 0
+            },
+            {
+              "Line": 61,
+              "Offset": 431,
+              "EndOffset": 433,
+              "Path": 0,
+              "Ordinal": 8,
+              "Hits": 0
+            },
+            {
+              "Line": 50,
+              "Offset": 8,
+              "EndOffset": 472,
+              "Path": 2,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 61,
+              "Offset": 431,
+              "EndOffset": 500,
+              "Path": 1,
+              "Ordinal": 9,
+              "Hits": 0
+            },
+            {
+              "Line": 109,
+              "Offset": 1064,
+              "EndOffset": 1066,
+              "Path": 0,
+              "Ordinal": 10,
+              "Hits": 0
+            },
+            {
+              "Line": 50,
+              "Offset": 8,
+              "EndOffset": 1106,
+              "Path": 3,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 109,
+              "Offset": 1064,
+              "EndOffset": 1135,
+              "Path": 1,
+              "Ordinal": 11,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Projects\\Core\\Core2.2\\aspnetcore_template.MVC\\Views\\Shared\\_siteFooter.cshtml": {
+      "AspNetCore.Views_Shared__siteFooter/<ExecuteAsync>d__0": {
+        "System.Void AspNetCore.Views_Shared__siteFooter/<ExecuteAsync>d__0::MoveNext()": {
+          "Lines": {
+            "5": 0,
+            "6": 0,
+            "7": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Projects\\Core\\Core2.2\\aspnetcore_template.MVC\\Views\\Shared\\_siteMenu.cshtml": {
+      "AspNetCore.Views_Shared__siteMenu/<ExecuteAsync>d__0": {
+        "System.Void AspNetCore.Views_Shared__siteMenu/<ExecuteAsync>d__0::MoveNext()": {
+          "Lines": {
+            "2": 0,
+            "5": 0,
+            "10": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Projects\\Core\\Core2.2\\aspnetcore_template.MVC\\Views\\Shared\\_userControl.cshtml": {
+      "AspNetCore.Views_Shared__userControl/<ExecuteAsync>d__0": {
+        "System.Void AspNetCore.Views_Shared__userControl/<ExecuteAsync>d__0::MoveNext()": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        }
+      }
+    }
+  },
+  "aspnetcore_template.ServiceModel.dll": {
+    "C:\\Projects\\Core\\Core2.2\\aspnetcore_template.ServiceModel\\Messaging\\JsonResultMessage.cs": {
+      "aspnetcore_template.ServiceModel.Messaging.JsonResultMessage": {
+        "System.Boolean aspnetcore_template.ServiceModel.Messaging.JsonResultMessage::get_Success()": {
+          "Lines": {
+            "9": 0
+          },
+          "Branches": []
+        },
+        "System.String aspnetcore_template.ServiceModel.Messaging.JsonResultMessage::get_Message()": {
+          "Lines": {
+            "10": 0
+          },
+          "Branches": []
+        }
+      },
+      "aspnetcore_template.ServiceModel.Messaging.ResultMessages": {
+        "aspnetcore_template.ServiceModel.Messaging.JsonResultMessage aspnetcore_template.ServiceModel.Messaging.ResultMessages::JsonResultMessage()": {
+          "Lines": {
+            "16": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "22": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Projects\\Core\\Core2.2\\aspnetcore_template.ServiceModel\\Entities\\Restaurant.cs": {
+      "aspnetcore_template.ServiceModel.Entities.Restaurant": {
+        "System.Int32 aspnetcore_template.ServiceModel.Entities.Restaurant::get_Id()": {
+          "Lines": {
+            "17": 9
+          },
+          "Branches": []
+        },
+        "System.String aspnetcore_template.ServiceModel.Entities.Restaurant::get_Name()": {
+          "Lines": {
+            "19": 12
+          },
+          "Branches": []
+        },
+        "aspnetcore_template.ServiceModel.Entities.CuisineType aspnetcore_template.ServiceModel.Entities.Restaurant::get_Cuisine()": {
+          "Lines": {
+            "20": 11
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Projects\\Core\\Core2.2\\aspnetcore_template.ServiceModel\\Entities\\Base\\EntityBase.cs": {
+      "aspnetcore_template.ServiceModel.Entities.Base.EntityBase`1": {
+        "TId aspnetcore_template.ServiceModel.Entities.Base.EntityBase`1::get_Id()": {
+          "Lines": {
+            "20": 0,
+            "21": 0,
+            "22": 0,
+            "23": 0,
+            "24": 0,
+            "26": 0,
+            "27": 0
+          },
+          "Branches": [
+            {
+              "Line": 21,
+              "Offset": 7,
+              "EndOffset": 9,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 21,
+              "Offset": 7,
+              "EndOffset": 36,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 21,
+              "Offset": 39,
+              "EndOffset": 41,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 21,
+              "Offset": 39,
+              "EndOffset": 59,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 26,
+              "Offset": 65,
+              "EndOffset": 67,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 26,
+              "Offset": 65,
+              "EndOffset": 80,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void aspnetcore_template.ServiceModel.Entities.Base.EntityBase`1::set_Id(TId)": {
+          "Lines": {
+            "30": 0,
+            "31": 0,
+            "32": 0
+          },
+          "Branches": []
+        },
+        "System.String aspnetcore_template.ServiceModel.Entities.Base.EntityBase`1::get_Key()": {
+          "Lines": {
+            "41": 0
+          },
+          "Branches": []
+        },
+        "System.Int32 aspnetcore_template.ServiceModel.Entities.Base.EntityBase`1::aspnetcore_template.ServiceModel.Entities.Base.IEntity.get_Id()": {
+          "Lines": {
+            "44": 0
+          },
+          "Branches": []
+        },
+        "System.Boolean aspnetcore_template.ServiceModel.Entities.Base.EntityBase`1::Equals(aspnetcore_template.ServiceModel.Entities.Base.EntityBase`1<TId>)": {
+          "Lines": {
+            "47": 0,
+            "48": 0,
+            "49": 0,
+            "50": 0,
+            "52": 0,
+            "53": 0,
+            "55": 0,
+            "56": 0
+          },
+          "Branches": [
+            {
+              "Line": 48,
+              "Offset": 7,
+              "EndOffset": 9,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 48,
+              "Offset": 7,
+              "EndOffset": 16,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 49,
+              "Offset": 22,
+              "EndOffset": 24,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 49,
+              "Offset": 22,
+              "EndOffset": 31,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 50,
+              "Offset": 50,
+              "EndOffset": 52,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 50,
+              "Offset": 50,
+              "EndOffset": 59,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            },
+            {
+              "Line": 52,
+              "Offset": 90,
+              "EndOffset": 92,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 0
+            },
+            {
+              "Line": 52,
+              "Offset": 90,
+              "EndOffset": 125,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 0
+            },
+            {
+              "Line": 52,
+              "Offset": 130,
+              "EndOffset": 132,
+              "Path": 0,
+              "Ordinal": 8,
+              "Hits": 0
+            },
+            {
+              "Line": 52,
+              "Offset": 130,
+              "EndOffset": 152,
+              "Path": 1,
+              "Ordinal": 9,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.String aspnetcore_template.ServiceModel.Entities.Base.EntityBase`1::GenerateKey()": {
+          "Lines": {
+            "59": 0,
+            "60": 0,
+            "61": 0
+          },
+          "Branches": []
+        },
+        "System.Boolean aspnetcore_template.ServiceModel.Entities.Base.EntityBase`1::Equals(System.Object)": {
+          "Lines": {
+            "64": 0,
+            "65": 0,
+            "66": 0,
+            "67": 0,
+            "68": 0,
+            "69": 0
+          },
+          "Branches": [
+            {
+              "Line": 65,
+              "Offset": 7,
+              "EndOffset": 9,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 65,
+              "Offset": 7,
+              "EndOffset": 13,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 66,
+              "Offset": 19,
+              "EndOffset": 21,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 66,
+              "Offset": 19,
+              "EndOffset": 25,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 67,
+              "Offset": 48,
+              "EndOffset": 50,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 67,
+              "Offset": 48,
+              "EndOffset": 54,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Int32 aspnetcore_template.ServiceModel.Entities.Base.EntityBase`1::GetHashCode()": {
+          "Lines": {
+            "72": 0,
+            "74": 0,
+            "78": 0,
+            "80": 0
+          },
+          "Branches": []
+        },
+        "System.Boolean aspnetcore_template.ServiceModel.Entities.Base.EntityBase`1::op_Equality(aspnetcore_template.ServiceModel.Entities.Base.EntityBase`1<TId>,aspnetcore_template.ServiceModel.Entities.Base.EntityBase`1<TId>)": {
+          "Lines": {
+            "88": 0,
+            "89": 0,
+            "90": 0
+          },
+          "Branches": []
+        },
+        "System.Boolean aspnetcore_template.ServiceModel.Entities.Base.EntityBase`1::op_Inequality(aspnetcore_template.ServiceModel.Entities.Base.EntityBase`1<TId>,aspnetcore_template.ServiceModel.Entities.Base.EntityBase`1<TId>)": {
+          "Lines": {
+            "93": 0,
+            "94": 0,
+            "95": 0
+          },
+          "Branches": []
+        }
+      },
+      "aspnetcore_template.ServiceModel.Entities.Base.EntityBase`1/KeyGenerator": {
+        "System.String aspnetcore_template.ServiceModel.Entities.Base.EntityBase`1/KeyGenerator::Generate()": {
+          "Lines": {
+            "100": 0,
+            "101": 0,
+            "102": 0
+          },
+          "Branches": []
+        },
+        "System.String aspnetcore_template.ServiceModel.Entities.Base.EntityBase`1/KeyGenerator::Generate(System.String)": {
+          "Lines": {
+            "105": 0,
+            "107": 0,
+            "108": 0
+          },
+          "Branches": []
+        }
+      }
+    }
+  }
+}

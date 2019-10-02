@@ -18,7 +18,7 @@ namespace aspnetcore_template.Business.Managers
         {
             _unitOfWork = unitOfWork;
         }
-        public Restaurant Add(Restaurant restaurant)
+        public async Task<Restaurant> AddAsync(Restaurant restaurant)
         {
             restaurant = _unitOfWork.Repository<Restaurant>().Insert(restaurant);
             _unitOfWork.Commit();
@@ -43,20 +43,20 @@ namespace aspnetcore_template.Business.Managers
             return _unitOfWork.Repository<Restaurant>().GetAll();
         }
 
-        public async Task<Restaurant> GetRestaurant(int Id)
+        public async Task<Restaurant> GetRestaurantAsync(int Id)
         {
             return await _unitOfWork.Repository<Restaurant>().GetByIdAsync(Id);
         }
         
-        public async Task<Restaurant> Update(Restaurant restaurantChanges)
+        public async Task<Restaurant> UpdateAsync(Restaurant restaurantChanges)
         {
             var restaurant = await _unitOfWork.Repository<Restaurant>().GetByIdAsync(restaurantChanges.Id);
             _unitOfWork.Repository<Restaurant>().Update(restaurant);
             await _unitOfWork.CommitAsync();
             return restaurantChanges;
         }
-
-        Task<Restaurant> IRestaurantManager.Delete(int id)
+       
+        Task<Restaurant> IRestaurantManager.DeleteAsync(int id)
         {
             throw new System.NotImplementedException();
         }

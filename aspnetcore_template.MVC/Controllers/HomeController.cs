@@ -18,27 +18,29 @@ namespace aspnetcore_template.Controllers
 {
     public class HomeController : Controller
     {
-        private IGreeter _greeter;
         private readonly IMapper _mapper;
         private readonly IRestaurantManager _restaurantManager;
-        public HomeController(IMapper mapper, IGreeter greeter, IRestaurantManager restaurantManager)
+        public HomeController(IMapper mapper, IRestaurantManager restaurantManager)
         {
             _mapper = mapper;
             _restaurantManager = restaurantManager;
-            _greeter = greeter;
+        }
+        [HttpGet()]
+        public async Task<IEnumerable<Restaurant>> GetRestaurants()
+        {
+            return await _restaurantManager.GetAllRestaurantsAsync();
         }
         [AllowAnonymous]
         public async Task<IActionResult> Index()
         {
             var model = new HomePageViewModel();
             model.Restaurants = await _restaurantManager.GetAllRestaurantsAsync();
-            model.CurrentGreeting = _greeter.GetGreeting();
-            return View(model);
+            return View("Index",model);
         }
 
         public async Task<IActionResult> Details(int Id)
         {
-            var model = await _restaurantManager.GetRestaurant(Id);
+            var model = await _restaurantManager.GetRestaurantAsync(Id);
             if (model == null)
             {
                 return RedirectToAction("Index");
@@ -49,7 +51,6 @@ namespace aspnetcore_template.Controllers
         {
             var model = new HomePageViewModel();
             model.Restaurants = await _restaurantManager.GetAllRestaurantsAsync();
-            model.CurrentGreeting = _greeter.GetGreeting();
             model.Message = "Select a Cuisine";
             return View(model);
         }
@@ -59,14 +60,14 @@ namespace aspnetcore_template.Controllers
             return View();
         }
         [HttpPost]
-        public IActionResult Create(RestaurantEditViewModel model)
+        public async Task<IActionResult> Create(RestaurantEditViewModel model)
         {
             if (ModelState.IsValid)
             {
                 var restaurant = new Restaurant();
                 restaurant.Cuisine = model.Cuisine;
                 restaurant.Name = model.Name;
-                _restaurantManager.Add(restaurant);
+                await _restaurantManager.AddAsync(restaurant);
                 return RedirectToAction("Details", new { id = restaurant.Id });
             }
             else
@@ -77,7 +78,7 @@ namespace aspnetcore_template.Controllers
         [HttpGet]
         public async Task<IActionResult> Edit(int Id)
         {
-            var model = await _restaurantManager.GetRestaurant(Id);
+            var model = await _restaurantManager.GetRestaurantAsync(Id);
             if (model == null)
             {
                 return RedirectToAction("Index");
@@ -88,20 +89,19 @@ namespace aspnetcore_template.Controllers
         [HttpPost]
         public async Task<IActionResult> Edit(int Id, RestaurantEditViewModel input)
         {
-            var restaurant = await _restaurantManager.GetRestaurant(Id);
+            var restaurant = await _restaurantManager.GetRestaurantAsync(Id);
             if (restaurant != null && ModelState.IsValid)
             {
                 restaurant.Name = input.Name;
                 restaurant.Cuisine = input.Cuisine;
-                await _restaurantManager.Update(restaurant);
+                await _restaurantManager.UpdateAsync(restaurant);
                 return RedirectToAction("Details", new { id = restaurant.Id });
             }
             return View(restaurant);
         }
         [HttpPost]
-        public JsonResult AjaxRestaurants()
+        public JsonResult AjaxRestaurants(string cuisineNumber)
         {
-            var cuisineNumber = Request.Form["cuisine"].FirstOrDefault(); 
             if (cuisineNumber == "")
             {
                 cuisineNumber = "0";
@@ -130,41 +130,36 @@ namespace aspnetcore_template.Controllers
 
             int recordsTotal = 0;
 
-            // getting all Customer data  
             IEnumerable<Restaurant> restaurants = _restaurantManager.GetRestaurantsbyCuisineType(Convert.ToInt32(cuisineNumber));
-            var restaurantData = (from c in restaurants
-                                  where c.Cuisine == (CuisineType)Convert.ToInt32(cuisineNumber)
-                                  select new
-                                  {
-                                      Id = c.Id,
-                                      Name = c.Name,
-                                      Cuisine = c.Cuisine
-                                  })
-                .Select(
-                    x =>
-                        new Restaurant()
-                        {
-                            Id = x.Id,
-                            Name = x.Name,
-                            Cuisine = x.Cuisine
-                        });
-            //Sorting  
-            //if (!(string.IsNullOrEmpty(sortColumn) && string.IsNullOrEmpty(sortColumnDirection)))
-            //{
-            //    restaurantData = restaurantData.OrderBy(sortColumn + " " + sortColumnDirection);
-            //}
-            ////Search  
-            //if (!string.IsNullOrEmpty(searchValue))
-            //{
-            //    restaurantData = restaurantData.Where(m => m.Name == searchValue);
-            //}
 
+            // getting all Customer data  
+            if (cuisineNumber == null)
+            {
+                restaurants = _restaurantManager.GetAllRestaurants();
+            }
+
+            //Search    
+            if (!string.IsNullOrEmpty(searchValue))
+            {
+                restaurants = restaurants.Where(d => d.Name != null && d.Name.ToLower().Contains(searchValue.ToLower())).ToList();
+            }
+            //Sorting
+            if (!(string.IsNullOrEmpty(sortColumn) && string.IsNullOrEmpty(sortColumnDirection)))
+            {
+                restaurants = SortByColumnWithOrder(sortColumn, sortColumnDirection, restaurants);
+            }
             //total number of rows counts   
-            recordsTotal = restaurantData.Count();
+            recordsTotal = restaurants.Count();
             //Paging   
-            var mappedResults = _mapper.Map<IEnumerable<Restaurant>, ICollection<HomePageViewModel>>(restaurantData);
-            var data = mappedResults.Skip(skip).Take(pageSize).ToList();
+            var mappedResults = _mapper.Map<IEnumerable<Restaurant>, ICollection<HomePageViewModel>>(restaurants);
+            ICollection<HomePageViewModel> data = new List<HomePageViewModel>();
+            if (recordsTotal > 0)
+            {
+                data = mappedResults.Skip(skip).Take(pageSize).ToList();
+            }
+
             //Returning Json Data  
+
             return Json(new { draw = draw, recordsFiltered = recordsTotal, recordsTotal = recordsTotal, data = data });
         }
         public JsonResult UpdateSelectedRows(string selectedRestaurants)
@@ -212,5 +207,21 @@ namespace aspnetcore_template.Controllers
                 resultMessage.Message = "Error updating row(s). " + ex.Message;
             }            return Json(resultMessage);
         }
+        private IEnumerable<Restaurant> SortByColumnWithOrder(string sortColumn, string sortColumnDir, IEnumerable<Restaurant> data)
+        {
+            // Sorting   
+            switch (sortColumn)
+            {
+                case "Name":
+                    data = sortColumnDir.Equals("desc", StringComparison.CurrentCultureIgnoreCase) ? data.OrderByDescending(p => p.Name).ToList() : data.OrderBy(p => p.Name).ToList();
+                    break;
+               
+                default:
+                    data = sortColumnDir.Equals("desc", StringComparison.CurrentCultureIgnoreCase) ? data.OrderByDescending(p => p.Name).ToList() : data.OrderBy(p => p.Name).ToList();
+                    break;
+            }
+            return data.AsEnumerable();
+        }
+
     }
 }

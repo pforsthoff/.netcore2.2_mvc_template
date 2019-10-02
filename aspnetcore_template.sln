@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "aspnetcore_template.Data", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "aspnetcore_template.ServiceModel", "aspnetcore_template.ServiceModel\aspnetcore_template.ServiceModel.csproj", "{582662DA-0F1A-4063-9CEA-B1DB654BA8A3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "aspnetcore_template.Tests", "aspnetcore_template.Tests\aspnetcore_template.Tests.csproj", "{F814C400-98E7-4245-B5CC-9108795B71E6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{2E752866-4A29-4B36-B191-C6B9E5DC28A2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,10 +41,10 @@ Global
 		{582662DA-0F1A-4063-9CEA-B1DB654BA8A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{582662DA-0F1A-4063-9CEA-B1DB654BA8A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{582662DA-0F1A-4063-9CEA-B1DB654BA8A3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F814C400-98E7-4245-B5CC-9108795B71E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F814C400-98E7-4245-B5CC-9108795B71E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F814C400-98E7-4245-B5CC-9108795B71E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F814C400-98E7-4245-B5CC-9108795B71E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E752866-4A29-4B36-B191-C6B9E5DC28A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E752866-4A29-4B36-B191-C6B9E5DC28A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E752866-4A29-4B36-B191-C6B9E5DC28A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E752866-4A29-4B36-B191-C6B9E5DC28A2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
