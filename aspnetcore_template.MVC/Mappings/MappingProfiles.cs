@@ -9,7 +9,8 @@ namespace aspnetcore_template.MVC.Mappings
         public MappingProfiles()
         {
             CreateMap<Restaurant, HomePageViewModel>()
-                          .ForMember(dest => dest.Actions, opt => opt.MapFrom(src => RestaurantTransforms.ProcessServerActionsAnchor(src.Id)));
+                          .ForMember(dest => dest.Actions, opt => opt.MapFrom(src => RestaurantTransforms.ProcessServerActionsAnchor(src.Id)))
+                          .ForMember(dest => dest.Cuisine, opt => opt.MapFrom(src => RestaurantTransforms.GetEnumName(src.Cuisine)));
         }
     }
 }

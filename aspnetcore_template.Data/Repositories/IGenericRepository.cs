@@ -46,11 +46,11 @@ namespace aspnetcore_template.Data.Repositories
         ICollection<T> FindAll(Expression<Func<T, bool>> match);
         Task<ICollection<T>> FindAllAsync(Expression<Func<T, bool>> match);
 
-        T Insert(T entity);
+        Task<T> InsertAsync(T entity);
 
         void Update(T updated);
 
-        void Delete(T t);
+        Task DeleteAsync(T t);
 
         int Count();
         Task<int> CountAsync();

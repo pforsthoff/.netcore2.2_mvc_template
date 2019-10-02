@@ -4,17 +4,17 @@
       "aspnetcore_template.Business.Managers.RestaurantManager": {
         "System.Void aspnetcore_template.Business.Managers.RestaurantManager::Delete(System.Int32)": {
           "Lines": {
-            "29": 0,
-            "30": 0,
-            "31": 0,
-            "32": 0,
-            "33": 0,
-            "34": 0,
-            "35": 0
+            "39": 0,
+            "40": 0,
+            "41": 0,
+            "42": 0,
+            "43": 0,
+            "44": 0,
+            "45": 0
           },
           "Branches": [
             {
-              "Line": 31,
+              "Line": 41,
               "Offset": 30,
               "EndOffset": 32,
               "Path": 0,
@@ -22,7 +22,7 @@
               "Hits": 0
             },
             {
-              "Line": 31,
+              "Line": 41,
               "Offset": 30,
               "EndOffset": 52,
               "Path": 1,
@@ -33,42 +33,42 @@
         },
         "System.Collections.Generic.IEnumerable`1<aspnetcore_template.ServiceModel.Entities.Restaurant> aspnetcore_template.Business.Managers.RestaurantManager::GetAllRestaurants()": {
           "Lines": {
-            "42": 0,
-            "43": 0,
-            "44": 0
+            "52": 0,
+            "53": 0,
+            "54": 0
           },
           "Branches": []
         },
         "System.Threading.Tasks.Task`1<aspnetcore_template.ServiceModel.Entities.Restaurant> aspnetcore_template.Business.Managers.RestaurantManager::aspnetcore_template.ServiceModel.Business.IRestaurantManager.DeleteAsync(System.Int32)": {
           "Lines": {
-            "60": 0,
-            "61": 0
+            "70": 0,
+            "71": 0
           },
           "Branches": []
         },
         "System.Collections.Generic.IEnumerable`1<aspnetcore_template.ServiceModel.Entities.Restaurant> aspnetcore_template.Business.Managers.RestaurantManager::GetRestaurantsbyCuisineType(System.Int32)": {
           "Lines": {
-            "64": 0,
-            "65": 0,
-            "67": 0
+            "74": 0,
+            "75": 0,
+            "77": 0
           },
           "Branches": []
         },
         "aspnetcore_template.ServiceModel.Messaging.JsonResultMessage aspnetcore_template.Business.Managers.RestaurantManager::UpdateRestaurant(aspnetcore_template.ServiceModel.Entities.Restaurant)": {
           "Lines": {
-            "70": 0,
-            "71": 0,
-            "73": 0,
-            "74": 0,
-            "75": 0,
-            "76": 0,
-            "77": 0,
-            "78": 0,
-            "79": 0,
             "80": 0,
             "81": 0,
-            "82": 0,
-            "83": 0
+            "83": 0,
+            "84": 0,
+            "85": 0,
+            "86": 0,
+            "87": 0,
+            "88": 0,
+            "89": 0,
+            "90": 0,
+            "91": 0,
+            "92": 0,
+            "93": 0
           },
           "Branches": []
         },
@@ -82,14 +82,22 @@
           "Branches": []
         }
       },
-      "aspnetcore_template.Business.Managers.RestaurantManager/<AddAsync>d__2": {
-        "System.Void aspnetcore_template.Business.Managers.RestaurantManager/<AddAsync>d__2::MoveNext()": {
+      "aspnetcore_template.Business.Managers.RestaurantManager/<AddNewRestaurantAsync>d__2": {
+        "System.Void aspnetcore_template.Business.Managers.RestaurantManager/<AddNewRestaurantAsync>d__2::MoveNext()": {
           "Lines": {
-            "22": 0,
             "23": 0,
             "24": 0,
-            "25": 0,
-            "26": 0
+            "26": 0,
+            "27": 0,
+            "28": 0,
+            "29": 0,
+            "30": 0,
+            "31": 0,
+            "32": 0,
+            "33": 0,
+            "34": 0,
+            "35": 0,
+            "36": 0
           },
           "Branches": []
         }
@@ -97,13 +105,13 @@
       "aspnetcore_template.Business.Managers.RestaurantManager/<GetAllRestaurantsAsync>d__4": {
         "System.Void aspnetcore_template.Business.Managers.RestaurantManager/<GetAllRestaurantsAsync>d__4::MoveNext()": {
           "Lines": {
-            "38": 0,
-            "39": 0,
-            "40": 0
+            "48": 0,
+            "49": 0,
+            "50": 0
           },
           "Branches": [
             {
-              "Line": 39,
+              "Line": 49,
               "Offset": 49,
               "EndOffset": 51,
               "Path": 0,
@@ -111,7 +119,7 @@
               "Hits": 0
             },
             {
-              "Line": 39,
+              "Line": 49,
               "Offset": 49,
               "EndOffset": 115,
               "Path": 1,
@@ -124,13 +132,13 @@
       "aspnetcore_template.Business.Managers.RestaurantManager/<GetRestaurantAsync>d__6": {
         "System.Void aspnetcore_template.Business.Managers.RestaurantManager/<GetRestaurantAsync>d__6::MoveNext()": {
           "Lines": {
-            "47": 0,
-            "48": 0,
-            "49": 0
+            "57": 0,
+            "58": 0,
+            "59": 0
           },
           "Branches": [
             {
-              "Line": 48,
+              "Line": 58,
               "Offset": 60,
               "EndOffset": 62,
               "Path": 0,
@@ -138,7 +146,7 @@
               "Hits": 0
             },
             {
-              "Line": 48,
+              "Line": 58,
               "Offset": 60,
               "EndOffset": 126,
               "Path": 1,
@@ -151,16 +159,16 @@
       "aspnetcore_template.Business.Managers.RestaurantManager/<UpdateAsync>d__7": {
         "System.Void aspnetcore_template.Business.Managers.RestaurantManager/<UpdateAsync>d__7::MoveNext()": {
           "Lines": {
-            "52": 0,
-            "53": 0,
-            "54": 0,
-            "55": 0,
-            "56": 0,
-            "57": 0
+            "62": 0,
+            "63": 0,
+            "64": 0,
+            "65": 0,
+            "66": 0,
+            "67": 0
           },
           "Branches": [
             {
-              "Line": 52,
+              "Line": 62,
               "Offset": 14,
               "EndOffset": 25,
               "Path": 0,
@@ -168,7 +176,7 @@
               "Hits": 0
             },
             {
-              "Line": 53,
+              "Line": 63,
               "Offset": 76,
               "EndOffset": 78,
               "Path": 0,
@@ -176,7 +184,7 @@
               "Hits": 0
             },
             {
-              "Line": 53,
+              "Line": 63,
               "Offset": 76,
               "EndOffset": 145,
               "Path": 1,
@@ -184,7 +192,7 @@
               "Hits": 0
             },
             {
-              "Line": 55,
+              "Line": 65,
               "Offset": 235,
               "EndOffset": 237,
               "Path": 0,
@@ -192,7 +200,7 @@
               "Hits": 0
             },
             {
-              "Line": 52,
+              "Line": 62,
               "Offset": 14,
               "EndOffset": 274,
               "Path": 1,
@@ -200,7 +208,7 @@
               "Hits": 0
             },
             {
-              "Line": 55,
+              "Line": 65,
               "Offset": 235,
               "EndOffset": 303,
               "Path": 1,
@@ -1722,7 +1730,8 @@
             "10": 0,
             "11": 0,
             "12": 0,
-            "13": 0
+            "13": 0,
+            "14": 0
           },
           "Branches": [
             {
@@ -1740,6 +1749,22 @@
               "Path": 1,
               "Ordinal": 1,
               "Hits": 0
+            },
+            {
+              "Line": 11,
+              "Offset": 170,
+              "EndOffset": 172,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 11,
+              "Offset": 170,
+              "EndOffset": 195,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
             }
           ]
         }
@@ -1749,16 +1774,25 @@
       "aspnetcore_template.MVC.Mappings.RestaurantTransforms": {
         "System.String aspnetcore_template.MVC.Mappings.RestaurantTransforms::ProcessServerActionsAnchor(System.Int32)": {
           "Lines": {
-            "8": 0,
             "9": 0,
-            "11": 0,
+            "10": 0,
             "12": 0,
             "13": 0,
             "14": 0,
             "15": 0,
             "16": 0,
-            "18": 0,
-            "19": 0
+            "17": 0,
+            "19": 0,
+            "20": 0
+          },
+          "Branches": []
+        },
+        "System.String aspnetcore_template.MVC.Mappings.RestaurantTransforms::GetEnumName(aspnetcore_template.ServiceModel.Entities.CuisineType)": {
+          "Lines": {
+            "22": 0,
+            "23": 0,
+            "24": 0,
+            "25": 0
           },
           "Branches": []
         }
@@ -1774,53 +1808,223 @@
           },
           "Branches": []
         },
-        "Microsoft.AspNetCore.Mvc.JsonResult aspnetcore_template.Controllers.HomeController::UpdateSelectedRows(System.String)": {
+        "Microsoft.AspNetCore.Mvc.JsonResult aspnetcore_template.Controllers.HomeController::AjaxRestaurants(System.String)": {
           "Lines": {
             "104": 0,
             "105": 0,
             "106": 0,
             "107": 0,
+            "108": 0,
             "109": 0,
-            "110": 0,
-            "111": 0,
             "112": 0,
-            "113": 0,
-            "114": 0,
             "115": 0,
-            "117": 0,
             "118": 0,
-            "119": 0,
-            "120": 0,
             "121": 0,
-            "122": 0,
-            "123": 0,
             "124": 0,
-            "125": 0,
-            "126": 0,
             "127": 0,
             "129": 0,
-            "130": 0,
             "131": 0,
-            "132": 0,
             "133": 0,
-            "134": 0,
-            "135": 0,
             "136": 0,
             "137": 0,
+            "138": 0,
             "139": 0,
-            "140": 0,
-            "141": 0,
             "142": 0,
             "143": 0,
             "144": 0,
             "145": 0,
-            "146": 0,
             "147": 0,
-            "148": 0
+            "148": 0,
+            "149": 0,
+            "150": 0,
+            "152": 0,
+            "154": 0,
+            "155": 0,
+            "156": 0,
+            "157": 0,
+            "158": 0,
+            "159": 0,
+            "163": 0,
+            "164": 0
           },
           "Branches": [
             {
-              "Line": 114,
+              "Line": 105,
+              "Offset": 22,
+              "EndOffset": 24,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 105,
+              "Offset": 22,
+              "EndOffset": 33,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 127,
+              "Offset": 279,
+              "EndOffset": 281,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 127,
+              "Offset": 279,
+              "EndOffset": 284,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 129,
+              "Offset": 293,
+              "EndOffset": 295,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 129,
+              "Offset": 293,
+              "EndOffset": 298,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            },
+            {
+              "Line": 136,
+              "Offset": 336,
+              "EndOffset": 338,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 0
+            },
+            {
+              "Line": 136,
+              "Offset": 336,
+              "EndOffset": 353,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 0
+            },
+            {
+              "Line": 142,
+              "Offset": 371,
+              "EndOffset": 373,
+              "Path": 0,
+              "Ordinal": 8,
+              "Hits": 0
+            },
+            {
+              "Line": 142,
+              "Offset": 371,
+              "EndOffset": 401,
+              "Path": 1,
+              "Ordinal": 9,
+              "Hits": 0
+            },
+            {
+              "Line": 147,
+              "Offset": 408,
+              "EndOffset": 410,
+              "Path": 0,
+              "Ordinal": 10,
+              "Hits": 0
+            },
+            {
+              "Line": 147,
+              "Offset": 408,
+              "EndOffset": 422,
+              "Path": 1,
+              "Ordinal": 11,
+              "Hits": 0
+            },
+            {
+              "Line": 147,
+              "Offset": 427,
+              "EndOffset": 429,
+              "Path": 0,
+              "Ordinal": 12,
+              "Hits": 0
+            },
+            {
+              "Line": 147,
+              "Offset": 427,
+              "EndOffset": 445,
+              "Path": 1,
+              "Ordinal": 13,
+              "Hits": 0
+            },
+            {
+              "Line": 156,
+              "Offset": 485,
+              "EndOffset": 487,
+              "Path": 0,
+              "Ordinal": 14,
+              "Hits": 0
+            },
+            {
+              "Line": 156,
+              "Offset": 485,
+              "EndOffset": 512,
+              "Path": 1,
+              "Ordinal": 15,
+              "Hits": 0
+            }
+          ]
+        },
+        "Microsoft.AspNetCore.Mvc.JsonResult aspnetcore_template.Controllers.HomeController::UpdateSelectedRows(System.String)": {
+          "Lines": {
+            "166": 0,
+            "167": 0,
+            "168": 0,
+            "169": 0,
+            "171": 0,
+            "172": 0,
+            "173": 0,
+            "174": 0,
+            "175": 0,
+            "176": 0,
+            "177": 0,
+            "179": 0,
+            "180": 0,
+            "181": 0,
+            "182": 0,
+            "183": 0,
+            "184": 0,
+            "185": 0,
+            "186": 0,
+            "187": 0,
+            "188": 0,
+            "189": 0,
+            "191": 0,
+            "192": 0,
+            "193": 0,
+            "194": 0,
+            "195": 0,
+            "196": 0,
+            "197": 0,
+            "198": 0,
+            "199": 0,
+            "201": 0,
+            "202": 0,
+            "203": 0,
+            "204": 0,
+            "205": 0,
+            "206": 0,
+            "207": 0,
+            "208": 0,
+            "209": 0,
+            "210": 0
+          },
+          "Branches": [
+            {
+              "Line": 176,
               "Offset": 129,
               "EndOffset": 53,
               "Path": 1,
@@ -1828,7 +2032,7 @@
               "Hits": 0
             },
             {
-              "Line": 124,
+              "Line": 186,
               "Offset": 105,
               "EndOffset": 107,
               "Path": 0,
@@ -1836,7 +2040,7 @@
               "Hits": 0
             },
             {
-              "Line": 124,
+              "Line": 186,
               "Offset": 105,
               "EndOffset": 115,
               "Path": 1,
@@ -1844,7 +2048,7 @@
               "Hits": 0
             },
             {
-              "Line": 114,
+              "Line": 176,
               "Offset": 129,
               "EndOffset": 131,
               "Path": 0,
@@ -1852,7 +2056,7 @@
               "Hits": 0
             },
             {
-              "Line": 133,
+              "Line": 195,
               "Offset": 154,
               "EndOffset": 156,
               "Path": 0,
@@ -1860,7 +2064,7 @@
               "Hits": 0
             },
             {
-              "Line": 133,
+              "Line": 195,
               "Offset": 154,
               "EndOffset": 217,
               "Path": 1,
@@ -1871,18 +2075,18 @@
         },
         "System.Collections.Generic.IEnumerable`1<aspnetcore_template.ServiceModel.Entities.Restaurant> aspnetcore_template.Controllers.HomeController::SortByColumnWithOrder(System.String,System.String,System.Collections.Generic.IEnumerable`1<aspnetcore_template.ServiceModel.Entities.Restaurant>)": {
           "Lines": {
-            "150": 0,
-            "152": 0,
-            "155": 0,
-            "156": 0,
-            "159": 0,
-            "160": 0,
-            "162": 0,
-            "163": 0
+            "212": 0,
+            "214": 0,
+            "217": 0,
+            "218": 0,
+            "221": 0,
+            "222": 0,
+            "224": 0,
+            "225": 0
           },
           "Branches": [
             {
-              "Line": 152,
+              "Line": 214,
               "Offset": 6,
               "EndOffset": 8,
               "Path": 0,
@@ -1890,7 +2094,7 @@
               "Hits": 0
             },
             {
-              "Line": 152,
+              "Line": 214,
               "Offset": 19,
               "EndOffset": 23,
               "Path": 1,
@@ -1898,7 +2102,7 @@
               "Hits": 0
             },
             {
-              "Line": 155,
+              "Line": 217,
               "Offset": 35,
               "EndOffset": 37,
               "Path": 0,
@@ -1906,7 +2110,7 @@
               "Hits": 0
             },
             {
-              "Line": 155,
+              "Line": 217,
               "Offset": 44,
               "EndOffset": 46,
               "Path": 0,
@@ -1914,7 +2118,7 @@
               "Hits": 0
             },
             {
-              "Line": 155,
+              "Line": 217,
               "Offset": 44,
               "EndOffset": 69,
               "Path": 1,
@@ -1922,7 +2126,7 @@
               "Hits": 0
             },
             {
-              "Line": 155,
+              "Line": 217,
               "Offset": 35,
               "EndOffset": 81,
               "Path": 1,
@@ -1930,7 +2134,7 @@
               "Hits": 0
             },
             {
-              "Line": 155,
+              "Line": 217,
               "Offset": 88,
               "EndOffset": 90,
               "Path": 0,
@@ -1938,7 +2142,7 @@
               "Hits": 0
             },
             {
-              "Line": 155,
+              "Line": 217,
               "Offset": 88,
               "EndOffset": 113,
               "Path": 1,
@@ -1946,7 +2150,7 @@
               "Hits": 0
             },
             {
-              "Line": 152,
+              "Line": 214,
               "Offset": 6,
               "EndOffset": 127,
               "Path": 1,
@@ -1954,7 +2158,7 @@
               "Hits": 0
             },
             {
-              "Line": 152,
+              "Line": 214,
               "Offset": 19,
               "EndOffset": 127,
               "Path": 0,
@@ -1962,7 +2166,7 @@
               "Hits": 0
             },
             {
-              "Line": 159,
+              "Line": 221,
               "Offset": 139,
               "EndOffset": 141,
               "Path": 0,
@@ -1970,7 +2174,7 @@
               "Hits": 0
             },
             {
-              "Line": 159,
+              "Line": 221,
               "Offset": 148,
               "EndOffset": 150,
               "Path": 0,
@@ -1978,7 +2182,7 @@
               "Hits": 0
             },
             {
-              "Line": 159,
+              "Line": 221,
               "Offset": 148,
               "EndOffset": 173,
               "Path": 1,
@@ -1986,7 +2190,7 @@
               "Hits": 0
             },
             {
-              "Line": 159,
+              "Line": 221,
               "Offset": 139,
               "EndOffset": 185,
               "Path": 1,
@@ -1994,7 +2198,7 @@
               "Hits": 0
             },
             {
-              "Line": 159,
+              "Line": 221,
               "Offset": 192,
               "EndOffset": 194,
               "Path": 0,
@@ -2002,11 +2206,67 @@
               "Hits": 0
             },
             {
-              "Line": 159,
+              "Line": 221,
               "Offset": 192,
               "EndOffset": 217,
               "Path": 1,
               "Ordinal": 15,
+              "Hits": 0
+            }
+          ]
+        },
+        "Microsoft.AspNetCore.Mvc.JsonResult aspnetcore_template.Controllers.HomeController::editDropdownUrl(System.String)": {
+          "Lines": {
+            "236": 0,
+            "237": 0,
+            "239": 0,
+            "241": 0,
+            "242": 0,
+            "243": 0,
+            "244": 0,
+            "245": 0,
+            "246": 0,
+            "247": 0,
+            "249": 0,
+            "251": 0,
+            "252": 0,
+            "253": 0,
+            "254": 0,
+            "255": 0,
+            "257": 0,
+            "258": 0
+          },
+          "Branches": [
+            {
+              "Line": 241,
+              "Offset": 34,
+              "EndOffset": 36,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 241,
+              "Offset": 34,
+              "EndOffset": 59,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 243,
+              "Offset": 72,
+              "EndOffset": 74,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 243,
+              "Offset": 72,
+              "EndOffset": 97,
+              "Path": 1,
+              "Ordinal": 3,
               "Hits": 0
             }
           ]
@@ -2314,6 +2574,84 @@
               "EndOffset": 395,
               "Path": 1,
               "Ordinal": 7,
+              "Hits": 0
+            }
+          ]
+        }
+      },
+      "aspnetcore_template.Controllers.HomeController/<AddNewRestaurant>d__15": {
+        "System.Void aspnetcore_template.Controllers.HomeController/<AddNewRestaurant>d__15::MoveNext()": {
+          "Lines": {
+            "261": 0,
+            "262": 0,
+            "263": 0,
+            "264": 0,
+            "266": 0,
+            "267": 0,
+            "268": 0,
+            "269": 0,
+            "270": 0,
+            "271": 0,
+            "272": 0,
+            "273": 0,
+            "274": 0,
+            "276": 0,
+            "277": 0
+          },
+          "Branches": [
+            {
+              "Line": 264,
+              "Offset": 58,
+              "EndOffset": 64,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 268,
+              "Offset": 117,
+              "EndOffset": 119,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 264,
+              "Offset": 58,
+              "EndOffset": 158,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 268,
+              "Offset": 117,
+              "EndOffset": 186,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            }
+          ]
+        }
+      },
+      "aspnetcore_template.Controllers.HomeController/<>c__DisplayClass11_0": {
+        "System.Boolean aspnetcore_template.Controllers.HomeController/<>c__DisplayClass11_0::<AjaxRestaurants>b__0(aspnetcore_template.ServiceModel.Entities.Restaurant)": {
+          "Lines": {},
+          "Branches": [
+            {
+              "Line": 144,
+              "Offset": 6,
+              "EndOffset": 8,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 144,
+              "Offset": 6,
+              "EndOffset": 37,
+              "Path": 1,
+              "Ordinal": 1,
               "Hits": 0
             }
           ]
@@ -3073,7 +3411,10 @@
             "28": 0,
             "29": 0,
             "30": 0,
-            "281": 0
+            "69": 0,
+            "286": 0,
+            "374": 0,
+            "433": 0
           },
           "Branches": [
             {
@@ -3482,7 +3823,7 @@
         "System.Void AspNetCore.Views_Shared__Layout/<<ExecuteAsync>b__32_0>d::MoveNext()": {
           "Lines": {
             "6": 0,
-            "41": 0
+            "38": 0
           },
           "Branches": [
             {
@@ -4167,24 +4508,24 @@
             },
             {
               "Line": 6,
-              "Offset": 5362,
-              "EndOffset": 5364,
+              "Offset": 5361,
+              "EndOffset": 5363,
               "Path": 0,
               "Ordinal": 107,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 5362,
-              "EndOffset": 5387,
+              "Offset": 5361,
+              "EndOffset": 5386,
               "Path": 1,
               "Ordinal": 108,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 5532,
-              "EndOffset": 5534,
+              "Offset": 5531,
+              "EndOffset": 5533,
               "Path": 0,
               "Ordinal": 109,
               "Hits": 0
@@ -4192,31 +4533,31 @@
             {
               "Line": 6,
               "Offset": 8,
-              "EndOffset": 5575,
+              "EndOffset": 5574,
               "Path": 17,
               "Ordinal": 17,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 5532,
-              "EndOffset": 5604,
+              "Offset": 5531,
+              "EndOffset": 5603,
               "Path": 1,
               "Ordinal": 110,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 5640,
-              "EndOffset": 5642,
+              "Offset": 5639,
+              "EndOffset": 5641,
               "Path": 0,
               "Ordinal": 111,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 5673,
-              "EndOffset": 5675,
+              "Offset": 5672,
+              "EndOffset": 5674,
               "Path": 0,
               "Ordinal": 113,
               "Hits": 0
@@ -4224,47 +4565,47 @@
             {
               "Line": 6,
               "Offset": 8,
-              "EndOffset": 5716,
+              "EndOffset": 5715,
               "Path": 18,
               "Ordinal": 18,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 5673,
-              "EndOffset": 5745,
+              "Offset": 5672,
+              "EndOffset": 5744,
               "Path": 1,
               "Ordinal": 114,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 5640,
-              "EndOffset": 5754,
+              "Offset": 5639,
+              "EndOffset": 5753,
               "Path": 1,
               "Ordinal": 112,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 5923,
-              "EndOffset": 5925,
+              "Offset": 5922,
+              "EndOffset": 5924,
               "Path": 0,
               "Ordinal": 115,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 5923,
-              "EndOffset": 5948,
+              "Offset": 5922,
+              "EndOffset": 5947,
               "Path": 1,
               "Ordinal": 116,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 6093,
-              "EndOffset": 6095,
+              "Offset": 6092,
+              "EndOffset": 6094,
               "Path": 0,
               "Ordinal": 117,
               "Hits": 0
@@ -4272,31 +4613,31 @@
             {
               "Line": 6,
               "Offset": 8,
-              "EndOffset": 6136,
+              "EndOffset": 6135,
               "Path": 19,
               "Ordinal": 19,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 6093,
-              "EndOffset": 6165,
+              "Offset": 6092,
+              "EndOffset": 6164,
               "Path": 1,
               "Ordinal": 118,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 6201,
-              "EndOffset": 6203,
+              "Offset": 6200,
+              "EndOffset": 6202,
               "Path": 0,
               "Ordinal": 119,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 6234,
-              "EndOffset": 6236,
+              "Offset": 6233,
+              "EndOffset": 6235,
               "Path": 0,
               "Ordinal": 121,
               "Hits": 0
@@ -4304,47 +4645,47 @@
             {
               "Line": 6,
               "Offset": 8,
-              "EndOffset": 6277,
+              "EndOffset": 6276,
               "Path": 20,
               "Ordinal": 20,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 6234,
-              "EndOffset": 6306,
+              "Offset": 6233,
+              "EndOffset": 6305,
               "Path": 1,
               "Ordinal": 122,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 6201,
-              "EndOffset": 6315,
+              "Offset": 6200,
+              "EndOffset": 6314,
               "Path": 1,
               "Ordinal": 120,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 6484,
-              "EndOffset": 6486,
+              "Offset": 6483,
+              "EndOffset": 6485,
               "Path": 0,
               "Ordinal": 123,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 6484,
-              "EndOffset": 6509,
+              "Offset": 6483,
+              "EndOffset": 6508,
               "Path": 1,
               "Ordinal": 124,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 6654,
-              "EndOffset": 6656,
+              "Offset": 6653,
+              "EndOffset": 6655,
               "Path": 0,
               "Ordinal": 125,
               "Hits": 0
@@ -4352,31 +4693,31 @@
             {
               "Line": 6,
               "Offset": 8,
-              "EndOffset": 6697,
+              "EndOffset": 6696,
               "Path": 21,
               "Ordinal": 21,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 6654,
-              "EndOffset": 6726,
+              "Offset": 6653,
+              "EndOffset": 6725,
               "Path": 1,
               "Ordinal": 126,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 6762,
-              "EndOffset": 6764,
+              "Offset": 6761,
+              "EndOffset": 6763,
               "Path": 0,
               "Ordinal": 127,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 6795,
-              "EndOffset": 6797,
+              "Offset": 6794,
+              "EndOffset": 6796,
               "Path": 0,
               "Ordinal": 129,
               "Hits": 0
@@ -4384,47 +4725,47 @@
             {
               "Line": 6,
               "Offset": 8,
-              "EndOffset": 6838,
+              "EndOffset": 6837,
               "Path": 22,
               "Ordinal": 22,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 6795,
-              "EndOffset": 6867,
+              "Offset": 6794,
+              "EndOffset": 6866,
               "Path": 1,
               "Ordinal": 130,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 6762,
-              "EndOffset": 6876,
+              "Offset": 6761,
+              "EndOffset": 6875,
               "Path": 1,
               "Ordinal": 128,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 7045,
-              "EndOffset": 7047,
+              "Offset": 7044,
+              "EndOffset": 7046,
               "Path": 0,
               "Ordinal": 131,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 7045,
-              "EndOffset": 7070,
+              "Offset": 7044,
+              "EndOffset": 7069,
               "Path": 1,
               "Ordinal": 132,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 7215,
-              "EndOffset": 7217,
+              "Offset": 7214,
+              "EndOffset": 7216,
               "Path": 0,
               "Ordinal": 133,
               "Hits": 0
@@ -4432,31 +4773,31 @@
             {
               "Line": 6,
               "Offset": 8,
-              "EndOffset": 7258,
+              "EndOffset": 7257,
               "Path": 23,
               "Ordinal": 23,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 7215,
-              "EndOffset": 7287,
+              "Offset": 7214,
+              "EndOffset": 7286,
               "Path": 1,
               "Ordinal": 134,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 7323,
-              "EndOffset": 7325,
+              "Offset": 7322,
+              "EndOffset": 7324,
               "Path": 0,
               "Ordinal": 135,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 7356,
-              "EndOffset": 7358,
+              "Offset": 7355,
+              "EndOffset": 7357,
               "Path": 0,
               "Ordinal": 137,
               "Hits": 0
@@ -4464,47 +4805,47 @@
             {
               "Line": 6,
               "Offset": 8,
-              "EndOffset": 7399,
+              "EndOffset": 7398,
               "Path": 24,
               "Ordinal": 24,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 7356,
-              "EndOffset": 7428,
+              "Offset": 7355,
+              "EndOffset": 7427,
               "Path": 1,
               "Ordinal": 138,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 7323,
-              "EndOffset": 7437,
+              "Offset": 7322,
+              "EndOffset": 7436,
               "Path": 1,
               "Ordinal": 136,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 7654,
-              "EndOffset": 7656,
+              "Offset": 7653,
+              "EndOffset": 7655,
               "Path": 0,
               "Ordinal": 139,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 7654,
-              "EndOffset": 7679,
+              "Offset": 7653,
+              "EndOffset": 7678,
               "Path": 1,
               "Ordinal": 140,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 7824,
-              "EndOffset": 7826,
+              "Offset": 7823,
+              "EndOffset": 7825,
               "Path": 0,
               "Ordinal": 141,
               "Hits": 0
@@ -4512,31 +4853,31 @@
             {
               "Line": 6,
               "Offset": 8,
-              "EndOffset": 7867,
+              "EndOffset": 7866,
               "Path": 25,
               "Ordinal": 25,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 7824,
-              "EndOffset": 7896,
+              "Offset": 7823,
+              "EndOffset": 7895,
               "Path": 1,
               "Ordinal": 142,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 7932,
-              "EndOffset": 7934,
+              "Offset": 7931,
+              "EndOffset": 7933,
               "Path": 0,
               "Ordinal": 143,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 7965,
-              "EndOffset": 7967,
+              "Offset": 7964,
+              "EndOffset": 7966,
               "Path": 0,
               "Ordinal": 145,
               "Hits": 0
@@ -4544,47 +4885,47 @@
             {
               "Line": 6,
               "Offset": 8,
-              "EndOffset": 8008,
+              "EndOffset": 8007,
               "Path": 26,
               "Ordinal": 26,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 7965,
-              "EndOffset": 8037,
+              "Offset": 7964,
+              "EndOffset": 8036,
               "Path": 1,
               "Ordinal": 146,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 7932,
-              "EndOffset": 8046,
+              "Offset": 7931,
+              "EndOffset": 8045,
               "Path": 1,
               "Ordinal": 144,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 8263,
-              "EndOffset": 8265,
+              "Offset": 8262,
+              "EndOffset": 8264,
               "Path": 0,
               "Ordinal": 147,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 8263,
-              "EndOffset": 8288,
+              "Offset": 8262,
+              "EndOffset": 8287,
               "Path": 1,
               "Ordinal": 148,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 8433,
-              "EndOffset": 8435,
+              "Offset": 8432,
+              "EndOffset": 8434,
               "Path": 0,
               "Ordinal": 149,
               "Hits": 0
@@ -4592,31 +4933,31 @@
             {
               "Line": 6,
               "Offset": 8,
-              "EndOffset": 8476,
+              "EndOffset": 8475,
               "Path": 27,
               "Ordinal": 27,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 8433,
-              "EndOffset": 8505,
+              "Offset": 8432,
+              "EndOffset": 8504,
               "Path": 1,
               "Ordinal": 150,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 8541,
-              "EndOffset": 8543,
+              "Offset": 8540,
+              "EndOffset": 8542,
               "Path": 0,
               "Ordinal": 151,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 8574,
-              "EndOffset": 8576,
+              "Offset": 8573,
+              "EndOffset": 8575,
               "Path": 0,
               "Ordinal": 153,
               "Hits": 0
@@ -4624,47 +4965,47 @@
             {
               "Line": 6,
               "Offset": 8,
-              "EndOffset": 8617,
+              "EndOffset": 8616,
               "Path": 28,
               "Ordinal": 28,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 8574,
-              "EndOffset": 8646,
+              "Offset": 8573,
+              "EndOffset": 8645,
               "Path": 1,
               "Ordinal": 154,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 8541,
-              "EndOffset": 8655,
+              "Offset": 8540,
+              "EndOffset": 8654,
               "Path": 1,
               "Ordinal": 152,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 8872,
-              "EndOffset": 8874,
+              "Offset": 8871,
+              "EndOffset": 8873,
               "Path": 0,
               "Ordinal": 155,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 8872,
-              "EndOffset": 8897,
+              "Offset": 8871,
+              "EndOffset": 8896,
               "Path": 1,
               "Ordinal": 156,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 9042,
-              "EndOffset": 9044,
+              "Offset": 9041,
+              "EndOffset": 9043,
               "Path": 0,
               "Ordinal": 157,
               "Hits": 0
@@ -4672,31 +5013,31 @@
             {
               "Line": 6,
               "Offset": 8,
-              "EndOffset": 9085,
+              "EndOffset": 9084,
               "Path": 29,
               "Ordinal": 29,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 9042,
-              "EndOffset": 9114,
+              "Offset": 9041,
+              "EndOffset": 9113,
               "Path": 1,
               "Ordinal": 158,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 9150,
-              "EndOffset": 9152,
+              "Offset": 9149,
+              "EndOffset": 9151,
               "Path": 0,
               "Ordinal": 159,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 9183,
-              "EndOffset": 9185,
+              "Offset": 9182,
+              "EndOffset": 9184,
               "Path": 0,
               "Ordinal": 161,
               "Hits": 0
@@ -4704,47 +5045,47 @@
             {
               "Line": 6,
               "Offset": 8,
-              "EndOffset": 9226,
+              "EndOffset": 9225,
               "Path": 30,
               "Ordinal": 30,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 9183,
-              "EndOffset": 9255,
+              "Offset": 9182,
+              "EndOffset": 9254,
               "Path": 1,
               "Ordinal": 162,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 9150,
-              "EndOffset": 9264,
+              "Offset": 9149,
+              "EndOffset": 9263,
               "Path": 1,
               "Ordinal": 160,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 9433,
-              "EndOffset": 9435,
+              "Offset": 9432,
+              "EndOffset": 9434,
               "Path": 0,
               "Ordinal": 163,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 9433,
-              "EndOffset": 9458,
+              "Offset": 9432,
+              "EndOffset": 9457,
               "Path": 1,
               "Ordinal": 164,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 9603,
-              "EndOffset": 9605,
+              "Offset": 9602,
+              "EndOffset": 9604,
               "Path": 0,
               "Ordinal": 165,
               "Hits": 0
@@ -4752,31 +5093,31 @@
             {
               "Line": 6,
               "Offset": 8,
-              "EndOffset": 9646,
+              "EndOffset": 9645,
               "Path": 31,
               "Ordinal": 31,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 9603,
-              "EndOffset": 9675,
+              "Offset": 9602,
+              "EndOffset": 9674,
               "Path": 1,
               "Ordinal": 166,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 9711,
-              "EndOffset": 9713,
+              "Offset": 9710,
+              "EndOffset": 9712,
               "Path": 0,
               "Ordinal": 167,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 9744,
-              "EndOffset": 9746,
+              "Offset": 9743,
+              "EndOffset": 9745,
               "Path": 0,
               "Ordinal": 169,
               "Hits": 0
@@ -4784,47 +5125,47 @@
             {
               "Line": 6,
               "Offset": 8,
-              "EndOffset": 9787,
+              "EndOffset": 9786,
               "Path": 32,
               "Ordinal": 32,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 9744,
-              "EndOffset": 9816,
+              "Offset": 9743,
+              "EndOffset": 9815,
               "Path": 1,
               "Ordinal": 170,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 9711,
-              "EndOffset": 9825,
+              "Offset": 9710,
+              "EndOffset": 9824,
               "Path": 1,
               "Ordinal": 168,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 9994,
-              "EndOffset": 9996,
+              "Offset": 9993,
+              "EndOffset": 9995,
               "Path": 0,
               "Ordinal": 171,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 9994,
-              "EndOffset": 10019,
+              "Offset": 9993,
+              "EndOffset": 10018,
               "Path": 1,
               "Ordinal": 172,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 10164,
-              "EndOffset": 10166,
+              "Offset": 10163,
+              "EndOffset": 10165,
               "Path": 0,
               "Ordinal": 173,
               "Hits": 0
@@ -4832,31 +5173,31 @@
             {
               "Line": 6,
               "Offset": 8,
-              "EndOffset": 10207,
+              "EndOffset": 10206,
               "Path": 33,
               "Ordinal": 33,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 10164,
-              "EndOffset": 10236,
+              "Offset": 10163,
+              "EndOffset": 10235,
               "Path": 1,
               "Ordinal": 174,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 10272,
-              "EndOffset": 10274,
+              "Offset": 10271,
+              "EndOffset": 10273,
               "Path": 0,
               "Ordinal": 175,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 10305,
-              "EndOffset": 10307,
+              "Offset": 10304,
+              "EndOffset": 10306,
               "Path": 0,
               "Ordinal": 177,
               "Hits": 0
@@ -4864,47 +5205,47 @@
             {
               "Line": 6,
               "Offset": 8,
-              "EndOffset": 10348,
+              "EndOffset": 10347,
               "Path": 34,
               "Ordinal": 34,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 10305,
-              "EndOffset": 10377,
+              "Offset": 10304,
+              "EndOffset": 10376,
               "Path": 1,
               "Ordinal": 178,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 10272,
-              "EndOffset": 10386,
+              "Offset": 10271,
+              "EndOffset": 10385,
               "Path": 1,
               "Ordinal": 176,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 10555,
-              "EndOffset": 10557,
+              "Offset": 10554,
+              "EndOffset": 10556,
               "Path": 0,
               "Ordinal": 179,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 10555,
-              "EndOffset": 10580,
+              "Offset": 10554,
+              "EndOffset": 10579,
               "Path": 1,
               "Ordinal": 180,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 10725,
-              "EndOffset": 10727,
+              "Offset": 10724,
+              "EndOffset": 10726,
               "Path": 0,
               "Ordinal": 181,
               "Hits": 0
@@ -4912,31 +5253,31 @@
             {
               "Line": 6,
               "Offset": 8,
-              "EndOffset": 10768,
+              "EndOffset": 10767,
               "Path": 35,
               "Ordinal": 35,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 10725,
-              "EndOffset": 10797,
+              "Offset": 10724,
+              "EndOffset": 10796,
               "Path": 1,
               "Ordinal": 182,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 10833,
-              "EndOffset": 10835,
+              "Offset": 10832,
+              "EndOffset": 10834,
               "Path": 0,
               "Ordinal": 183,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 10866,
-              "EndOffset": 10868,
+              "Offset": 10865,
+              "EndOffset": 10867,
               "Path": 0,
               "Ordinal": 185,
               "Hits": 0
@@ -4944,47 +5285,47 @@
             {
               "Line": 6,
               "Offset": 8,
-              "EndOffset": 10909,
+              "EndOffset": 10908,
               "Path": 36,
               "Ordinal": 36,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 10866,
-              "EndOffset": 10938,
+              "Offset": 10865,
+              "EndOffset": 10937,
               "Path": 1,
               "Ordinal": 186,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 10833,
-              "EndOffset": 10947,
+              "Offset": 10832,
+              "EndOffset": 10946,
               "Path": 1,
               "Ordinal": 184,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 11116,
-              "EndOffset": 11118,
+              "Offset": 11115,
+              "EndOffset": 11117,
               "Path": 0,
               "Ordinal": 187,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 11116,
-              "EndOffset": 11141,
+              "Offset": 11115,
+              "EndOffset": 11140,
               "Path": 1,
               "Ordinal": 188,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 11286,
-              "EndOffset": 11288,
+              "Offset": 11285,
+              "EndOffset": 11287,
               "Path": 0,
               "Ordinal": 189,
               "Hits": 0
@@ -4992,31 +5333,31 @@
             {
               "Line": 6,
               "Offset": 8,
-              "EndOffset": 11329,
+              "EndOffset": 11328,
               "Path": 37,
               "Ordinal": 37,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 11286,
-              "EndOffset": 11358,
+              "Offset": 11285,
+              "EndOffset": 11357,
               "Path": 1,
               "Ordinal": 190,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 11394,
-              "EndOffset": 11396,
+              "Offset": 11393,
+              "EndOffset": 11395,
               "Path": 0,
               "Ordinal": 191,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 11427,
-              "EndOffset": 11429,
+              "Offset": 11426,
+              "EndOffset": 11428,
               "Path": 0,
               "Ordinal": 193,
               "Hits": 0
@@ -5024,23 +5365,23 @@
             {
               "Line": 6,
               "Offset": 8,
-              "EndOffset": 11470,
+              "EndOffset": 11469,
               "Path": 38,
               "Ordinal": 38,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 11427,
-              "EndOffset": 11499,
+              "Offset": 11426,
+              "EndOffset": 11498,
               "Path": 1,
               "Ordinal": 194,
               "Hits": 0
             },
             {
               "Line": 6,
-              "Offset": 11394,
-              "EndOffset": 11508,
+              "Offset": 11393,
+              "EndOffset": 11507,
               "Path": 1,
               "Ordinal": 192,
               "Hits": 0
@@ -5051,24 +5392,24 @@
       "AspNetCore.Views_Shared__Layout/<<ExecuteAsync>b__32_1>d": {
         "System.Void AspNetCore.Views_Shared__Layout/<<ExecuteAsync>b__32_1>d::MoveNext()": {
           "Lines": {
+            "47": 0,
+            "49": 0,
             "50": 0,
+            "51": 0,
             "52": 0,
             "53": 0,
-            "54": 0,
-            "55": 0,
-            "56": 0,
-            "61": 0,
+            "58": 0,
+            "89": 0,
+            "91": 0,
             "92": 0,
-            "94": 0,
+            "93": 0,
             "95": 0,
-            "96": 0,
-            "98": 0,
-            "103": 0,
-            "109": 0
+            "100": 0,
+            "106": 0
           },
           "Branches": [
             {
-              "Line": 50,
+              "Line": 47,
               "Offset": 8,
               "EndOffset": 39,
               "Path": 0,
@@ -5076,7 +5417,7 @@
               "Hits": 0
             },
             {
-              "Line": 50,
+              "Line": 47,
               "Offset": 8,
               "EndOffset": 89,
               "Path": 1,
@@ -5084,7 +5425,7 @@
               "Hits": 0
             },
             {
-              "Line": 50,
+              "Line": 47,
               "Offset": 91,
               "EndOffset": 97,
               "Path": 0,
@@ -5092,7 +5433,7 @@
               "Hits": 0
             },
             {
-              "Line": 52,
+              "Line": 49,
               "Offset": 152,
               "EndOffset": 154,
               "Path": 0,
@@ -5100,7 +5441,7 @@
               "Hits": 0
             },
             {
-              "Line": 50,
+              "Line": 47,
               "Offset": 91,
               "EndOffset": 193,
               "Path": 1,
@@ -5108,7 +5449,7 @@
               "Hits": 0
             },
             {
-              "Line": 52,
+              "Line": 49,
               "Offset": 152,
               "EndOffset": 221,
               "Path": 1,
@@ -5116,7 +5457,7 @@
               "Hits": 0
             },
             {
-              "Line": 61,
+              "Line": 58,
               "Offset": 431,
               "EndOffset": 433,
               "Path": 0,
@@ -5124,7 +5465,7 @@
               "Hits": 0
             },
             {
-              "Line": 50,
+              "Line": 47,
               "Offset": 8,
               "EndOffset": 472,
               "Path": 2,
@@ -5132,7 +5473,7 @@
               "Hits": 0
             },
             {
-              "Line": 61,
+              "Line": 58,
               "Offset": 431,
               "EndOffset": 500,
               "Path": 1,
@@ -5140,7 +5481,7 @@
               "Hits": 0
             },
             {
-              "Line": 109,
+              "Line": 106,
               "Offset": 1064,
               "EndOffset": 1066,
               "Path": 0,
@@ -5148,7 +5489,7 @@
               "Hits": 0
             },
             {
-              "Line": 50,
+              "Line": 47,
               "Offset": 8,
               "EndOffset": 1106,
               "Path": 3,
@@ -5156,7 +5497,7 @@
               "Hits": 0
             },
             {
-              "Line": 109,
+              "Line": 106,
               "Offset": 1064,
               "EndOffset": 1135,
               "Path": 1,
@@ -5207,13 +5548,13 @@
       "aspnetcore_template.ServiceModel.Messaging.JsonResultMessage": {
         "System.Boolean aspnetcore_template.ServiceModel.Messaging.JsonResultMessage::get_Success()": {
           "Lines": {
-            "9": 0
+            "9": 1
           },
           "Branches": []
         },
         "System.String aspnetcore_template.ServiceModel.Messaging.JsonResultMessage::get_Message()": {
           "Lines": {
-            "10": 0
+            "10": 1
           },
           "Branches": []
         }

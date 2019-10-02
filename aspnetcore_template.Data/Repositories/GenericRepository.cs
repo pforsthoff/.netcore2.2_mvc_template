@@ -27,7 +27,7 @@ namespace aspnetcore_template.Data.Repositories
             return await _context.Set<T>().CountAsync();
         }
 
-        public void Delete(T t)
+        public Task DeleteAsync(T t)
         {
             if (_context.Set<T>() == null)
             {
@@ -35,6 +35,7 @@ namespace aspnetcore_template.Data.Repositories
                 throw new ArgumentNullException(nameof(t));
             }
             _context.Set<T>().Remove(t);
+            return _context.SaveChangesAsync();
         }
 
         public bool Exist(Expression<Func<T, bool>> predicate)
@@ -204,9 +205,10 @@ namespace aspnetcore_template.Data.Repositories
 
         }
 
-        public T Insert(T entity)
+        public async Task<T> InsertAsync(T entity)
         {
-            _context.Set<T>().Add(entity);
+            await _context.Set<T>().AddAsync(entity);
+            _context.SaveChanges();
             return entity;
         }
 

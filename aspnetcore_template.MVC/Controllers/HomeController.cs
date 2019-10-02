@@ -1,18 +1,18 @@
 ﻿using aspnetcore_template.Common.Extensions;
 using aspnetcore_template.ServiceModel.Business;
 using aspnetcore_template.ServiceModel.Entities;
-using aspnetcore_template.Services;
+using aspnetcore_template.ServiceModel.Messaging;
 using aspnetcore_template.ViewModels;
+using AutoMapper;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Dynamic;
 using System.Threading.Tasks;
-using AutoMapper;
-using aspnetcore_template.ServiceModel.Messaging;
-using Newtonsoft.Json;
 
 namespace aspnetcore_template.Controllers
 {
@@ -67,7 +67,7 @@ namespace aspnetcore_template.Controllers
                 var restaurant = new Restaurant();
                 restaurant.Cuisine = model.Cuisine;
                 restaurant.Name = model.Name;
-                await _restaurantManager.AddAsync(restaurant);
+                await _restaurantManager.AddNewRestaurantAsync(restaurant);
                 return RedirectToAction("Details", new { id = restaurant.Id });
             }
             else
@@ -221,6 +221,82 @@ namespace aspnetcore_template.Controllers
                     break;
             }
             return data.AsEnumerable();
+        }
+    
+        public JsonResult editDropdownUrl(string selectlist)
+        {
+            var resultMessage = ResultMessages.JsonResultMessage();
+            try
+            {
+
+                var results = from CuisineType d in Enum.GetValues(typeof(CuisineType))
+                select new { ID = (int)d, Name = d.ToString() };
+                IEnumerable<SelectListItem> cuisineTypes = results.Select(m => new SelectListItem
+                {
+                    Value = m.ID.ToString(),
+                    Text = m.Name
+                }).Distinct().ToList();
+
+                return Json(cuisineTypes);
+            }
+            catch (Exception ex)
+            {
+                resultMessage.Success = false;
+                resultMessage.Message = "Error retrieving select list information. " + ex.Message;
+            }
+
+            return Json(resultMessage);
+        }
+        [HttpPost]
+        public async Task<JsonResult> AddNewRestaurant(string NewRow)
+        {
+            var result = ResultMessages.JsonResultMessage();
+            result.Message = "Error Adding New Row.";
+            result.Success = false;
+            try
+            {
+                Restaurant newRestaurant = JsonConvert.DeserializeObject<Restaurant>(NewRow);
+                result = await _restaurantManager.AddNewRestaurantAsync(newRestaurant);
+            }            catch (Exception e)
+            {
+                result.Message = "Error Adding New Row.";
+                result.Success = false;
+                return Json(result);
+            }
+            return Json(result);
+        }
+        public async Task<JsonResult> DeleteSelectedItems(List<int> selectedItems)
+        {
+            var resultMessage = new JsonResultMessage
+            {
+                Success = false,
+                Message = "Unable to delete selected items, please try again."
+            };
+            if (selectedItems != null)
+            {
+                var failures = 0;
+                var successes = 0;
+                foreach (int restaurantId in selectedItems)
+                {
+                    var result = await _restaurantManager.DeleteAsync(restaurantId);
+                    if (!result.Success)
+                    {
+                        failures += 1;
+                    }
+                    else
+                    {
+                        successes += 1;
+                    }
+                }
+                if (failures > 0)
+                {
+                    resultMessage.Success = false;
+                    resultMessage.Message = "Deleted {0}, Failed to Delete {1} items".FormatWith(successes, failures);
+                    return Json(resultMessage);
+                }
+                resultMessage.Success = true;
+                resultMessage.Message = "Deleted {0} items.".FormatWith(successes);
+            }            return Json(resultMessage);
         }
 
     }

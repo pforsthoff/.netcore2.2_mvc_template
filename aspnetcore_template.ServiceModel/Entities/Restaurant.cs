@@ -10,7 +10,16 @@ namespace aspnetcore_template.ServiceModel.Entities
         None,
         Italian,
         French,
-        American
+        American,
+        Mexican,
+        German,
+        Greek,
+        Vietnamese,
+        Thai,
+        Japaneese,
+        Chinese,
+        MiddleEastern,
+        Korean
     }
     public class Restaurant : IEntity
     {

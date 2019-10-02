@@ -11,6 +11,7 @@ using System.Linq;
 using AutoMapper;
 using System.Collections.Specialized;
 using Microsoft.AspNetCore.Http;
+using aspnetcore_template.ServiceModel.Messaging;
 
 namespace Tests
 {
@@ -72,7 +73,11 @@ namespace Tests
         public async Task Create_ReturnsNewlyCreatedRestaurant()
         {
             _controller = new HomeController(_mapperMock.Object, _restaurantManagerMock.Object);
-
+            JsonResultMessage message = new JsonResultMessage()
+            {
+                Message = "success",
+                Success = true
+            };
             var newRestaurant = new Restaurant()
             {
                 Name = "Lemongrass",
@@ -83,8 +88,8 @@ namespace Tests
                 Name = newRestaurant.Name,
                 Cuisine = newRestaurant.Cuisine
             };
-            _restaurantManagerMock.Setup(repo => repo.AddAsync(newRestaurant))
-                .ReturnsAsync(newRestaurant);
+            _restaurantManagerMock.Setup(repo => repo.AddNewRestaurantAsync(newRestaurant))
+                .Returns(Task.FromResult(message));
 
             // Act
             var result = await _controller.Create(newRestaurantModel);

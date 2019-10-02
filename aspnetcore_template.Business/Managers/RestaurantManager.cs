@@ -18,20 +18,47 @@ namespace aspnetcore_template.Business.Managers
         {
             _unitOfWork = unitOfWork;
         }
-        public async Task<Restaurant> AddAsync(Restaurant restaurant)
+       
+        public async Task<JsonResultMessage> AddNewRestaurantAsync(Restaurant restaurant)
         {
-            restaurant = _unitOfWork.Repository<Restaurant>().Insert(restaurant);
-            _unitOfWork.Commit();
-            return restaurant;
+            var result = new JsonResultMessage()
+            { 
+                Success = true,
+                Message = "Successfully added new restaurant."
+            };
+            
+            try
+            {
+                restaurant = await _unitOfWork.Repository<Restaurant>().InsertAsync(restaurant);
+                _unitOfWork.Commit();
+            }
+            catch (Exception ex)
+            {
+                result.Success = false;
+                result.Message = "Error adding config. " + ex.Message;
+            }
+            return result;
         }
 
-        public void Delete(int id)
+        public async Task<JsonResultMessage> DeleteAsync(int id)
         {
-            Restaurant restaurant = _unitOfWork.Repository<Restaurant>().GetById(id);
-            if (restaurant != null)
+            var result = new JsonResultMessage()
             {
-                _unitOfWork.Repository<Restaurant>().Delete(restaurant);
-            }
+                Success = true,
+                Message = "Successfully added new restaurant."
+            };
+                try
+                {
+                Restaurant restaurant = _unitOfWork.Repository<Restaurant>().GetById(id);
+                await _unitOfWork.Repository<Restaurant>().DeleteAsync(restaurant);
+                    _unitOfWork.Commit();
+                }
+                catch (Exception ex)
+                {
+                    result.Success = false;
+                    result.Message = "Error deleting item(s). " + ex.Message;
+                }
+                return result;
         }
 
         public async Task<IEnumerable<Restaurant>> GetAllRestaurantsAsync()
@@ -56,10 +83,6 @@ namespace aspnetcore_template.Business.Managers
             return restaurantChanges;
         }
        
-        Task<Restaurant> IRestaurantManager.DeleteAsync(int id)
-        {
-            throw new System.NotImplementedException();
-        }
         public IEnumerable<Restaurant> GetRestaurantsbyCuisineType(int cuisineNumber)
         {
             return _unitOfWork.Repository<Restaurant>().GetByCuisineType(cuisineNumber);

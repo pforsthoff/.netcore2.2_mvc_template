@@ -140,7 +140,8 @@
                         });
 
                         table.search('').columns().search('').draw();
-                         table.buttons().container().appendTo('#tableActions');
+                        //Place Excel button at bottom of grid
+                        table.buttons().container().appendTo('#tableActions');
                         $(document).contextmenu({
                             delegate: ".dataTable tr",
                             menu: [
@@ -167,10 +168,10 @@
                                         UpdateRows(row);
                                         break;
                                     case "add":
-                                        AddRow(row);
+                                        ShowAddRow(row);
                                         break;
                                     case "addupdate":
-                                        AddUpdateRow(row);
+                                        SaveAddRow(row);
                                         break;
                                     case "delete":
                                         DeleteSelectedRows();
@@ -186,7 +187,22 @@
                         });
                         table.MakeCellsEditable({
                         //dataTables cellEdit
-                        "columns": [1,2]
+                            "columns": [1, 2],
+                            "inputTypes": [
+                                {
+                                "name": "name",
+                                "column": 1, // NAME
+                                "css": "edittext",  // edit text box width
+                                "maxLength": 20, //prevent characters past
+                                "required": true // required field validator
+                               
+                            },
+                                {
+                                "name": "cuisine",
+                                "column": 2, // Cuisine
+                                "type": "list",
+                                "url": '@Url.Action("editDropdownUrl", "Home")'
+                            }]
                         }),
                             $("body")
                                 .tooltip({
@@ -218,16 +234,76 @@
                         }
                     }
 
-                    $(document)
-                        .on('click',
-                            '#btnQuery',
+                    $(document).on('click', '#btnQuery',
                             function (e) {
                                 e.preventDefault();
                                 var id = this.id;
                                 table.ajax.reload();
 
-                            });
-                    // Click event to put row into edit mode - minus action column
+                        });
+                    function ShowAddRow(e) {
+                    //Check for existing new row
+                    if (!$('#newrow').length)
+                    {
+                        $(this).ShowAddRow($(e));
+                    }
+                }
+            $(document).on('click','#btnAdd',
+            function(e) {
+                e.preventDefault();
+                if ($("input[name=name]").val() === '' ||
+                    $("#cuisine option:selected").val() === '') {
+                    toastr.error("Please ensure Name and Cuisine are complete.", "Error");
+                    return;
+                }
+                 $newName = $("input[name=name]").val(),
+                 $newCuisine = $("#cuisine option:selected").val();
+                 BootstrapDialog.show({
+                    size: BootstrapDialog.SIZE_SMALL,
+                    //closable: false,
+                    type: BootstrapDialog.TYPE_DEFAULT,
+                    title: "Add New Item Confirmation",
+                    message: "Are you sure you wish to add a new Item?",
+
+                    buttons: [
+                        {
+                            label: "Confirm",
+                            cssClass: 'btn-primary',
+                            action: function(dialog) {
+                                dialog.close();
+
+                                $.ajax({
+                                    type: 'POST',
+                                    url: '@Url.Action("AddNewRestaurant", "Home")',
+                    dataType: 'json',
+                    traditional: true,
+                    data: addAntiForgeryToken(
+                        {
+                            name: newName,
+                            cuisine: $newCuisine
+                        })
+
+                }).done(function (result) {
+                    if (result.success) {
+                       toastr.success(result.message, "Success");
+                    } else {
+                        toastr.error(result.message, "Error");
+                    }
+                    $("#restaurant-table").DataTable().destroy();
+                    loadTable();
+                });
+            }
+        },
+            {
+                label: "Cancel",
+                action: function (dialog) {
+                    dialog.close();
+                }
+            }
+        ]
+    });
+            });
+    // Click event to put row into edit mode - minus action column
     $('#restaurant-table tbody').on('dblclick', 'td', function () {
         try {
             console.log('edit click');
@@ -318,5 +394,109 @@
                         }
                     ]
                 });
+                };
+            function SaveAddRow(e) {
+            var test = $("input[name=cuisine]").val();
+            //console.log('input val: ' + test);
+                var $row = $(e).closest('tr'),
+                    $config = $("input[name=name]"),
+                    $configname = $("#cuisine option:selected");
+            if (typeof $config.val() !== "undefined") {
+                var newRow = {};
+                newRow["NAME"] = $config.val();
+                newRow["CUISINE"] = $configname.val();
+                BootstrapDialog.show({
+                    size: BootstrapDialog.SIZE_SMALL,
+                    //closable: false,
+                    type: BootstrapDialog.TYPE_DANGER,
+                    title: "Add Confirmation",
+                    message: "Are you sure you wish to add a new row?",
+
+                    buttons: [
+                        {
+                            label: "Confirm",
+                            cssClass: 'btn-primary',
+                            action: function(dialog) {
+                                dialog.close();
+                                $.ajax({
+                                    type: 'POST',
+                                    url: '@Url.Action("AddNewRestaurant", "Home")',
+                                    dataType: 'json',
+                                    traditional: true,
+                                    data: addAntiForgeryToken({ NewRow: JSON.stringify(newRow) })
+
+                                }).done(function(result) {
+                                    if (result.success) {
+                                        toastr.success(result.message, "Success");
+                                        $("#restaurant-table").DataTable().destroy();
+                                        selected = [];
+                                        loadTable();
+                                    } else {
+                                        toastr.error(result.message, "Error");
+                                    }
+                                });
+                            }
+                        },
+                        {
+                            label: "Cancel",
+                            action: function(dialog) {
+
+                                dialog.close();
+                            }
+                        }
+                    ]
+                });
+            } else {
+                toastr.error("Select Create New Row First.", "Error");
+            }
         };
+        function DeleteSelectedRows() {
+            table.column(0).checkboxes.selected.length = 0;
+            var rows_selected = table.column(0).checkboxes.selected();
+            if (rows_selected.length === 0) {
+                toastr.error("Please select at least one checkbox.", "Error");
+                return;
+            };
+            var selected = [];
+            // Iterate over all selected checkboxes
+            $.each(rows_selected, function (index, rowId) {
+                selected.push(rowId);
+            });
+            BootstrapDialog.show({
+                size: BootstrapDialog.SIZE_SMALL,
+                type: BootstrapDialog.TYPE_DANGER,
+                title: "Delete Confirmation",
+                message: "Are you sure you wish to delete ALL of the selected Items?",
+                buttons: [{
+                        label: "Confirm",
+                        cssClass: 'btn-primary',
+                        action: function (dialog) {
+                            dialog.close();
+                            $.ajax({
+                                type: 'POST',
+                                url: '@Url.Action("DeleteSelectedItems", "Home")',
+                                dataType: 'json',
+                                traditional: true,
+                                data: addAntiForgeryToken({ selectedItems: selected })
+
+                            }).done(function (result) {
+                                if (result.success) {
+                                    toastr.success(result.message, "Success");
+                                } else {
+                                    toastr.error(result.message, "Error");
+                                }
+                                table.columns(0).checkboxes.deselectAll();
+                                table.ajax.reload();
+                            });
+                        }
+                    },
+                    {
+                        label: "Cancel",
+                        action: function (dialog) {
+                            dialog.close();
+                        }
+                    }
+                ]
+            });
+        }
  </script>

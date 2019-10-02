@@ -10,9 +10,9 @@ namespace aspnetcore_template.ServiceModel.Business
         Task<Restaurant> GetRestaurantAsync(int Id);
         IEnumerable<Restaurant> GetAllRestaurants();
         Task<IEnumerable<Restaurant>> GetAllRestaurantsAsync();
-        Task<Restaurant> AddAsync(Restaurant restaurant);
+        Task<JsonResultMessage> AddNewRestaurantAsync(Restaurant restaurant);
         Task<Restaurant> UpdateAsync(Restaurant restaurantChanges);
-        Task<Restaurant> DeleteAsync(int id);
+        Task<JsonResultMessage> DeleteAsync(int id);
         IEnumerable<Restaurant> GetRestaurantsbyCuisineType(int cuisineNumber);
         JsonResultMessage UpdateRestaurant(Restaurant restaurant);
     }

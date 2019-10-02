@@ -5,7 +5,7 @@
 //Do not attempt to upgrade this version!
 
 jQuery.fn.dataTable.Api.register('MakeCellsEditable()', function (settings) {
-    console.log('datatables edit called');
+    //console.log('datatables edit called');
     var table = this.table();
 
     jQuery.fn.extend({
@@ -37,17 +37,17 @@ jQuery.fn.dataTable.Api.register('MakeCellsEditable()', function (settings) {
                                 }
                             });  
                     } catch (e) {
-
+                        console.log('errors ' + e);
                     } 
                    
-                    console.log("vis: " + visible);
+                    //console.log("vis: " + visible);
                     if (visible) {
 
                         var td = table.cell({ row: element, column: val }).node();
                         var cell = table.cell({ row: element, column: val });
                         var inputField = getInputField(td);
                         var newValue = inputField.val();
-                        console.log("val: " + table.cell({ row: element, column: val }).data());
+                        //console.log("val: " + table.cell({ row: element, column: val }).data());
                         _update(cell, newValue);
                     }
                 });
@@ -89,7 +89,7 @@ jQuery.fn.dataTable.Api.register('MakeCellsEditable()', function (settings) {
         },
         AddNewRow: function (callingElement, row, tablename) {
             if (callingElement === 'undefined') {
-                console.log('undefined');
+                //console.log('undefined');
                 return;
             }
             if (typeof tablename === 'undefined') {
@@ -104,7 +104,7 @@ jQuery.fn.dataTable.Api.register('MakeCellsEditable()', function (settings) {
             }
             var input = getInputField(this);
         },
-        ShowEditRow: function (e, editDropdownUrl) {
+        ShowEditRow: function (e) {
             var table = $($(e).closest("table")).DataTable().table();
             var controlRow = $(e);
             var rowId = 0;
@@ -149,29 +149,23 @@ jQuery.fn.dataTable.Api.register('MakeCellsEditable()', function (settings) {
                         }
                     });
                 } catch (e) {
-
+                    console.log('errors ' + e);
                 } 
                 
                 if (visible) {
                     if (!$(cell).find('input').length && !$(cell).find('select').length && !$(cell).find('textarea').length) {
                         //console.log("date" + oldValue);
-                        var input = getInputHtml(currentColumnIndex, settings, oldValue, val, editDropdownUrl, rowId);
+                        var input = getInputHtml(currentColumnIndex, settings, oldValue, val);
                         $(updatecell).html(input.html);
                     }
                 }
-
             });
         },
-        ShowAddRow: function (e, editDropdownUrl) {
+        ShowAddRow: function (e) {
             var table = $($(e).closest("table")).DataTable().table();
             var htmlTable = $($(e).closest("table"));
             var controlRow = $(e);
-            var rowId = 0;
-            try {
-                rowId = table.row(e).data().Id;
-            } catch (e) {
-                console.log("error");
-            }
+            
             var row = '';
             row += '<tr id="newrow" role="row" class="selected">';
             row += ('<td><input type="checkbox" class="dt-checkboxes"></td>');
@@ -181,7 +175,7 @@ jQuery.fn.dataTable.Api.register('MakeCellsEditable()', function (settings) {
                 var cell = table.cell({ row: controlRow, column: val });
                 var currentColumnIndex = cell.index().column;
                 var columns = table.settings().init().columns;
-                var columnName = columns[currentColumnIndex].data;
+                //var columnName = columns[currentColumnIndex].data;
                 var oldValue = '';
                 var input = '';
                 $.each(settings.inputTypes, function (index, setting) {
@@ -191,19 +185,19 @@ jQuery.fn.dataTable.Api.register('MakeCellsEditable()', function (settings) {
                             row += '<td></td>';
                         } else {
                             if (!$(cell).find('input').length && !$(cell).find('select').length && !$(cell).find('textarea').length) {
-                                input = getInputHtml(currentColumnIndex, settings, oldValue, val, editDropdownUrl, rowId, columnName);
+                                input = getInputHtml(currentColumnIndex, settings, oldValue, val);
                                 row += '<td>' + input.html + '</td>';
                             }
                         }
                     }
                 });
             });
-            row += ('<td><a id="AddNewRow" href="#" onclick="event.preventDefault(); SaveAddRow(this); return false;">' +
+            row += '<td><a id="AddNewRow" href="#" onclick="event.preventDefault(); SaveAddRow(this); return false;">' +
                 '<i class="glyphicon glyphicon-floppy-disk glyphicon-margin"' +
                 'style="color: green" data-toggle="tooltip" data-original-title="Add"></i></a >&nbsp; ' +
                 '<a id="CancelAddNewRow" href="#" onclick="event.preventDefault(); CancelAddNewRow(this); return false;" >' +
                 '<i class="glyphicon-margin glyphicon glyphicon-remove glyphicon-margin"' +
-                'style="color: red" data-toggle="tooltip" data-original-title="Cancel"></i></a></td></tr>');
+                'style="color: red" data-toggle="tooltip" data-original-title="Cancel"></i></a></td></tr>';
             $(htmlTable).prepend(row);
             $("htmlTable").eq(0).children("tr").eq(0).addClass('selected');
             //console.log(row_data);
@@ -245,11 +239,10 @@ jQuery.fn.dataTable.Api.register('MakeCellsEditable()', function (settings) {
             }
         },
         GetSettingsColumns: function (e) {
-            console.log('getsettings called');
             var settingsColumns = [];
             $.each(settings.columns, function (i, val) {
                 settingsColumns.push(val);
-            })
+            });
             return settingsColumns;
         },
         IsEditBlurEvents: function (e) {
@@ -268,9 +261,11 @@ jQuery.fn.dataTable.Api.register('MakeCellsEditable()', function (settings) {
 
 });
 
-function getInputHtml(currentColumnIndex, settings, oldValue, val, editDropdownUrl, rowId, columnName) {
+function getInputHtml(currentColumnIndex, settings, oldValue, val) {
     var inputSetting,
         inputType,
+        inputName,
+        inputUrl,
         input,
         inputCss,
         confirmCss,
@@ -280,7 +275,7 @@ function getInputHtml(currentColumnIndex, settings, oldValue, val, editDropdownU
         required
         ;
 
-    input = { "focus": true, "html": null }
+    input = { "focus": true, "html": null };
 
     if (settings.inputTypes) {
         $.each(settings.inputTypes, function (index, setting) {
@@ -288,6 +283,12 @@ function getInputHtml(currentColumnIndex, settings, oldValue, val, editDropdownU
                 inputSetting = setting;
                 if (typeof inputSetting.type !== "undefined") {
                     inputType = inputSetting.type.toLowerCase();
+                }
+                if (typeof inputSetting.name !== "undefined") {
+                    inputName = inputSetting.name.toLowerCase();
+                }
+                if (typeof inputSetting.url !== "undefined") {
+                    inputUrl = inputSetting.url.toLowerCase();
                 }
                 if (typeof inputSetting.css !== "undefined") {
                     inputCss = inputSetting.css.toLowerCase();
@@ -297,9 +298,6 @@ function getInputHtml(currentColumnIndex, settings, oldValue, val, editDropdownU
                 }
                 if (typeof inputSetting.maxLength !== "undefined") {
                     maxLength = inputSetting.maxLength;
-                }
-                if (typeof columnName === "undefined") {
-                    columnName = 'ColumnName';
                 }
             }
         });
@@ -317,23 +315,20 @@ function getInputHtml(currentColumnIndex, settings, oldValue, val, editDropdownU
         case "list":
             //The parameter sent to the controller is select plus list index
             //multiple dropdowns can be specified by using switch statement on controller method
-            var selectlist = "select" + val;
             var options;
             $.ajax({
                 type: "POST",
-                url: editDropdownUrl,
+                url: inputUrl,
                 dataType: "json",
-                data: { selectlist: selectlist },
+                data: { selectlist: inputName },
                 success: function (result) {
-                    input.html = "<select id='select" + val + "' class='ui-corner-all' minlength='" + minLength + " maxlength='" + maxLength + "' >";
+                    input.html = "<select id='" + inputName + "' class='ui-corner-all' minlength='" + minLength + " maxlength='" + maxLength + "' >";
                     $.each(result, function (i, item) {
-                        //console.log("old: " + oldValue + " New: " + item.Value);
-                        //if (oldValue === item.Text) {
-                        if (oldValue === item.Value) {
+                        if (oldValue === item.text) {
                             input.html += '<option  selected="selected" value="' +
-                                item.Value + '">' + item.Text + '</option>';
+                                item.value + '">' + item.text + '</option>';
                         } else {
-                            input.html += '<option value="' + item.Value + '">' + item.Text + '</option>';
+                            input.html += '<option value="' + item.value + '">' + item.text + '</option>';
                         }
                     });
                     //console.log(input.html);
@@ -392,14 +387,14 @@ function getInputHtml(currentColumnIndex, settings, oldValue, val, editDropdownU
         default: // text input
             try {
                 if (settings.editblurevents) {
-                    input.html = "<input id='celledit" + rowId + "-" + currentColumnIndex + "' class='" + inputCss + "'  minlength='" + minLength + "' maxlength='" + maxLength + "' name='" + columnName + "' value='" + oldValue + "' onblur='CellEditBlur(this)' ></input>";
+                    input.html = "<input id='" + inputName + "' class='" + inputCss + "'  minlength='" + minLength + "' maxlength='" + maxLength + "' name='" + inputName + "' value='" + oldValue + "' onblur='CellEditBlur(this)' ></input>";
                 }
                 else {
-                    input.html = "<input id='celledit" + rowId + "-" + currentColumnIndex + "' class='" + inputCss + "'  minlength='" + minLength + "' + required maxlength='" + maxLength + "' name='" + columnName + "' + value='" + oldValue + "' ></input>";
+                    input.html = "<input id='" + inputName + "' class='" + inputCss + "'  minlength='" + minLength + "' + required maxlength='" + maxLength + "' name='" + inputName + "' + value='" + oldValue + "' ></input>";
                 }
                 break;
             } catch (e) {
-                input.html = "<input id='celledit" + rowId + "-" + currentColumnIndex + "' class='" + inputCss + "'  minlength='" + minLength + "' maxlength='" + maxLength + "' name='" + columnName + "' value='" + oldValue + "' ></input>";
+                input.html = "<input id='" + inputName + "' class='" + inputCss + "'  minlength='" + minLength + "' maxlength='" + maxLength + "' name='" + inputName + "' value='" + oldValue + "' ></input>";
             }
     }
     return input;
