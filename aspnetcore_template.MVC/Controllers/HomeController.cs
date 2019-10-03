@@ -115,7 +115,9 @@ namespace aspnetcore_template.Controllers
             var length = Request.Form["length"].FirstOrDefault();
 
             // Sort Column Name  
-            var sortColumn = Request.Form["columns[" + Request.Form["order[0][column]"].FirstOrDefault() + "][name]"].FirstOrDefault();
+            var sortColumn = Request.Form["order[0][column]"].FirstOrDefault();
+
+            //var sortColumn = Request.Form["columns[" + Request.Form["order[0][column]"].FirstOrDefault() + "][name]"].FirstOrDefault();
 
             // Sort Column Direction (asc, desc)  
             var sortColumnDirection = Request.Form["order[0][dir]"].FirstOrDefault();
@@ -212,10 +214,12 @@ namespace aspnetcore_template.Controllers
             // Sorting   
             switch (sortColumn)
             {
-                case "Name":
+                case "1":
                     data = sortColumnDir.Equals("desc", StringComparison.CurrentCultureIgnoreCase) ? data.OrderByDescending(p => p.Name).ToList() : data.OrderBy(p => p.Name).ToList();
                     break;
-               
+                case "2":
+                    data = sortColumnDir.Equals("desc", StringComparison.CurrentCultureIgnoreCase) ? data.OrderByDescending(p => p.Cuisine.ToString()).ToList() : data.OrderBy(p => p.Cuisine.ToString()).ToList();
+                    break;
                 default:
                     data = sortColumnDir.Equals("desc", StringComparison.CurrentCultureIgnoreCase) ? data.OrderByDescending(p => p.Name).ToList() : data.OrderBy(p => p.Name).ToList();
                     break;

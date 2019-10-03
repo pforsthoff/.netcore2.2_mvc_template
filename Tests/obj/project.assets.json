@@ -3593,7 +3593,6 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "2.2.6",
           "Microsoft.EntityFrameworkCore.Relational": "2.2.6",
-          "Microsoft.Extensions.Identity.Stores": "2.2.0",
           "aspnetcore_template.ServiceModel": "1.0.0"
         },
         "compile": {
@@ -10902,9 +10901,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projects\\Core\\Core2.2\\Tests\\Tests.csproj",
-      "projectName": "Tests",
-      "projectPath": "C:\\Projects\\Core\\Core2.2\\Tests\\Tests.csproj",
+      "projectUniqueName": "C:\\Projects\\Core\\Core2.2\\Tests\\aspnetcore_template.Tests.csproj",
+      "projectName": "aspnetcore_template.Tests",
+      "projectPath": "C:\\Projects\\Core\\Core2.2\\Tests\\aspnetcore_template.Tests.csproj",
       "packagesPath": "C:\\Users\\Paul\\.nuget\\packages\\",
       "outputPath": "C:\\Projects\\Core\\Core2.2\\Tests\\obj\\",
       "projectStyle": "PackageReference",
