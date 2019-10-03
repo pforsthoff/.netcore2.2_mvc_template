@@ -1,8 +1,8 @@
+C:\Projects\Core\Core2.2\Tests\bin\Debug\netcoreapp2.2\aspnetcore_template.MVC.Views.dll
+C:\Projects\Core\Core2.2\Tests\bin\Debug\netcoreapp2.2\aspnetcore_template.MVC.Views.pdb
 C:\Projects\Core\Core2.2\Tests\bin\Debug\netcoreapp2.2\xunit.runner.visualstudio.dotnetcore.testadapter.dll
 C:\Projects\Core\Core2.2\Tests\bin\Debug\netcoreapp2.2\xunit.runner.reporters.netcoreapp10.dll
 C:\Projects\Core\Core2.2\Tests\bin\Debug\netcoreapp2.2\xunit.runner.utility.netcoreapp10.dll
-C:\Projects\Core\Core2.2\Tests\bin\Debug\netcoreapp2.2\aspnetcore_template.MVC.Views.dll
-C:\Projects\Core\Core2.2\Tests\bin\Debug\netcoreapp2.2\aspnetcore_template.MVC.Views.pdb
 C:\Projects\Core\Core2.2\Tests\bin\Debug\netcoreapp2.2\aspnetcore_template.Tests.deps.json
 C:\Projects\Core\Core2.2\Tests\bin\Debug\netcoreapp2.2\aspnetcore_template.Tests.runtimeconfig.json
 C:\Projects\Core\Core2.2\Tests\bin\Debug\netcoreapp2.2\aspnetcore_template.Tests.runtimeconfig.dev.json

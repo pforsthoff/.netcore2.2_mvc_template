@@ -16,17 +16,14 @@
                     <div class="row" style="padding-left: 10px;">
                         <div class="form-inline">
                             <div class="form-group col-lg-1">
-                                @*@Html.LabelFor(m => m.Message, new { @class = "control-label", @for = "siteFilter" })*@
                                 <div>
                                     Cuisine
-                                    @*@Html.Label(Model.Message,Model.Message, new { @id = "siteFilter" })*@
                                 </div>
                             </div>
                             <div class="form-group col-lg-4">
-                                @*@Html.LabelFor(m => m.Message, new { @class = "control-label", @for = "modelFilterLabel" })*@
                                 <div>
                                     @Html.DropDownList("CuisineType",
-                                    Html.GetEnumSelectList<CuisineType>(),
+                                    Html.GetEnumSelectList<CuisineType>().OrderBy(c => c.Text),
                                     "Select Cuisine", new { @class = "form-control" })
                                 </div>
                             </div>
@@ -75,7 +72,6 @@
                             stateSave: true,
                             dom: 'lBfrtip',
                             buttons: [
-
                                 {
                                     extend: 'excelHtml5',
                                     "text": 'Excel <span class="glyphicon glyphicon-download-alt"></span>',

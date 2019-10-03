@@ -7,12 +7,9 @@
     ViewBag.Title = "Home";
 
 }
-    <div id="sidebar">
-        @await Html.PartialAsync("_Sidebar")
-    </div>
+   
 <div id="wrapper">
     <div id="main">
-        <h1>Welcome!</h1>
 
         @foreach (var restaurant in Model.Restaurants)
         {

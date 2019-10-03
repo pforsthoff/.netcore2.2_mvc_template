@@ -117,8 +117,6 @@ namespace aspnetcore_template.Controllers
             // Sort Column Name  
             var sortColumn = Request.Form["order[0][column]"].FirstOrDefault();
 
-            //var sortColumn = Request.Form["columns[" + Request.Form["order[0][column]"].FirstOrDefault() + "][name]"].FirstOrDefault();
-
             // Sort Column Direction (asc, desc)  
             var sortColumnDirection = Request.Form["order[0][dir]"].FirstOrDefault();
 

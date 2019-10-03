@@ -5,9 +5,9 @@ using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.Configuration;
 using Microsoft.EntityFrameworkCore;
 using aspnetcore_template.ServiceModel.Entities;
-using aspnetcore_template.Services;
 using Microsoft.AspNetCore.Identity;
 using System.IO;
+using System.Linq;
 using aspnetcore_template.Data.Repositories;
 using AutoMapper;
 using System;
@@ -30,7 +30,6 @@ namespace aspnetcore_template
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
-            services.AddSingleton<IGreeter, Greeter>();
             services.AddSingleton(provider => Configuration);
             services.AddIdentity<User, IdentityRole>()
                .AddEntityFrameworkStores<CoreDbContext>();
@@ -42,7 +41,7 @@ namespace aspnetcore_template
         }
         public IConfiguration Configuration { get; set; }
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IGreeter greeter, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
             app.UseMvc(ConfigureRoutes);
             app.UseStaticFiles();
@@ -50,12 +49,6 @@ namespace aspnetcore_template
             {
                 app.UseDeveloperExceptionPage();
             }
-
-            //app.Run(async (context) =>
-            //{
-            //    var greeting = greeter.GetGreeting();
-            //    await context.Response.WriteAsync(greeting);
-            //});
         }
         private void ConfigureRoutes(IRouteBuilder routeBuilder)
         {
@@ -73,6 +66,33 @@ namespace aspnetcore_template
                 .Build();
 
             host.Run();
+        }
+        public static void Seed(IApplicationBuilder applicationBuilder)
+        {
+            using (var serviceScope = applicationBuilder.ApplicationServices.GetRequiredService<IServiceScopeFactory>()
+                    .CreateScope())
+            {
+                CoreDbContext context = serviceScope.ServiceProvider.GetService<CoreDbContext>();
+
+                if (!context.Restaurants.Any())
+                {
+                    context.Restaurants.Add(new Restaurant() { Name = "Carabas", Cuisine = CuisineType.Italian });
+                    context.Restaurants.Add(new Restaurant() { Name = "Chipotle", Cuisine = CuisineType.Mexican });
+                    context.Restaurants.Add(new Restaurant() { Name = "Garbanzo", Cuisine = CuisineType.MiddleEastern });
+                    context.Restaurants.Add(new Restaurant() { Name = "Five Guys", Cuisine = CuisineType.American });
+                    context.Restaurants.Add(new Restaurant() { Name = "Saigon Springs", Cuisine = CuisineType.Vietnamese });
+                    context.Restaurants.Add(new Restaurant() { Name = "Thai Lilly", Cuisine = CuisineType.Thai });
+                    context.Restaurants.Add(new Restaurant() { Name = "Monicas", Cuisine = CuisineType.Mexican });
+                    context.Restaurants.Add(new Restaurant() { Name = "Popeyes", Cuisine = CuisineType.American });
+                    context.Restaurants.Add(new Restaurant() { Name = "AI", Cuisine = CuisineType.Japaneese });
+                    context.Restaurants.Add(new Restaurant() { Name = "ChickFilet", Cuisine = CuisineType.American });
+                    context.Restaurants.Add(new Restaurant() { Name = "Grifters", Cuisine = CuisineType.American });
+
+                    context.SaveChanges();
+                }
+
+                context.SaveChanges();
+            }
         }
     }
 }
